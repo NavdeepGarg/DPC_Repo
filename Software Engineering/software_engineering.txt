@@ -76,6 +76,14 @@ SEI-CMM
 	
 Software Metric 
 https://www.youtube.com/watch?v=bnydxXPN_rI
+	•Metric provides the measures fr various aspect of software process and products.
+	•It aid in maintain the software quality
+	•Acc to Tom Demacro :"you cannot control what you cannot measure"
+	•Size Metric: LOC , Function Point COunt , Cyclomatic Coplexity
+	•Quality Metric: Defect and their type and cuases, severity,and effect on s/w quality
+	•Process Metric: The method and tools used , the company standards and performance of dev. are the part of process metrics
+	•Resource metric : Effort , Time,Other h/w and humna resources.
+	•
 
 ISO 9001:
 	standard that deals with orgs. dealing with design , dev, prod, serv of goods.Software Industries come under this standard only.
