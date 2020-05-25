@@ -60,10 +60,10 @@ SEI-CMM
 	
 	CMM-1:
 	•Initial
-	•A s/w development organisation at this level is involved/characterised by adhoc activities.
+	•A s/w development organisation at this level is involved/characterized by adhoc activities.
 	CMM-2:
-	•Repetable
-	•A s/w development organisation at this level the basic project managemetn practice such as trackking of cost and scheduled are established.
+	•Repeatable
+	•A s/w development organization at this level the basic project management practice such as tracking of cost and scheduled are established.
 	CMM-3
 	•Defined
 	•---at this level both management and development are well defined and documented
@@ -78,7 +78,7 @@ Software Metric
 https://www.youtube.com/watch?v=bnydxXPN_rI
 
 ISO 9001:
-	standard that deals with orgs. deaking with design , dev, prod, serv of goods.Software Indistries come under this standsr only.
+	standard that deals with orgs. dealing with design , dev, prod, serv of goods.Software Industries come under this standard only.
 	
 #############
 
