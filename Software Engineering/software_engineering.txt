@@ -1,0 +1,100 @@
+Engineering
+	•Engineering is a scientific field and job that involves taking our scientific understanding of the natural world and using it to invent, design, and build things to solve problems and achieve practical goals in cost effective manner
+
+Software_Engineering
+	•It is systematic, disciplined, quantifiable approach in development ,maintenance and operationalization of software.
+	•Software crisis: is the difficulty of writing a software in required time.
+	 Causes are : lack o budget management, skillful  human resources
+	 Solution is Software Engineering
+	 
+Types of Software:
+	•System Software : collection of program that serves other s/w e.g. : Operating systematic
+	•Application Software : developed for end users .. e.g. : Excel and MS word
+	•Embedded Software: It resides in ROM. it is used to control products and sys for consumer and industrial works. E.g.: GPS devices, factory robot
+	•Web Application : client server model
+	•Artificial intelligence : 
+	
+
+Software Life Cycle Model
+	•DEfines Entry and Exit criteria for every phase , which help project manager to monitor the progress of project 
+
+Waterfall Model
+	•In phase manner, once one phase over then only next phase start(top to down)
+	•Requirement Analysis : SRS , sharing the contract document with customer and producer.
+	•System Design : System Architecture, Hardware in use, SDD
+	•Implementation : covering each unit and development of small prog called units
+	•Integration and Testing : Int of all unit and testing
+	•Deployment : releasing in the market
+	•Maintenance: After release
+	Advantages: 
+		•Phase wise manner, clear definition and role specifications, easy to use
+	Disadvantage:
+		•No working prototype will be produced until late during life-cycle
+		•high risk and not usable for complex projects
+
+Prototyping Model
+	•Uses Multiple iteration and after each iteration it will be shown and evaluated by  the customer. (after Reg, analysis, design )
+		and then development testing and maintenance will be initiated and completed.
+	Advantages: 
+		•Customer can see steady progress.
+		•Useful when requirement are changing rapidly
+	Disadvantage:
+		•Dont know when customer will satisfy 
+		•No fixed count of iterations
+
+Spiral Model
+	•
+	
+Evolutionary model is a combination of Iterative and Incremental model.
+
+
+Software Quality:
+	A quality software does exactly what we want it to do,
+	Factors:
+	•Portability, Usability, Reusability, correctness.
+
+SEI-CMM
+	•Software Engineering Institution who developed a model CMM to label the organisation for their product quality and help them to improve the quality pf their product.
+	•Its implementation has significant business benefits and it can be enforced in two ways:
+		Capability evaluation , s/W process assessment.
+	
+	CMM-1:
+	•Initial
+	•A s/w development organisation at this level is involved/characterised by adhoc activities.
+	CMM-2:
+	•Repetable
+	•A s/w development organisation at this level the basic project managemetn practice such as trackking of cost and scheduled are established.
+	CMM-3
+	•Defined
+	•---at this level both management and development are well defined and documented
+	CMM-4:
+	•Managed
+	•Focus is on software metrics
+	CMM-5:
+	•Optimized
+	•Process and Product metrics are collected
+	
+Software Metric 
+https://www.youtube.com/watch?v=bnydxXPN_rI
+
+ISO 9001:
+	standard that deals with orgs. deaking with design , dev, prod, serv of goods.Software Indistries come under this standsr only.
+	
+#############
+
+Incremental Development
+	Incremental Development is a practice where the system functionalities are sliced into increments (small portions). In each increment, a vertical slice of functionality is delivered by going through all the activities of the software development process, from the requirements to the deployment.
+
+	Incremental Development (adding) is often used together with Iterative Development (redo) in software development. This is referred to as Iterative and Incremental Development (IID).
+
+Evolutionary method
+	The terms evolution and evolutionary have been introduced by Tom Gilb in his book Software Metrics published in 1976 where he wrote about EVO, his practice of IID (perhaps the oldest). Evolutionary development focuses on early delivery of high value to stakeholders and on obtaining and utilizing feedback from stakeholders.
+	 
+	Evolutionary iterative development implies that the requirements, plan, estimates, and solution evolve or are refined over the course of the iterations, rather than fully defined and “frozen” in a major up-front specification effort before the development iterations begin. Evolutionary methods are consistent with the pattern of unpredictable discovery and change in new product development.
+
+	
+
+
+
+
+

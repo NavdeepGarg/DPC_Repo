@@ -1,0 +1,66 @@
+Software Testing
+
+Verification and Validation Model
+
+This model is used when requirement are well defined and non-ambiguous
+Verifications:
+	•is the static analysis technique, where testing is done without executing the code
+	•e.g. code inspection,code walkthruogh, reviews etc
+Validation
+	•Dynamic analysis technique, where code is executed by execution
+	
+	•In this V&V model development and QA activities are done simultaneously and testing starts right from requirement phase.
+	 and verification and validation activities go hand in hand.
+	•Left hand side are dev act and right side are test act
+	•requirement analysis -> UAT
+	•Design reviews -> system test plan and traceability matrix  : 
+	•Architecture diagram is created , their modules and dependencies ->INtegraation test plan 
+	•Low level design for function and interfaces are defines-> Unit case testing 
+	
+	•Unit testing is done to check the desired output of the function written, this is been done majorly by dev team.
+	 bugs are logged and tracked.
+	•Integartion test plan produces integration test cases and track them 
+	
+
+Software Testing Life Cycle:
+	
+	•It is software testing process tat executed in planned and systematic manner to improve the quality of product.
+	 that identifies what test activities to carry out and when to accomplish those test activities.
+	•RA:QA team figure out the testable requirements. they follow up with stakeholders like Architecture designer, business analyst to get answer for any question.
+		
+	•Test Planning: Important phase where test manager figure the cost and effort to be done for commencing the testing.
+	•Test Case DEvelopment:	Testing team wrte test case and gather required data and get reviewd by QA lead.
+							Requirement tracebility matrix is built where each test cases is mapped with the corresponding requirement.
+	•Enviromnet Setup : it is an independent activity where testing environment is sets up.
+	•Test Execution  : Test case execution started.
+	•Test Cycle closure: 
+
+Types of Testing
+	•Manual Testign and Automation Testing:
+	Challenges with Maual Testing are  : Boring, Error prone, Time consuming, Tedious.
+
+Static Methods of testing are : code inspection , code review 
+
+Testing Methods(dynamic methods):
+	•Black Box Testing:Known as Behavioural Testign , s/w test the interanl structual, design and implementation and UI and UX of the product being tested.
+	•White Box : 	internal structure , login design and implementation of different module.
+	•Grey bOx:Only Partly internal sturcure is known to the tester.
+
+Fucntional Testing
+	•Describe what the product does
+	•Unit testing, Acceptance trsting,Smoke Testing,Integration Teasting,Rehression testing
+Non Functional Testing:
+	•Performed after Functional Testing
+	•Describe how prodyct works
+	•Performance Tsting,Scalability Trsting,Load Trsting, Stress Testing
+	
+Software Testign Level
+	•Unit->Integration->System->Accpetance
+
+Software Testing Document and its aritfacts:
+	•Test Plan: Provide Outline strategy which will be implemented for testing the application.
+	•Test Scenario:a single line stmt that notifies the area in which your app will experiment.
+	•Test Case: collections of  steps , conitions , inputs and expected outputs which can be implemnetedd
+	•Tracebility Matrix: that map requirement at SDLC with test cases
+	
+	

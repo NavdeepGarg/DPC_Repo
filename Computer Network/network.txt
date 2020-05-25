@@ -1,0 +1,34 @@
+Digital Signature
+	•Non Repudiation, authentication, Integrity(Msg is not altered in between)
+	
+Hash Algorithm
+	•One way only, not reverse.
+	•Output is called as digest
+	•Digest can be reversed to plain text if the original message/password is weak	(password hacking)
+
+Dictionary Attack
+	•Look up of pre-stored digest and plain text is created , and hacker will then search the stolen digest in that dictionary.
+	
+BruteForce Attack
+	•by guessing and chances
+	
+Private Key Encryption
+	•single key shared between Sender and Receiver
+	•Two types-stream Cipher, Block cipher
+	•stream cipher does bit by bit encryption (e.g. Rivest Cipher 4), block does block by block.(e.g. Rivest Cipher 5, DES)
+
+Public Key Encryption
+	•communication has to start with receiver first, bcos he will generate the key pair that would be used by the sender to encrypt the message .
+	•Receiver will use the private key to decrypt the message.
+	•One flaw is receiver may not know if the message is sent by the right sender or man in middle has come.
+
+Circuit Switching
+	•Dedicated circuit established for communication between the system
+	•Ideal for telephone services which happen on real time basis.
+	•It rent the circuit or path till the communication get ends, thats why International call are expensive
+
+Packet Switching
+	•ideal case for where small lag or delay is acceptable.
+	•Internet is based on packet switching where data packet are traveling with a IP address and sequencing mechanism.
+
+
