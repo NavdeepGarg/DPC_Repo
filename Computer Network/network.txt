@@ -31,4 +31,13 @@ Packet Switching
 	•ideal case for where small lag or delay is acceptable.
 	•Internet is based on packet switching where data packet are traveling with a IP address and sequencing mechanism.
 
+An intranet is private network which are heavily protected by networking devices.
+
+IDS : intrusion Detection System , IPS:Intrusion Prevention system -> they both can be part of a single instrument also.
+	Its job is to detect , log, prevent the unwanted traffic and data coming to INTERNET.
+
+Salt is the random number generated for each user password which is then mixed up with the digest in order to make it more difficult password for the user.
+Salt is stored in DB as well
+where as Pepper is another secret not-necessarily unique number which can be added to salt in min order to make it more difficult password for the user.
+Pepper is not stored in DB
 
