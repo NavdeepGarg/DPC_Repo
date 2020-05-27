@@ -1,12 +1,23 @@
 Software Testing
 
+Test Scenario:
+	•is the hypothetical story to test the particular functionality of an application.
+	•It need use cases to test the function
+	
+Defect
+	•The mistakes done at the developer end which produces different result than expected.
+	•It is detected and corrected by Developer
+Bug
+	•Same defect which are detected by tester
+
+
 Verification and Validation Model
 
 This model is used when requirement are well defined and non-ambiguous
 Verifications:
 	•is the static analysis technique, where testing is done without executing the code
 	•e.g. code inspection,code walkthruogh, reviews etc
-Validation
+Validation (d for dynamic)
 	•Dynamic analysis technique, where code is executed by execution
 	
 	•In this V&V model development and QA activities are done simultaneously and testing starts right from requirement phase.
@@ -36,25 +47,25 @@ Software Testing Life Cycle:
 	•Test Cycle closure: 
 
 Types of Testing
-	•Manual Testign and Automation Testing:
-	Challenges with Maual Testing are  : Boring, Error prone, Time consuming, Tedious.
+	•Manual Testing and Automation Testing:
+	Challenges with Manual Testing are  : Boring, Error prone, Time consuming, Tedious.
 
 Static Methods of testing are : code inspection , code review 
 
 Testing Methods(dynamic methods):
-	•Black Box Testing:Known as Behavioural Testign , s/w test the interanl structual, design and implementation and UI and UX of the product being tested.
+	•Black Box Testing:Known as Behavioral Testing , s/w test the internal structural, design and implementation and UI and UX of the product being tested.
 	•White Box : 	internal structure , login design and implementation of different module.
-	•Grey bOx:Only Partly internal sturcure is known to the tester.
+	•Grey bOx:Only Partly internal structure is known to the tester.
 
-Fucntional Testing
+Functional Testing
 	•Describe what the product does
-	•Unit testing, Acceptance trsting,Smoke Testing,Integration Teasting,Rehression testing
+	•Unit testing, Acceptance testing,Smoke Testing,Integration Testing,Regression testing
 Non Functional Testing:
 	•Performed after Functional Testing
-	•Describe how prodyct works
-	•Performance Tsting,Scalability Trsting,Load Trsting, Stress Testing
+	•Describe how product works
+	•Performance testing,Scalability testing,Load testing, Stress Testing
 	
-Software Testign Level
+Software Testing Level
 	•Unit->Integration->System->Accpetance
 
 Software Testing Document and its aritfacts:
@@ -62,5 +73,16 @@ Software Testing Document and its aritfacts:
 	•Test Scenario:a single line stmt that notifies the area in which your app will experiment.
 	•Test Case: collections of  steps , conitions , inputs and expected outputs which can be implemnetedd
 	•Tracebility Matrix: that map requirement at SDLC with test cases
+
+Loop testing
+	•White box testing , for checking loops
+
+Smoke Testing
+	•The term ‘smoke testing’, it is said, came to software testing from a similar type of hardware testing, in which the device passed the test if it did not catch fire (or smoked) the first time it was turned on.
+	•Smoke testing covers most of the major functions of the software but none of them in depth. The result of this test is used to decide whether to proceed with further testing. If the smoke test passes, go ahead with further testing. If it fails, halt further tests and ask for a new build with the required fixes. If an application is badly broken, detailed testing might be a waste of time and effort.
 	
-	
+Penetration testing:
+	•It is security assessment
+	•It is simulation of process that hacker would use to launch attack on your website.
+	•It is implemented by simulating malicious attacks from an organization's internal and external users to analyses th potential vulnerabilities
+	•Network configuration are the most common vulnerabilities found in penetration testing.
