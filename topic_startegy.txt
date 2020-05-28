@@ -17,8 +17,8 @@ Software testing
 •Computer Network
 	https://www.youtube.com/playlist?list=PLSNNzog5eydvsPPMwn-6waomQXOOxZew4
 
-•Operating System includng Linux and unix
+•Operating System including Linux and unix
 
-•DataStructure and Algos
+•DataStructure and Algorithms
 
 •Latest Technologies
