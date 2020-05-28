@@ -1,3 +1,13 @@
+Software is: (1) instructions (computer programs) that when executed provide desired
+features, function, and performance; (2) data structures that enable the programs to adequately
+manipulate information, and (3) descriptive information in both hard copy and
+virtual forms that describes the operation and use of the programs
+
+Technical competence, communication skills, inter personnel skills, maintain competence makes a good s/w engineer.
+
+Process
+	•Set of activities
+
 Metric:
 	•IEEE93 defines it as a quantitative measure of the degree to which system , component, process, possess on attribute.
 
@@ -36,8 +46,9 @@ Waterfall Model
 		•high risk and not usable for complex projects
 
 Prototyping Model
-	•Uses Multiple iteration and after each iteration it will be shown and evaluated by  the customer. (after Reg, analysis, design )
-		and then development testing and maintenance will be initiated and completed.
+
+	•The prototyping paradigm begins with communication.Meet with stakeholders to define the overall objectives for the software.
+	•Then quick design/model -> construction of a prototype->stakeholders feedback->further refinements 	
 	Advantages: 
 		•Customer can see steady progress.
 		•Useful when requirement are changing rapidly
@@ -47,6 +58,7 @@ Prototyping Model
 
 Spiral Model
 	•Is a evolutionary model that couples with iterative and waterfall model with risk analysis.
+	•If your management demands fixed-budget development (generally a bad idea), the spiral can be a problem. As each circuit is completed, project cost is revisited and revised
 	
 Evolutionary model is a combination of Iterative and Incremental model.
 
@@ -57,13 +69,13 @@ Software Quality:
 	•Portability, Usability, Reusability, correctness.
 
 SEI-CMM
-	•Software Engineering Institution who developed a model CMM to label the organisation for their product quality and help them to improve the quality pf their product.
+	•Software Engineering Institution who developed a model CMM to label the organization for their product quality and help them to improve the quality pf their product.
 	•Its implementation has significant business benefits and it can be enforced in two ways:
 		Capability evaluation , s/W process assessment.
 	
 	CMM-1:
 	•Initial
-	•A s/w development organisation at this level is involved/characterized by adhoc activities.
+	•A s/w development organization at this level is involved/characterized by ad-hoc activities.
 	CMM-2:
 	•Repeatable
 	•A s/w development organization at this level the basic project management practice such as tracking of cost and scheduled are established.
