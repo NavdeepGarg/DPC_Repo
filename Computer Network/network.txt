@@ -41,3 +41,10 @@ Salt is stored in DB as well
 where as Pepper is another secret not-necessarily unique number which can be added to salt in min order to make it more difficult password for the user.
 Pepper is not stored in DB
 
+•VPN
+VPNs essentially create a data tunnel between your local network and an exit node in another location, which could be thousands of miles away, making it seem as if you’re in another place. This benefit allows online freedom, or the ability to access your favorite apps and websites while on the go.
+
+Here’s a closer look at how a virtual private network works. VPNs use encryption to scramble data when it’s sent over a Wi-Fi network. Encryption makes the data unreadable. Data security is especially important when using a public Wi-Fi network, because it prevents anyone else on the network from eavesdropping on your internet activity.
+
+There’s another side to privacy. Without a VPN, your internet service provider can know your entire browsing history. With a VPN, your search history is hidden. That’s because your web activity will be associated with the VPN server’s IP address, not yours. A VPN service provider may have servers all over the world. That means your search activity could appear to originate at any one of them. Keep in mind, search engines also track your search history, but they’ll associate that information with an IP address that’s not yours. Again, your VPN will keep your online activity private.
+
