@@ -115,6 +115,20 @@ Evolutionary method
 	 
 	Evolutionary iterative development implies that the requirements, plan, estimates, and solution evolve or are refined over the course of the iterations, rather than fully defined and “frozen” in a major up-front specification effort before the development iterations begin. Evolutionary methods are consistent with the pattern of unpredictable discovery and change in new product development.
 	
+	
+Rapid application development
+	•agile software development methodology
+	•prioritizes rapid prototype releases and iterations
+	•emphasizes the use of software and user feedback over strict planning and requirements recording
+	
+	Benefits
+	•Enhanced flexibility and adaptability as developers can make adjustments quickly during the development process.
+	•Encouragement of code reuse, which means less manual coding, less room for errors, and shorter testing times.
+	•Increased customer satisfaction due to high-level collaboration and coordination between stakeholders 
+	
+	
+	
+	
 #############
 Verification and Validations
 Verification:

@@ -13,10 +13,12 @@ Bug
 
 Verification and Validation Model
 
+	•Also, the costs of fixing a defect increase across the development life-cycle. The earlier in life cycle a defect is detected, the cheaper it is to fix it. As they say, "A stitch in time saves nine."
+
 This model is used when requirement are well defined and non-ambiguous
 Verifications:
 	•is the static analysis technique, where testing is done without executing the code
-	•e.g. code inspection,code walkthruogh, reviews etc
+	•e.g. code inspection,code walk-through, reviews etc
 Validation (d for dynamic)
 	•Dynamic analysis technique, where code is executed by execution
 	
@@ -30,7 +32,7 @@ Validation (d for dynamic)
 	
 	•Unit testing is done to check the desired output of the function written, this is been done majorly by dev team.
 	 bugs are logged and tracked.
-	•Integartion test plan produces integration test cases and track them 
+	•Integration test plan produces integration test cases and track them 
 	
 
 Software Testing Life Cycle:
@@ -40,9 +42,9 @@ Software Testing Life Cycle:
 	•RA:QA team figure out the testable requirements. they follow up with stakeholders like Architecture designer, business analyst to get answer for any question.
 		
 	•Test Planning: Important phase where test manager figure the cost and effort to be done for commencing the testing.
-	•Test Case DEvelopment:	Testing team wrte test case and gather required data and get reviewd by QA lead.
-							Requirement tracebility matrix is built where each test cases is mapped with the corresponding requirement.
-	•Enviromnet Setup : it is an independent activity where testing environment is sets up.
+	•Test Case DEvelopment:	Testing team wrt test case and gather required data and get reviewed by QA lead.
+							Requirement traceability matrix is built where each test cases is mapped with the corresponding requirement.
+	•Environment Setup : it is an independent activity where testing environment is sets up.
 	•Test Execution  : Test case execution started.
 	•Test Cycle closure: 
 
@@ -66,13 +68,13 @@ Non Functional Testing:
 	•Performance testing,Scalability testing,Load testing, Stress Testing
 	
 Software Testing Level
-	•Unit->Integration->System->Accpetance
+	•Unit->Integration->System->Acceptance
 
-Software Testing Document and its aritfacts:
+Software Testing Document and its artifacts:
 	•Test Plan: Provide Outline strategy which will be implemented for testing the application.
 	•Test Scenario:a single line stmt that notifies the area in which your app will experiment.
-	•Test Case: collections of  steps , conitions , inputs and expected outputs which can be implemnetedd
-	•Tracebility Matrix: that map requirement at SDLC with test cases
+	•Test Case: collections of  steps , conditions , inputs and expected outputs which can be implemented
+	•Traceability Matrix: that map requirement at SDLC with test cases
 
 Loop testing
 	•White box testing , for checking loops
