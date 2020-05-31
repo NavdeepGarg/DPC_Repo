@@ -1,0 +1,61 @@
+•Find out the different version differences in java 
+from java 8 to 11
+
+strictness order of modifiers:
+	private>default>protected>public
+
+dafult is package private identifier, i.e. it scope will not be visible outside package , chahe voh subclass hi kyu na ho.
+
+#####################Design Patter Notes#####################
+•Make sure your design is in such a way that it is adaptable to change
+
+Smells are the indication that you are doing something wrong.
+	•like rigidity,fragility,tight coupling ,needless repetition,too many public members(it violates encapsulation)
+
+Program to an interface and do for implementation.It is a common theme of design pattern.
+
+Composition has many benefits than inheritance.
+	•It offer loose coupling.
+	•It provide more extensibility bcoz there is least to bother about the inheritance linkage
+	•There is always most time spent on code after its development, so better to think for extensibility wherever it can be  applicable.
+	 This argument favors Composition over Inheritance.
+	•Composition enhance polymorphism
+
+Delegation
+	•when a class delegate some task to other class to accomplish
+	•It also uses the cOmposition principle.
+	•equals() and hashCode() is the classic example.
+	 In order to compare two objects for equality we ask the class itself to do the comparison instead of client class doing that check.
+	
+Dependency Inversion Principle(DIP)
+	•encourage the thinking in making of abstraction/interfaces.
+	•think first of abstraction than concrete class.
+	•if you are overriding the implemented method in superclass, it means you have not done the abstraction properly, rethink and change the design
+	coz it will end up in high coupling.
+	
+Dependency Injection:
+	•It goes hand in hand with DIP
+	•if you want to use DI, following 4 roles will be required
+		•the service you want to use
+		•the client uses the service
+		•an interface that is used by the client(composition rule) and implemented by a service
+		•injector which creates a service instance and inject it to the client.
+		
+UML is the documentation technique in a visual way that describe design.
+
+Creational Pattern
+ •Abstract Factory Pattern(with static creator)
+	
+	
+ •Singleton
+	•Most simplest • ensure class has only one instance and provide global point of access to it
+	•example printer,file system etc.
+	•In its implementation , using 'synchronized' keyword inthe getinstance() method will create lot of overhead and also synchronization is required only for 
+	the time when the object is going to be created for the very first time.Thue it creates perfromance issue.
+	•To tacke the performance issue double check locking is applied, where synchronized block is used.
+	
+	
+	
+	
+	
+	
