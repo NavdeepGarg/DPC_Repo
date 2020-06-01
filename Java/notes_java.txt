@@ -4,7 +4,7 @@ from java 8 to 11
 strictness order of modifiers:
 	private>default>protected>public
 
-dafult is package private identifier, i.e. it scope will not be visible outside package , chahe voh subclass hi kyu na ho.
+•default is package private identifier, i.e. it scope will not be visible outside package , chahe voh subclass hi kyu na ho.
 
 #####################Design Patter Notes#####################
 •Make sure your design is in such a way that it is adaptable to change
@@ -51,11 +51,5 @@ Creational Pattern
 	•Most simplest • ensure class has only one instance and provide global point of access to it
 	•example printer,file system etc.
 	•In its implementation , using 'synchronized' keyword inthe getinstance() method will create lot of overhead and also synchronization is required only for 
-	the time when the object is going to be created for the very first time.Thue it creates perfromance issue.
-	•To tacke the performance issue double check locking is applied, where synchronized block is used.
-	
-	
-	
-	
-	
-	
+	the time when the object is going to be created for the very first time.Thus it creates performance issue.
+	•To tackle the performance issue double check locking is applied, where synchronized block is used.
