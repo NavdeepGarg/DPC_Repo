@@ -59,9 +59,64 @@ Prototyping Model
 Spiral Model
 	•Is a evolutionary model that couples with iterative and waterfall model with risk analysis.
 	•If your management demands fixed-budget development (generally a bad idea), the spiral can be a problem. As each circuit is completed, project cost is revisited and revised
-	
-Evolutionary model is a combination of Iterative and Incremental model.
+	•The first circuit around the spiral might result in the development of a product
+		specification; subsequent passes around the spiral might be used to develop a prototype
+		and then progressively more sophisticated versions of the software. Each pass
+		through the planning region results in adjustments to the project plan. Cost and
+		schedule are adjusted based on feedback derived from the customer after delivery.
+		In addition, the project manager adjusts the planned number of iterations required
+		to complete the software.
+	•Unlike other process models that end when software is delivered, the spiral model
+can be adapted to apply throughout the life of the computer software.
 
+	
+Incremental Development
+	•Incremental Development is a practice where the system functionalities are sliced into increments (small portions). In each increment, a vertical slice of functionality is delivered by going through all the activities of the software development process, from the requirements to the deployment.
+
+	•Incremental Development (adding) is often used together with Iterative Development (redo) in software development. This is referred to as Iterative and Incremental Development (IID).
+
+Evolutionary method
+
+	•Evolutionary model is a combination of Iterative and Incremental model.
+
+	•The terms evolution and evolutionary have been introduced by Tom Gilb in his book Software Metrics published in 1976 where he wrote about EVO, his practice of IID (perhaps the oldest). Evolutionary development focuses on early delivery of high value to stakeholders and on obtaining and utilizing feedback from stakeholders.
+	 
+	•Evolutionary iterative development implies that the requirements, plan, estimates, and solution evolve or are refined over the course of the iterations, rather than fully defined and “frozen” in a major up-front specification effort before the development iterations begin. Evolutionary methods are consistent with the pattern of unpredictable discovery and change in new product development.
+	
+	
+Rapid application development
+	•agile software development methodology
+	•prioritizes rapid prototype releases and iterations
+	•emphasizes the use of software and user feedback over strict planning and requirements recording
+	
+	Benefits
+	•Enhanced flexibility and adaptability as developers can make adjustments quickly during the development process.
+	•Encouragement of code reuse, which means less manual coding, less room for errors, and shorter testing times.
+	•Increased customer satisfaction due to high-level collaboration and coordination between stakeholders 
+	
+Agile Development
+	•Agile software engineering combines a philosophy and a set of development guidelines.
+	•The philosophy encourages customer satisfaction and early incremental delivery of software; small, highly motivated project teams;
+	informal methods; minimal software engineering work products; and overall development simplicity. 
+	•The development guidelines stress delivery over analysis and design and active and continuous communication between developers and customers.
+	•It has 12 principles
+	•Human factor is most important ,a nimble team is required
+	
+	
+Scrum (the name is derived from an activity that occurs during a rugby match13) is an agile software development method
+	terms under it:
+	•Backlog—a prioritized list of project requirements
+	•Sprints—consist of work units that are required to achieve a requirement.
+	•Scrum meetings—are short (typically 15 minutes) meetings held daily by the Scrum team
+		 •What did you do since the last team meeting?
+		 •What obstacles are you encountering?
+		 •What do you plan to accomplish by the next team meeting?
+	
+•It all depends how you are comfortable in developing your software.Based on the environment and skill set modern approach of software model is picked and continue with development.
+ Concurrent Models, Component based model, Aspect Oriented model are new approaches fro software life cycle that more or less involves evolutionary model strategies.
+
+	
+#############
 
 Software Quality:
 	A quality software does exactly what we want it to do,
@@ -95,7 +150,7 @@ https://www.youtube.com/watch?v=bnydxXPN_rI
 	•It aid in maintain the software quality
 	•Acc to Tom Demacro :"you cannot control what you cannot measure"
 	•Size Metric: LOC , Function Point COunt , Cyclomatic Coplexity
-	•Quality Metric: Defect and their type and cuases, severity,and effect on s/w quality
+	•Quality Metric: Defect and their type and causes, severity,and effect on s/w quality
 	•Process Metric: The method and tools used , the company standards and performance of dev. are the part of process metrics
 	•Resource metric : Effort , Time,Other h/w and humna resources.
 	•
@@ -105,31 +160,6 @@ ISO 9001:
 	
 #############
 
-Incremental Development
-	Incremental Development is a practice where the system functionalities are sliced into increments (small portions). In each increment, a vertical slice of functionality is delivered by going through all the activities of the software development process, from the requirements to the deployment.
-
-	Incremental Development (adding) is often used together with Iterative Development (redo) in software development. This is referred to as Iterative and Incremental Development (IID).
-
-Evolutionary method
-	The terms evolution and evolutionary have been introduced by Tom Gilb in his book Software Metrics published in 1976 where he wrote about EVO, his practice of IID (perhaps the oldest). Evolutionary development focuses on early delivery of high value to stakeholders and on obtaining and utilizing feedback from stakeholders.
-	 
-	Evolutionary iterative development implies that the requirements, plan, estimates, and solution evolve or are refined over the course of the iterations, rather than fully defined and “frozen” in a major up-front specification effort before the development iterations begin. Evolutionary methods are consistent with the pattern of unpredictable discovery and change in new product development.
-	
-	
-Rapid application development
-	•agile software development methodology
-	•prioritizes rapid prototype releases and iterations
-	•emphasizes the use of software and user feedback over strict planning and requirements recording
-	
-	Benefits
-	•Enhanced flexibility and adaptability as developers can make adjustments quickly during the development process.
-	•Encouragement of code reuse, which means less manual coding, less room for errors, and shorter testing times.
-	•Increased customer satisfaction due to high-level collaboration and coordination between stakeholders 
-	
-	
-	
-	
-#############
 Verification and Validations
 Verification:
 	•Set of activities that ensure that software correctly implements a specific functionalities
@@ -164,4 +194,3 @@ Types of Cohesion:(TCP-CFS)
     •Logical Cohesion: The elements are logically related and not functionally. Ex- A component reads inputs from tape, disk, and network. All the code for these functions is in the same component. Operations are related, but the functions are significantly different.
     •Coincidental Cohesion: The elements are not related(unrelated). The elements have no conceptual relationship other than location in source code. 
 	It is accidental and the worst form of cohesion. Ex- print next line and reverse the characters of a string in a single component.
-

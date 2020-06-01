@@ -1,0 +1,44 @@
+
+
+•software problems. One is bugs, which are implementation problems. The other is software flaws—architectural
+	problems in the design. People pay too much attention to bugs and not enough on flaws
+
+•the TR is an effective means for uncovering errors and improving software quality.
+•defect and fault are synonymous
+•defect : imply a quality problem that is discovered after the software has been released to end users.
+•error to depict a quality problem that is discovered by software engineers (or others) before the software is released to the end user.
+
+•Review effort =Preparation Effort + Assessment Effort + Rework Effort
+
+•The objectives of an FTR are: 
+	(1) to uncover errors in function, logic, or implementation for any representation of the software; 
+	(2) to verify that the software under review meets its requirements; 
+	(3) to ensure that the software has been represented according to predefined standards.
+
+•The FTR is actually a class of reviews that includes walk-through and inspections.
+
+•Software reliability is defined in statistical terms as “the probability of failure-free operation of a computer program in a specified environment for a specified time”
+	•measure of reliability
+	 meantime-between-failure (MTBF): MTTF(mean-time-to-failure) + MTTR(mean-time-to-repair)
+	•
+
+	
+The specific goals of a walk-through are:-
+	• to present the document to stakeholders both within and outside the software discipline, in order to gather information regarding the topic under documentation.
+	• to explain and evaluate the contents of the document.
+	• to establish a common understanding of the document.
+	• to examine and discuss the validity of proposed solutions and the possible alternatives.
+	
+#IPWS had gone under code-walk-through
+	
+The specific goals of a technical review are:
+	• evaluate the value of technical concepts and alternatives in the product and project environment.
+	• establish consistency in the use and representation of technical concepts.
+	• ensuring at an early stage, that technical concepts are used correctly;
+	• inform participants of the technical content of the document.
+	
+The specific goals of a Inspection are:
+	• help the author to improve the quality of the document under inspection.
+	• remove defects efficiently, as early as possible.
+	• improve product quality, by producing documents with a higher level of quality.
+	• create a common understanding by exchanging information among the inspection participants.

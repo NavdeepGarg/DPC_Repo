@@ -1,3 +1,4 @@
+
 Software Testing
 
 Test Scenario:
@@ -93,12 +94,26 @@ Penetration testing:
 Regression Testing:
 	•Regression TESTING is defined as a type of software testing to confirm that a recent program or code change has not adversely affected existing features.
 	•Regression Testing is nothing but a full or partial selection of already executed test cases which are re-executed to ensure existing functionalities work fine.
-	•It is done when, there is 1)New functionalty added 2) Change Requirement raised 3)Defect fix occured.
+	•It is done when, there is 1)New functionality added 2) Change Requirement raised 3)Defect fix occurred.
 	
 	
 Regression Testing Vs Retesting:
 	•Retesting is testing the previous raised defect to make sure things are corrected now.
 	Ex if tester found a bug in purchase module and posted , he will retest it to confirm.
 	•Regression Testing will test the finance module also bcoz it depends on purchase module.
-	•retestign done on failed testcases while regression done on past testcases
+	•retesting done on failed testcases while regression done on past testcases 
+
+Stress testing executes a system in a manner that demands resources in abnormal quantity, frequency, or volume.
+
+Performance tests are often coupled with stress testing and usually require both hardware and software instrumentation
+
+Deployment testing, sometimes called configuration testing, exercises the software in each environment in which it is to operate.
+
+Stubs and Driver
+	•Stubs used in Top-Down approach of integration testing.
+	•Upper modules are ready for testing but lower modules not yet finished.
+	•so lower modules are made as stub to replicate the simulate their effects.
+	
+	•Driver is the exact opposite case.
+
 	
