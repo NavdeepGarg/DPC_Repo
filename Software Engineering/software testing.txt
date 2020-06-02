@@ -1,4 +1,3 @@
-
 Software Testing
 
 Test Scenario:
@@ -103,7 +102,7 @@ Regression Testing Vs Retesting:
 	•Regression Testing will test the finance module also bcoz it depends on purchase module.
 	•retesting done on failed testcases while regression done on past testcases 
 
-Stress testing executes a system in a manner that demands resources in abnormal quantity, frequency, or volume.
+Stress testing executes a system in a manner that demands resources in abnormal quantity, frequency, or volume.Basically to give more stress/load on the application.
 
 Performance tests are often coupled with stress testing and usually require both hardware and software instrumentation
 

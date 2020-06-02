@@ -1,5 +1,3 @@
-
-
 •software problems. One is bugs, which are implementation problems. The other is software flaws—architectural
 	problems in the design. People pay too much attention to bugs and not enough on flaws
 
@@ -21,7 +19,8 @@
 	•measure of reliability
 	 meantime-between-failure (MTBF): MTTF(mean-time-to-failure) + MTTR(mean-time-to-repair)
 	•
-
+•Software availability is the probability that a program is operating according to requirements at a given point in time and is defined as
+	availability=100*MTTF/(MTTF+MTTR)
 	
 The specific goals of a walk-through are:-
 	• to present the document to stakeholders both within and outside the software discipline, in order to gather information regarding the topic under documentation.
