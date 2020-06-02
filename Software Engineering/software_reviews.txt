@@ -22,11 +22,13 @@
 •Software availability is the probability that a program is operating according to requirements at a given point in time and is defined as
 	availability=100*MTTF/(MTTF+MTTR)
 	
-The specific goals of a walk-through are:-
+The specific goals of a codewalk-through are:-
 	• to present the document to stakeholders both within and outside the software discipline, in order to gather information regarding the topic under documentation.
+	• INFORMAL, UNPLANNED
+	• Moderator is author
+	• AUThor make a note of defects and suggestions.
 	• to explain and evaluate the contents of the document.
-	• to establish a common understanding of the document.
-	•Moderator is author
+	• to establish a common understanding of the document.	
 	• to examine and discuss the validity of proposed solutions and the possible alternatives.
 	
 #IPWS had gone under code-walk-through
@@ -37,9 +39,13 @@ The specific goals of a technical review are:
 	• ensuring at an early stage, that technical concepts are used correctly;
 	• inform participants of the technical content of the document.
 	
-The specific goals of a Inspection are:
+The specific goals of a Code Inspection are:
 	• help the author to improve the quality of the document under inspection.
-	•Moderator is not author
+	• Moderator is not author
+	• FORMAL meeting and planned meeting
+	• Reader read the product code and everyone inspect it and come up with defects.
+	• Recorder records the defects
 	• remove defects efficiently, as early as possible.
+	• Moderator has a role in making sure that the discussion proceed on productive lines.
 	• improve product quality, by producing documents with a higher level of quality.
 	• create a common understanding by exchanging information among the inspection participants.
