@@ -1,3 +1,9 @@
+ASCII: American Standard Code for Information Interchange , single bye in use
+UTF:Unicode Transformation Format , upto 6 byte in use
+Unicode: Universal Character Encoding, encoded in 16 bits. 
+CAPTCHA:completely automated public Turing test to tell computers and humans apart
+
+
 •DPC Topics
 
 
@@ -28,3 +34,9 @@ Software testing
 
 RANDOM Questions
 •why not completely paperless still 
+•What are different centre specific configuration required to be changed
+•Why TA is not fully on-line in URSC
+•what are the possible cyber attack on IPWS
+•disdv of rsync
+•why DB was not allowed
+•
