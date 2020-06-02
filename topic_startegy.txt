@@ -39,4 +39,6 @@ RANDOM Questions
 •what are the possible cyber attack on IPWS
 •disdv of rsync
 •why DB was not allowed
-•
+•whether RSYNC does two-way sync or one-way sync
+•IEEE applicable standards pending
+•Software quality pending
