@@ -26,6 +26,7 @@ The specific goals of a walk-through are:-
 	• to present the document to stakeholders both within and outside the software discipline, in order to gather information regarding the topic under documentation.
 	• to explain and evaluate the contents of the document.
 	• to establish a common understanding of the document.
+	•Moderator is author
 	• to examine and discuss the validity of proposed solutions and the possible alternatives.
 	
 #IPWS had gone under code-walk-through
@@ -38,6 +39,7 @@ The specific goals of a technical review are:
 	
 The specific goals of a Inspection are:
 	• help the author to improve the quality of the document under inspection.
+	•Moderator is not author
 	• remove defects efficiently, as early as possible.
 	• improve product quality, by producing documents with a higher level of quality.
 	• create a common understanding by exchanging information among the inspection participants.
