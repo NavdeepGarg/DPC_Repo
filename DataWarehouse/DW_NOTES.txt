@@ -1,0 +1,29 @@
+• OLAP and OLTP are basically class of application under which application can be labeled.
+  DataWarehouse comes under OLAP and Database comes under OLTP.
+  Point of Sale is under OLTP, and also OLTP are the classes where transaction data generates as like POS.
+  
+•Microsoft SQL Server Analysis Services, SSAS
+	provide support for all three OLAPs i.e. MOLAP, ROLAP,HOLAP
+
+•slice operation is basically a report operation in simple term. i.e. cube ki slice kardi across a dimension. for eg jismina quarter(q1,q2,q3,q4) aa jae and ek city aa jae(like canada)
+	One dimension is selected for slice operation
+•Dice operation is filter operation.
+	2 or more dimension can be selected for Dice operation
+
+•Normalization is done in OLTP and De-Normalization is done in OLAP
+
+Dimensional modeling
+	•In simple term, first check you business event like Shipping, Sale are the business event.
+		then check for the grain of business event like amount of sale, or amount of product.
+		then check for the dimension that come into play and then check for the fact table to get the measures.
+
+•Non-additive facts
+
+	Profit margins are non-additive. If a department has two employees, and one employee has sold an item with a 55% profit margin and the other has sold an item with a 45% profit margin, the profit margin for the department is not 100%.
+
+•Semi-additive facts
+
+	You can aggregate semi-additive facts for some, but not all, dimensions.
+
+	You can aggregate department headcounts to give an organization total, but you cannot aggregate them over time, so the Sales department headcount for March 31 may be 20 employees, and for April 30 the headcount may be 23, but that does not mean that the total headcount at the end of April is 43.
+	Another example is stockcount, yesterday you have 100 , today you 50 .. so in-total you have 50 only and not 150. thus this fact is not summed up on time dimension.
