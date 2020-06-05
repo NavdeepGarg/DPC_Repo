@@ -1,3 +1,5 @@
+http://softwaretestingfundamentals.com/ - Good Tutorials
+
 Software Testing
 
 Test Scenario:
@@ -92,6 +94,7 @@ Penetration testing:
 	
 Regression Testing:
 	•Regression TESTING is defined as a type of software testing to confirm that a recent program or code change has not adversely affected existing features.
+	•Regression [noun] literally means the act of going back to a previous place or state; return or reversion.
 	•Regression Testing is nothing but a full or partial selection of already executed test cases which are re-executed to ensure existing functionalities work fine.
 	•It is done when, there is 1)New functionality added 2) Change Requirement raised 3)Defect fix occurred.
 	

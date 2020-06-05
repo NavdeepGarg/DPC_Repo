@@ -1,3 +1,5 @@
+
+
 Software is: (1) instructions (computer programs) that when executed provide desired
 features, function, and performance; (2) data structures that enable the programs to adequately
 manipulate information, and (3) descriptive information in both hard copy and
@@ -97,7 +99,7 @@ Rapid application development
 	
 Agile Development
 	•Agile software engineering combines a philosophy and a set of development guidelines.
-	•The philosophy encourages customer satisfaction and early incremental delivery of software; small, highly motivated project teams;
+	•The philosophy encourages customer satisfaction and early incremental delivery of software; small, highly motivated project teams;a nimble team is required
 	informal methods; minimal software engineering work products; and overall development simplicity. 
 	•The development guidelines stress delivery over analysis and design and active and continuous communication between developers and customers.
 	•It has 12 principles
