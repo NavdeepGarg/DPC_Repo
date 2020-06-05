@@ -1,0 +1,2 @@
+•In greek mythology , Kerberos is a dog with three head
+•It is an authentication protocol for client/server protocol that two purposes: security and authentication
