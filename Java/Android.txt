@@ -1,0 +1,3 @@
+•Ensure Virtualization is enabled in CPU processing
+•Java file is the brain of XML activity.
+•images can be put inside drawable folder,

@@ -1,0 +1,46 @@
+#######from edureka##########
+
+•JVM : is an abstract machine that provide runtime environment where java bytecode can be executed.
+•JRE: is a runtime environment which implements JVM and provide all class libraries and other files that JVM requires at runtime.
+•JDK: is tool necessary for compile, document, and package  java programs. 
+
+•Multiprocessing is adding more number of or CPUs/processors to the system which increases the computing speed of the system. 
+•Multithreading is allowing a process to create more threads which increase the responsiveness of the system.
+
+MultiProgramming is the strategy of an Operating system that poses importance of Maximum CPU utilization.
+	•Max CPU utilization•MultiProgramming means more than one program in main memory
+	•Process requires CPU time and I/O time to get completed.When it requires I/O then cPU make a 'context switch' to another process instead of sitting idle.
+	•This can be extended to multiple users also. It all depends how fast is your processor is serving the request.
+	Disadvantages:
+	•Memory scheduling, process scheduling and Paging(Non contiguous memory allocation) all requires.
+	
+MultiTasking
+	•it is a MultiProgramming operating system with time sharing methodology.
+	•ONLY ONE CPU but switches so fast that gives an impression/illusion that all processes are running concurrently.
+
+Program 
+	•is a set of instruction.
+	•It is Passive because Program is stored on disk in some file and does not require any other resources
+	•multiple processes can be a part of the same program.
+	•Dont get CONFUSE with program and process. when a program comes under execution it become a process.
+	
+Process
+	•When a program is executed, it is known as process.
+	•It is Active because Process holds resources such as CPU, memory address, disk, I/O etc.
+	•Process : any executing instance of a program on top of your operating system.
+For example in a word processor, a background thread may check spelling and grammar while a foreground thread processes user input ( keystrokes ), while yet a third thread loads images from the hard drive, and a fourth does periodic automatic backups of the file being edited.
+
+	
+•Synchronization is the process to sync the concurrent thread in execution.
+	Program->Process->Thread
+	
+•System.gc()is the garbage collector destructor call to remove the unused objects.
+
+•Heap is the memory segment where all objects created with 'new' keyword will be stored.
+•Stack hold all the references.
+
+•Abstract class object CANNOT BE created by you but CAN BE  created by RunTimeEnvironment.
+
+•Interface object cannot be created neither by you nor by RunTimeEnvironment.
+
+•static block executed when class load where simple block will execute when object created
