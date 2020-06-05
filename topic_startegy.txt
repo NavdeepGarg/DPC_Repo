@@ -42,3 +42,10 @@ RANDOM Questions
 •whether RSYNC does two-way sync or one-way sync
 •IEEE applicable standards pending
 •Software quality pending
+•String buffer thread safety
+•DevOps
+•GSSAPI Authentication and need of Kerberos
+•SSH key exchange methodology
+
+•maintenance and enhancement of IPWS
+	DR methodoloy, 
