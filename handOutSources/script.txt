@@ -1,0 +1,5 @@
+
+
+•Implemented DOXYGEN tool , for generating documentation from all popular annotated programming languages. This tool has generated online documentations(in browser) and set of off-line reference manual in PDFs which helped in maintaining software-quality and ISO standard activities
+
+•As Division Level Management Representatives (DMR) of MISD for ISO program, responsible for maintaining required ISO documents for the division which are essential in maintaining ISO standard activities.
