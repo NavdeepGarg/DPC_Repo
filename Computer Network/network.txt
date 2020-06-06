@@ -1,4 +1,4 @@
-Digital Signature
+Digital Signature is a mathematical technique to validate
 	•Non Repudiation, authentication, Integrity(Msg is not altered in between)
 	
 Hash Algorithm
