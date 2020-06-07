@@ -60,7 +60,7 @@ Prototyping Model
 		•No fixed count of iterations
 
 Spiral Model
-	•Is a evolutionary model that couples with iterative and waterfall model with risk analysis.
+	•Is a evolutionary model that couples with iterative and waterfall model with 'risk analysis'.
 	•If your management demands fixed-budget development (generally a bad idea), the spiral can be a problem. As each circuit is completed, project cost is revisited and revised
 	•The first circuit around the spiral might result in the development of a product
 		specification; subsequent passes around the spiral might be used to develop a prototype
@@ -176,7 +176,7 @@ Verification:
 	•Code inspection , review are the part of this activity.
 Validations:
 	•Set of activities that ensure that the software is traceable to customer requirement
-	•In other words, it validate whether we have build a right product.
+	•In other words, it validate whether we have built a right product.
 	•	
 
 https://www.youtube.com/watch?v=YI0X5z15n-g
@@ -192,7 +192,7 @@ Types of Coupling:(DSCECC)
     •Content Coupling: In a content coupling, one module can modify the data of another module or control flow is passed from one module to the other module. 
 	This is the worst form of coupling and should be avoided.
 	
-Types of Cohesion:(TCP-CFS)
+Types of Cohesion:(TCS-PCF)
 
     •Functional Cohesion: Every essential element for a single computation is contained in the component. A functional cohesion performs the task and functions. 
 	It is an ideal situation.

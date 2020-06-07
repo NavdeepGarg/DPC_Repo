@@ -47,3 +47,8 @@ VPN
 	•There’s another side to privacy. Without a VPN, your internet service provider can know your entire browsing history. With a VPN, your search history is hidden. That’s because your web activity will be associated with the VPN server’s IP address, not yours. A VPN service provider may have servers all over the world. That means your search activity could appear to originate at any one of them. Keep in mind, search engines also track your search history, but they’ll associate that information with an IP address that’s not yours. Again, your VPN will keep your online activity private.
 	•When you connect your computer (or another device, such as a smartphone or tablet) to a VPN, the computer acts as if it’s on the same local network as the VPN. All your network traffic is sent over a secure connection to the VPN. Because your computer behaves as if it’s on the network, this allows you to securely access local network resources even when you’re on the other side of the world. You’ll also be able to use the Internet as if you were present at the VPN’s location, which has some benefits if you’re using pubic Wi-Fi or want to access geo-blocked websites.
 
+
+https://www.youtube.com/watch?v=UpEs1P5ueIQ
+TCP sErvcies
+
+•SSH, is an OSI model application layer protocol which uses TCP services at port no 22
