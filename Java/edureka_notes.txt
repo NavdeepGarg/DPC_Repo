@@ -44,3 +44,41 @@ For example in a word processor, a background thread may check spelling and gram
 •Interface object cannot be created neither by you nor by RunTimeEnvironment.
 
 •static block executed when class load where simple block will execute when object created
+
+################SPRING NOTES##########################
+
+•SpringArchitechture Discussed
+
+•It is an application framework and inversion of control container for the java platform.
+•It is lightweight and integrated framework that can be used for developing enterprise application.
+
+•For anything if we wish to be available when application is ready use @component annotation, this will tell spring to create an instance of this class.
+
+•By default scope of spring framework is Singleton.
+
+•Other scope is Prototype.
+
+•@autowired is used to create a link with different object that have been created in Spring container.
+
+•FOR spring MVC , src->main->webapp folder must contain all relevant JSP, which will be picked by the application as and when required.
+
+•DispactcherServlet
+	•it does the receptionist role for application.
+	•It is the front controller in the Spring MVC application as it loads the spring bean configuration file and initialize all the beans that have been configured.
+	
+•ContextLoaderListner
+	the listener to start up and shut down the WebApplication in Spring root.
+
+
+################SPRING-BOOT NOTES##########################
+
+•artifact Id is project Name •groupID is package name
+
+•thus artifact scope is bigger than group Id
+
+•@SpringBootApplication
+this annotation comprises three substructure
+	1) @Configuration 2) @componentScan 3) @EnableAutoConfiguration
+
+	
+
