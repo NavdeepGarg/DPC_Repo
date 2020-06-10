@@ -32,3 +32,21 @@ IoT
 	Thus in effect every parcel can be mapped easily on the mobile itself.
 
 ###########################################################################################################################
+
+BIGDATA
+
+link 
+•https://www.youtube.com/watch?v=bAyrObl7TYE
+
+1EXAbyte = 1000petaByte=1000000TeraByte=1000000000gigaByte
+
+•Definition
+	Big Data is also data but with a huge size. Big Data is a term used to describe a collection of data that is huge in volume and yet growing exponentially with time
+	Thus it becomes quite evident to process this data.
+
+•5V'
+	Volume, Velocity,Variety, Veracity(Accuracy), Value
+
+•Hadoop, Cassandra, Spark are the framwerok to process Bigdata
+	HDFS(Hadoop ditributed file system) does not perform parallel processing as it is the work of MapReduce. HDFS is the storage layer of Hadoop that stores smaller chunks of data on multiple data nodes in a distributed manner. 
+
