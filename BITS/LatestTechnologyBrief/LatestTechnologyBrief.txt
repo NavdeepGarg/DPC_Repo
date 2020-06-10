@@ -1,0 +1,34 @@
+Cloud computing
+	•It is the on-demand delivery og IT resources via internet with pay as go pricing
+	•E.g. DropBox , google Photos
+	•Instead of buying you can use services provided by others like AWS
+	•It help in reducing the overall cost.
+	•Services ranges from infrastructure to data storage and computing to machine learning
+	
+Services:
+	SaAS:
+		•Software as Services
+		•Cloud provider lease their software to client E.g. Sale-forces for providing customer relations manager on cloud infrastructure.
+	PaaS
+		•Platform as services
+		•it gives the ability to th customer to deploy customer developed apps using prog. languages , tools etc that are provided by Cloud provider. E.g. GoogleApp Engine
+	IaaS
+		•Infrastructure as Services
+		•Provide virtualized computing resources over the internet.
+
+Cloud Type
+	Public : anyone can use
+	Private : authentication is required and will be given some private space
+	Hybrid: If your private space has gone more congested then you can use the public space as well.
+	
+###########################################################################################################################
+
+IoT
+	•InternetOfThing , set of connected devices
+	•It enables the connected devices to communicate with each other. The various sensors used in the devices keep on posting its data on IoT server.
+	•IoT server integrate the data , analyze the data and shared with other devices for better user experience and automation.
+	
+	•Eg. AC manufacturing machine have sensor that keep on reporting its health to the mobile devices and further the barcode machine where sensor again to sen the details to mobile devices
+	Thus in effect every parcel can be mapped easily on the mobile itself.
+
+###########################################################################################################################
