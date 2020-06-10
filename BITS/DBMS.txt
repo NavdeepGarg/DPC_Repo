@@ -1,0 +1,19 @@
+Data
+	•Fact recorded are known as Data
+DataBase
+	•Collection of related Data e.g. MulltipmediaDatabase, DataWarehouse, Relational DB.
+DBMS
+	•DBMS = Database + Management System
+	•DBMS is a collection of inter-related data and set of programs to store & access those data in an easy and effective manner
+	•A database management system (DBMS) is a software package designed to define, manipulate, retrieve and manage data in a database
+
+Data Redundancy
+	•When multiple time data is repeated for no effective reason.(e.g. Student and Branch storage)
+	•It leads to data inconsistency and following anomalies:
+	•Insertion Ano.: when you cannot a piece of data because other part of the tuple is not available
+	•Update Ano. : when you have to update a single piece of data , but it has to update in all tables.
+	•Delete Ano : whne u want to delete unwanted data but it may alos delete data which you dont want to delete.
+
+•To tackle data redundancy Normalization has come into effect.
+
+•
