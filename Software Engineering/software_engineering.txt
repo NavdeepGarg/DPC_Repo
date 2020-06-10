@@ -149,9 +149,11 @@ SEI-CMM
 	CMM-4:
 	•Managed
 	•Focus is on software metrics
+	•Such companies have proper mechanism to collect the Metrics to measure each and every work in the organization, hence future performance can predicted.
 	CMM-5:
 	•Optimized
 	•Process and Product metrics are collected
+	•well defined processes, which are properly measured.
 	
 Software Metric 
 https://www.youtube.com/watch?v=bnydxXPN_rI
