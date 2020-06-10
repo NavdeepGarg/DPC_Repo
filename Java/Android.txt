@@ -1,3 +1,31 @@
 •Ensure Virtualization is enabled in CPU processing
 •Java file is the brain of XML activity.
 •images can be put inside drawable folder,
+
+•Android is an operating system and programming platform developed by Google for mobile phones and other mobile devices, such as tablets
+
+•The Android platform, based on the Linux kernel, is designed primarily for touchscreen mobile devices such as mobile phones and tablets. 
+Because Android-powered devices are usually battery-powered, Android is designed to manage processes to keep power consumption at a minimum, providing longer battery use. 
+
+•To develop apps using the SDK, you use the Java programming language to develop the app and Extensible Markup Language (XML) files to describe data resources.
+
+•From the Architecture figure:
+	•Apps: Your apps live at this level, along with core system apps for email, SMS messaging, calendars, internet browsing, and contacts.
+	•Java API framework : 
+	•native libraries written in C and C++ and These native libraries are available to apps through the Java API framework. 
+	•Hardware abstraction layer (HAL):This layer provides standard interfaces that expose device hardware capabilities to the higher-level Java API framework
+	•Linux kernel: The foundation of the Android platform is the Linux kernel. 
+
+•App components
+	•Activities: An activity is the entry point for interacting with the user. 
+	•Services:A service is a general-purpose entry point for keeping an app running in the background.
+		for eg It might fetch data over the network without blocking user interaction with an activity.
+	•Broadcast receivers:A broadcast receiver is a component that enables broadcasts—
+		for example, to let other apps know that some data has been downloaded to the device and is available for them to use
+	•Content providers: A content provider manages a shared set of app data that you can store in the file system, in a SQLite database, on the web, or on any other persistent storage location that your app can access.
+	
+The manifest file
+	•It is read b4 app runs.
+	•Identifies any user permissions the app requires , Declares the minimum API Level required ,
+	 Declares hardware and software features used or required by the app, such as a camera,Declares API libraries the app needs to be linked against 
+	 and most importantly declaring component.

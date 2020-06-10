@@ -71,6 +71,11 @@ For example in a word processor, a background thread may check spelling and gram
 
 
 ################SPRING-BOOT NOTES##########################
+•Spring Boot is built on top of the Spring framework, and it comes with many dependencies that can be plugged into the Spring application. 
+Some examples are Spring Kafka, Spring LDAP, Spring Web Services, and Spring Security. 
+However, developers have to configure each building brick themselves using a lot of XML configuration files or annotations.
+
+•It is focused on shortening the code length and providing you with an easy way to run your Spring application.
 
 •artifact Id is project Name •groupID is package name
 
