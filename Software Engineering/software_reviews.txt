@@ -19,6 +19,7 @@
 	•measure of reliability
 	 meantime-between-failure (MTBF): MTTF(mean-time-to-failure) + MTTR(mean-time-to-repair)
 	•Probability = Number of failed cases/Total number of cases under consideration.
+
 •Software availability is the probability that a program is operating according to requirements at a given point in time and is defined as
 	availability=100*MTTF/(MTTF+MTTR)
 	
