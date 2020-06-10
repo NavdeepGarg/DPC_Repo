@@ -46,6 +46,6 @@ RANDOM Questions
 •DevOps
 •GSSAPI Authentication and need of Kerberos
 •SSH key exchange methodology
-
+•are we using LDAP
 •maintenance and enhancement of IPWS
 	DR methodoloy, 
