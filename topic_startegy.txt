@@ -49,3 +49,5 @@ RANDOM Questions
 •are we using LDAP
 •maintenance and enhancement of IPWS
 	DR methodoloy, 
+•What si ISRO CMM
+•how testing is performed in your divisional activities.
