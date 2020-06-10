@@ -16,4 +16,32 @@ Data Redundancy
 
 •To tackle data redundancy Normalization has come into effect.
 
-•
+•B and b+ tree are multilevel dynamic indexing structures
+	•B+ is better 
+
+•Entity–relationship model (ER model) 
+	are non-technical diagramm that describes the structure of a database with the help of a diagram, which is known as Entity Relationship Diagram (ER Diagram). 
+	it is a conceptual diagram that works on perception of real world.
+	
+Weak Entity:
+An entity that cannot be uniquely identified by its own attributes and relies on the relationship with other entity is called weak entity. The weak entity is represented by a double rectangle. For example – a bank account cannot be uniquely identified without knowing the bank to which the account belongs, so bank account is a weak entity.
+	
+ Er to Database tables
+	Imp facts:
+	•Table for Weak entity is required
+	•Table for M*N relationsip is alos required.
+
+•Transaction are the set of related operations
+	•ACID property.
+	•I : ISOLAtion is managed by concurrency control management
+	•D : Durability is managed by Recovery management system
+	•C :Consistency is ensured if rest three are in place.
+
+Concurrency issues
+
+	•Dirty read: reading  value from a uncomitted transaction
+		•Solution:Commit after other transaction get committed.
+	•Unrepeatable Read-- variable updated by other transaction
+	•Phantom Read -- variable deleted by other transaction
+	•Lost Update -- write write conflict
+
