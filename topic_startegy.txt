@@ -46,6 +46,8 @@ RANDOM Questions
 •DevOps
 •GSSAPI Authentication and need of Kerberos
 •SSH key exchange methodology
-
+•are we using LDAP
 •maintenance and enhancement of IPWS
 	DR methodoloy, 
+•What si ISRO CMM
+•how testing is performed in your divisional activities.

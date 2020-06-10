@@ -69,8 +69,17 @@ For example in a word processor, a background thread may check spelling and gram
 •ContextLoaderListner
 	the listener to start up and shut down the WebApplication in Spring root.
 
+•Hibernate
+		is a framework which is java based ORM tool for mapping domain objects with relational DB objects.
+		It provides implementation of JPA specifications
+		Benefial due to reducing boiler plate code and provide HQL.
 
 ################SPRING-BOOT NOTES##########################
+•Spring Boot is built on top of the Spring framework, and it comes with many dependencies that can be plugged into the Spring application. 
+Some examples are Spring Kafka, Spring LDAP, Spring Web Services, and Spring Security. 
+However, developers have to configure each building brick themselves using a lot of XML configuration files or annotations.
+
+•It is focused on shortening the code length and providing you with an easy way to run your Spring application.
 
 •artifact Id is project Name •groupID is package name
 
@@ -80,5 +89,23 @@ For example in a word processor, a background thread may check spelling and gram
 this annotation comprises three substructure
 	1) @Configuration 2) @componentScan 3) @EnableAutoConfiguration
 
-	
+https://www.tutorialsteacher.com/ioc/dependency-inversion-principle
 
+•DIP stands for  : Dependency Inversion Principle
+	"High-level modules should not depend on low-level modules. Both should depend on abstraction. Abstractions should not depend on details. Details should depend on abstractions."
+•DIP &IoC are Design principle
+•Dependency Injection is a Design Pattern
+•IoC Container is the FRAMEWORK
+
+IOC
+	•invert different kinds of controls in object-oriented design to achieve loose coupling.
+	•analogy : The IoC principle suggests to invert the control, meaning that instead of driving the car yourself, you hire a cab, where another person will drive the car. Thus, this is called inversion of the control - from you to the cab driver.
+	•To achieve it use Factory class to provide you the object on which you are dependent on.
+	
+DIP: Dependency Inversion Principle
+	•2 principles
+	•High-level modules(Jo depend kar rhe hai doosri class par) should not depend on low-level modules(Jis class par depend kar rhe hai). Both should depend on the abstraction.
+	•Abstractions should not depend on details. Details should depend on abstractions.
+	
+	
+	

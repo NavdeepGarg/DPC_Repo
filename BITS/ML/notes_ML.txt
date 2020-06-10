@@ -1,4 +1,3 @@
-
 •In simpler terms, Machine learning is an sub-domain of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. It relies on underlying hypothesis of creating the model and tries to improve it by fitting more data into the model over time.
 •A machine is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E.
 
@@ -18,4 +17,3 @@ Reinforcement learning
 	•The main challenge in reinforcement learning lays in preparing the simulation environment, which is highly dependant on the task to be performed. 	
 	
 •kNN (k- Nearest Neighbors) for Supervised Learning
-	KNN can easily be mapped to our real lives. If you want to learn about a person, of whom you have no information, you might like to find out about his close friends and the circles he moves in and gain access to his/her information!

@@ -56,7 +56,7 @@ Types of Testing
 
 Static Methods of testing are : code inspection , code review 
 
-Testing Startegies(dynamic methods):
+Testing Methods(dynamic methods):
 	•Black Box Testing:Known as Behavioral Testing , s/w test the internal structural, design and implementation and UI and UX of the product being tested.
 	•White Box : 	internal structure , login design and implementation of different module.
 	•Grey bOx:Only Partly internal structure is known to the tester.
