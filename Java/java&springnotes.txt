@@ -1,0 +1,102 @@
+#######from edureka##########
+
+•JVM : is an abstract machine that provide runtime environment where java bytecode can be executed.
+•JRE: is a runtime environment which implements JVM and provide all class libraries and other files that JVM requires at runtime.
+•JDK: is tool necessary for compile, document, and package  java programs. 
+
+•Multiprocessing is adding more number of or CPUs/processors to the system which increases the computing speed of the system. 
+•Multithreading is allowing a process to create more threads which increase the responsiveness of the system.
+
+MultiProgramming is the strategy of an Operating system that poses importance of Maximum CPU utilization.
+	•Max CPU utilization•MultiProgramming means more than one program in main memory
+	•Process requires CPU time and I/O time to get completed.When it requires I/O then cPU make a 'context switch' to another process instead of sitting idle.
+	•This can be extended to multiple users also. It all depends how fast is your processor is serving the request.
+	Disadvantages:
+	•Memory scheduling, process scheduling and Paging(Non contiguous memory allocation) all requires.
+	
+MultiTasking
+	•it is a MultiProgramming operating system with time sharing methodology.
+	•ONLY ONE CPU but switches so fast that gives an impression/illusion that all processes are running concurrently.
+
+Program 
+	•is a set of instruction.
+	•It is Passive because Program is stored on disk in some file and does not require any other resources
+	•multiple processes can be a part of the same program.
+	•Dont get CONFUSE with program and process. when a program comes under execution it become a process.
+	
+Process
+	•When a program is executed, it is known as process.
+	•It is Active because Process holds resources such as CPU, memory address, disk, I/O etc.
+	•Process : any executing instance of a program on top of your operating system.
+For example in a word processor, a background thread may check spelling and grammar while a foreground thread processes user input ( keystrokes ), while yet a third thread loads images from the hard drive, and a fourth does periodic automatic backups of the file being edited.
+
+	
+•Synchronization is the process to sync the concurrent thread in execution.
+	Program->Process->Thread
+	
+•System.gc()is the garbage collector destructor call to remove the unused objects.
+
+•Heap is the memory segment where all objects created with 'new' keyword will be stored.
+•Stack hold all the references.
+
+•Abstract class object CANNOT BE created by you but CAN BE  created by RunTimeEnvironment.
+
+•Interface object cannot be created neither by you nor by RunTimeEnvironment.
+
+•static block executed when class load where simple block will execute when object created
+
+################SPRING NOTES##########################
+
+•SpringArchitechture Discussed
+
+•It is an application framework and inversion of control container for the java platform.
+•It is lightweight and integrated framework that can be used for developing enterprise application.
+
+•For anything if we wish to be available when application is ready use @component annotation, this will tell spring to create an instance of this class.
+
+•By default scope of spring framework is Singleton.
+
+•Other scope is Prototype.
+
+•@autowired is used to create a link with different object that have been created in Spring container.
+
+•FOR spring MVC , src->main->webapp folder must contain all relevant JSP, which will be picked by the application as and when required.
+
+•DispactcherServlet
+	•it does the receptionist role for application.
+	•It is the front controller in the Spring MVC application as it loads the spring bean configuration file and initialize all the beans that have been configured.
+	
+•ContextLoaderListner
+	the listener to start up and shut down the WebApplication in Spring root.
+
+
+################SPRING-BOOT NOTES##########################
+
+•artifact Id is project Name •groupID is package name
+
+•thus artifact scope is bigger than group Id
+
+•@SpringBootApplication
+this annotation comprises three substructure
+	1) @Configuration 2) @componentScan 3) @EnableAutoConfiguration
+
+https://www.tutorialsteacher.com/ioc/dependency-inversion-principle
+
+•DIP stands for  : Dependency Inversion Principle
+	"High-level modules should not depend on low-level modules. Both should depend on abstraction. Abstractions should not depend on details. Details should depend on abstractions."
+•DIP &IoC are Design principle
+•Dependency Injection is a Design Pattern
+•IoC Container is the FRAMEWORK
+
+IOC
+	•invert different kinds of controls in object-oriented design to achieve loose coupling.
+	•analogy : The IoC principle suggests to invert the control, meaning that instead of driving the car yourself, you hire a cab, where another person will drive the car. Thus, this is called inversion of the control - from you to the cab driver.
+	•To achieve it use Factory class to provide you the object on which you are dependent on.
+	
+DIP: Dependency Inversion Principle
+	•2 principles
+	•High-level modules(Jo depend kar rhe hai doosri class par) should not depend on low-level modules(Jis class par depend kar rhe hai). Both should depend on the abstraction.
+	•Abstractions should not depend on details. Details should depend on abstractions.
+	
+	
+	
