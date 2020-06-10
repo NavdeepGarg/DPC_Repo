@@ -69,6 +69,10 @@ For example in a word processor, a background thread may check spelling and gram
 •ContextLoaderListner
 	the listener to start up and shut down the WebApplication in Spring root.
 
+•Hibernate
+		is a framework which is java based ORM tool for mapping domain objects with relational DB objects.
+		It provides implementation of JPA specifications
+		Benefial due to reducing boiler plate code and provide HQL.
 
 ################SPRING-BOOT NOTES##########################
 •Spring Boot is built on top of the Spring framework, and it comes with many dependencies that can be plugged into the Spring application. 
