@@ -1,3 +1,14 @@
+
+•In simpler terms, Machine learning is an sub-domain of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. It relies on underlying hypothesis of creating the model and tries to improve it by fitting more data into the model over time.
+•A machine is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E.
+
+•Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.
+
+•The ideal characteristic of artificial intelligence is its ability to rationalize and take actions that have the best chance of achieving a specific goal.
+
+Eg of AI :play chess and self-driving cars ,Speech recognition
+Eg of ML : Email Spam and Malware Filtering,Paypal is using ML for protection against money laundering
+
 •Inductive learnign  when father ask children not to play with fire it will burn you.
 •Dedductive Learnign : When father let the child to paly with fire to let him conclude that fire can burn him.
 
