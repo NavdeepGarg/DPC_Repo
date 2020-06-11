@@ -2,6 +2,8 @@ Data
 	•Fact recorded are known as Data
 DataBase
 	•Collection of related Data e.g. MulltipmediaDatabase, DataWarehouse, Relational DB.
+	Relational Database, Operational Database,Data Warehouse,Distributed Database,End-user Database - SRC QUORA
+	
 DBMS
 	•DBMS = Database + Management System
 	•DBMS is a collection of inter-related data and set of programs to store & access those data in an easy and effective manner
@@ -10,7 +12,7 @@ DBMS
 Data Redundancy
 	•When multiple time data is repeated for no effective reason.(e.g. Student and Branch storage)
 	•It leads to data inconsistency and following anomalies:
-	•Insertion Ano.: when you cannot a piece of data because other part of the tuple is not available
+	•Insertion Ano.: when you cannot insert a piece of data because other part of the tuple is not available
 	•Update Ano. : when you have to update a single piece of data , but it has to update in all tables.
 	•Delete Ano : whne u want to delete unwanted data but it may alos delete data which you dont want to delete.
 
@@ -44,4 +46,3 @@ Concurrency issues
 	•Unrepeatable Read-- variable updated by other transaction
 	•Phantom Read -- variable deleted by other transaction
 	•Lost Update -- write write conflict
-
