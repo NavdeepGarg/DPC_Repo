@@ -52,3 +52,5 @@ https://www.youtube.com/watch?v=UpEs1P5ueIQ
 TCP sErvcies
 
 •SSH, is an OSI model application layer protocol which uses TCP services at port no 22
+
+So, firewalld uses zones and services instead of chain and rules for performing the operations and it can manages rule(s) dynamically allowing updates & modification without breaking existing sessions and connections.
