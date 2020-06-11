@@ -12,6 +12,8 @@ Defect
 Bug
 	•Same defect which are detected by tester
 
+	Not sure on these definition , at many places Bugs and Defect are same.
+	Rather error are  pre-production and defects are post-production as mentioned in Pressman.
 
 Verification and Validation Model
 
@@ -23,7 +25,6 @@ Verifications:
 	•e.g. code inspection,code walk-through, reviews etc
 Validation (d for dynamic)
 	•Dynamic analysis technique, where code is executed by execution
-	
 	•In this V&V model development and QA activities are done simultaneously and testing starts right from requirement phase.
 	 and verification and validation activities go hand in hand.
 	•Left hand side are dev act and right side are test act
@@ -69,6 +70,11 @@ Non Functional Testing:
 	•Describe how product works
 	•Performance testing,Scalability testing,Load testing, Stress Testing
 	
+	•A load test ensures that a web system is capable of handling an expected volume of traffic, and therefore is sometimes referred to as volume testing
+	•A stress test is a test designed to increase the number of simultaneous requests on a system past a point where performance is degraded, 
+	possibly even to the point of complete failure.
+		 This pushes the system to a state of potential failure to see how the system handles it and whether the system can perform a graceful recovery.
+	
 Software Testing Level
 	•Unit->Integration->System->Acceptance
 
@@ -104,8 +110,6 @@ Regression Testing Vs Retesting:
 	Ex if tester found a bug in purchase module and posted , he will retest it to confirm.
 	•Regression Testing will test the finance module also bcoz it depends on purchase module.
 	•retesting done on failed testcases while regression done on past testcases 
-
-Stress testing executes a system in a manner that demands resources in abnormal quantity, frequency, or volume.Basically to give more stress/load on the application.
 
 Performance tests are often coupled with stress testing and usually require both hardware and software instrumentation
 
