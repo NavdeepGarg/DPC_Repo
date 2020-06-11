@@ -1,5 +1,5 @@
 Cloud computing
-	•It is the on-demand delivery og IT resources via internet with pay as go pricing
+	•It is the on-demand delivery of IT resources via internet with pay as go pricing
 	•E.g. DropBox , google Photos
 	•Instead of buying you can use services provided by others like AWS
 	•It help in reducing the overall cost.
@@ -49,4 +49,3 @@ link
 
 •Hadoop, Cassandra, Spark are the framwerok to process Bigdata
 	HDFS(Hadoop ditributed file system) does not perform parallel processing as it is the work of MapReduce. HDFS is the storage layer of Hadoop that stores smaller chunks of data on multiple data nodes in a distributed manner. 
-
