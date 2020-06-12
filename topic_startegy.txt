@@ -55,3 +55,36 @@ RANDOM Questions
 
 In December, 2013 the Union Cabinet approved the national roll out of PFMS
 Ministry of Finance, Dept. of Expenditure OM No 49 (7) /PF- I/ 2014 dated 02.12.2014 directed CGA to proceed with Digitization of Govt. Accounts through PFMS. 
+
+
+**********pending things*********
+•More to learn on Netwrok
+•More to learn on testing.
+	https://www.guru99.com/what-is-security-testing.html
+	https://www.guru99.com/non-functional-testing.html
+	
+•More to learn on ISO and QMS
+•Hacking and Cyber security
+
+IPWS testing: 
+
+whiteBox Testing
+unit testing (Functional testing): Junit
+
+BlackBox testing
+Integration Testing with COINS manually-(Functional testing)
+
+System Testing :StaticTesting and Vulnerability scanning by SonarCube and Coverity-(Non Functional testing)
+
+Developers describe Coverity Scan as "Find and fix defects in your Java, C/C++ or C# open source project for free". Coverity's implementation of static analysis can follow all the possible paths of execution through source code (including interprocedurally) and find defects and vulnerabilities caused by the conjunction of statements that are not errors independent of each other. On the other hand, SonarQube is detailed as "Continuous Code Quality". SonarQube provides an overview of the overall health of your source code and even more importantly, it highlights issues found on new code. With a Quality Gate set on your project, you will simply fix the Leak and start mechanically improving.
+
+Coverity Scan and SonarQube can be categorized as "Code Review" tools.
+
+
+The static code analysis has been performed manually and then by using Coverity and SonarQube tools in default code rule settings.
+
+
+
+https://the9000store.com/iso-9001-2015-requirements/what-is-iso-9001-quality-management-system/
+
+	
