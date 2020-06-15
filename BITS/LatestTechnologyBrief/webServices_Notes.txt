@@ -1,0 +1,72 @@
+
+
+	•Hypermedia as the Engine of Application State (HATEOAS) is a component of the REST application architecture that distinguishes it from other network application architectures. With HATEOAS, a client interacts with a network application whose application servers provide information dynamically through hypermedia.
+	•Hypermedia : an extension to hypertext providing multimedia facilities, such as those handling sound and video.
+	
+	•Richardson Maturity Model.
+		https://martinfowler.com/articles/richardsonMaturityModel.html
+		http://restcookbook.com/Miscellaneous/richardsonmaturitymodel/
+#################Web Service##############
+
+	•Definition : Software system designed to support inter-operable machine to machine interaction over a network
+	•SOAP
+		•Simple object access protocol, anyways it is no longer an abbreviation anymore.It is just like request response now.
+		•Its structure includes : SOAP envelop, SOaP Header (include meta Info like authorization , IT IS OPTIONAL), SOAP Body (contains actual request response)
+		•ALWAYS it is SOAP XML
+		•WSDL : Web Service Definition Language: 
+			•Service Provider publishes an interfcae for its service that describe all functionality of webservice.This XML based interfcae is WSDL.
+			•EndPoint -where the service is exposed at.
+			•All Operations: contains Operations which are allowed, CRUD
+			•
+		•UDDI : Universal Description Discovery INtegration , is an online directory from where a consumer will search the required wsdl file of 
+				service provider.
+	
+	•REST
+		•It is built over HTTP protocol to transfer the data between client and server.
+		•Both XML and JSON can be used for data transfer
+		•It does not have any definition language
+		
+		
+		
+#################Spring Cloud##############
+
+The image which is saved 'centralized_SpringCLoudConfigServer.png' so far tutorial is trying to extract the configuration properties for microservices from a local git repo through a spring_cloud_configserver.
+
+	•Config-Client 
+		•dependencies are Web, DevTools,Actuator, ConfigClient .Example : limits-service
+		#####STEPS:
+		•Change the application.properties to bootstrap.properties
+		•add the uri of spring cloud server in bootstrap.properties
+		•commit the configurations files in CENTRAL git-repository
+		
+		
+	•Config-Server : 
+		•dependencies are simply DevTools and ConfigServer . Example : spring-cloud-config-server URL : https//localhost:8888/limits-service/qa
+		•spring.cloud.config.server.git.uri is the important param through which git repo is accessed and returning the configuration properties of other servcies e.g. limits-service
+		•
+	
+	•FEING
+		•It is one of the component Spring CLoud inherit from Netflix
+		•It is used to talk to other MicroService
+		•Step 1: @EnableFeignClient
+		•Step 2:Make the interface-proxy (FeignClient) of the desired micro service with which to start the communication.
+		
+		
+	RunConfiguartion in eclipse made into use to run a new instances of same application on different port number <IMP>
+	
+	•RIBBON
+		•It is the component to share the load between different instances of same application running on different ports number
+		•currency-exchange-service.ribbon.listOfServers=http://localhost:8000,http://localhost:8001 entry to be made in application.properties of on Requesting microservice.
+		(who will going to make request to another servcice)
+		•@RibbonClient(name="currency-exchange-service") annotation to be used on Requesting microservice(who will going to make request to another servcice)
+		•
+		
+		
+	•EUREKA
+		•is the naming server, that offers  service-registration and service-discovery 
+		
+	•ZUUL
+		•API gateways for authorization, security, authenticztion, ratelimits,fault tolerance.
+		
+	•ZIPKIN
+		•Used for Distributed tracing, to know what and how call to microservoces are going 

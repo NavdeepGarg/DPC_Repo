@@ -146,14 +146,17 @@ SEI-CMM
 	CMM-3
 	•Defined
 	•---at this level both management and development are well defined and documented
+	•an organization has developed its own standard software process through greater attention to documentation, standardization, and integration
 	CMM-4:
-	•Managed
+	•Quantitatively Managed
 	•Focus is on software metrics
-	•Such companies have proper mechanism to collect the Metrics to measure each and every work in the organization, hence future performance can predicted.
+	•an organization monitors and controls its own processes through data collection and analysis.
+	
 	CMM-5:
 	•Optimized
 	•Process and Product metrics are collected
-	•well defined processes, which are properly measured.
+	•well defined processes, which are properly measured and moving towards continual 'improvements'
+	•introducing innovative processes to better serve the organization's particular needs.
 	
 Software Metric 
 https://www.youtube.com/watch?v=bnydxXPN_rI

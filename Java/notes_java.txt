@@ -7,6 +7,9 @@ strictness order of modifiers:
 •default is package private identifier, i.e. it scope will not be visible outside package , chahe voh subclass hi kyu na ho.
 
 #####################Design Patter Notes#####################
+
+•It is a reusable solution to commonly occuring problem within in a givn context of software design.
+
 •Make sure your design is in such a way that it is adaptable to change
 
 Smells are the indication that you are doing something wrong.

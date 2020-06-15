@@ -1,6 +1,11 @@
 Digital Signature is a mathematical technique to validate
 	•Non Repudiation, authentication, Integrity(Msg is not altered in between)
 	
+Digital Certificate:
+	•It based on trust and chain of trust.
+	•It verifies the digital signature is truly signed by the cliamed signer.
+	•It stores name of the signer, his inifrmation, info abut authority, expiration date etc.
+	
 Hash Algorithm
 	•One way only, not reverse.
 	•Output is called as digest
@@ -15,12 +20,43 @@ BruteForce Attack
 Private Key Encryption
 	•single key shared between Sender and Receiver
 	•Two types-stream Cipher, Block cipher
-	•stream cipher does bit by bit encryption (e.g. Rivest Cipher 4), block does block by block.(e.g. Rivest Cipher 5, DES)
+	•stream cipher does bit by bit encryption (e.g. Rivest Cipher 4), block does block by block.(e.g. Rivest Cipher 5, DES,AES)
+	
+AES:
+https://www.comparitech.com/blog/information-security/what-is-aes-encryption/
+
+	•The Advanced Encryption Standard (AES) is a fast and secure form of encryption that keeps prying eyes away from our data. We see it in messaging apps like WhatsApp and Signal, programs like VeraCrypt and WinZip.
+	•The National Institute of Standards and Technology (NIST) finally announced its selection in late 2001.
+	•Rijnadeal ALgo for key expansion.
+	•(Key expansion->Add round key->Byte substitution->Shift rows->Mix columns->Add round key   ) * 10, 12 ,14 rounds
+	•Decryption starts from last key and encrypted text and everything will go in reverse order from then.
 
 Public Key Encryption
 	•communication has to start with receiver first, bcos he will generate the key pair that would be used by the sender to encrypt the message .
 	•Receiver will use the private key to decrypt the message.
 	•One flaw is receiver may not know if the message is sent by the right sender or man in middle has come.
+	•Eg. RSA
+
+RSA:
+	•Rivest Shamir Aldeman algo, that come up in 1977 
+	•It provides a method to assure the confidentiality, integrity, authenticity, and non-repudiation of electronic communications and data storage.
+	•Many protocols like secure shell, OpenPGP, S/MIME, and SSL/TLS rely on RSA for encryption and digital signature functions
+	•I used it in TCS for accessing the VPNs
+	•Uses the processing of Encryptiion and Decyrption using prime no. and their mulitplication and other mathematical operations.
+	
+Which one to use Assymetric or Symmetric?
+Ans:
+https://www.quora.com/When-do-I-have-to-use-%E2%80%98symmetric%E2%80%99-over-%E2%80%98asymmetric%E2%80%99-encryption-and-vice-versa-When-is-it-useful-to-use-a-mix-of-both-How-can-I-combine-it-with-a-message-authentication-code-and-determine-if-it-is-useful#:~:text=Generally%2C%20you%20use%20symmetric%20encryption,and%20exchange%20the%20key%20asymmetrically.
+
+Baseband 
+	•it is related to 'digital' signal transmission, where Time Division multiplexing is used(TDM) 
+	•In this approach only one data signal at a time in the medium. Hence other data signal need to wait for their turn and get divided on time base.
+	
+BroadBand
+	•In this 'analog' signal transaformation happens.
+	•At a time more than one signals could be passed. In analogy term it is like multilane highway.
+	•Here Frequency Divison Multiplexing is used.
+
 
 Circuit Switching
 	•Dedicated circuit established for communication between the system
@@ -32,6 +68,15 @@ Packet Switching
 	•Internet is based on packet switching where data packet are traveling with a IP address and sequencing mechanism.
 
 An intranet is private network which are heavily protected by networking devices.
+
+Proxy server
+	•is a mediator between internal server and external network.
+	•By using Network Adress Transaltation(NAt) , proxy server hid the IP address of client machines.
+	•It can be used to cache the visited website and also to bann the targetted website.
+	
+Firewall
+	•Is a hardware whcih is responsible for Port filtering, Ip filtering, Content Filtering, Mac filtering and Dynamic Filtering.
+	
 
 IDS : intrusion Detection System , IPS:Intrusion Prevention system -> they both can be part of a single instrument also.
 	Its job is to detect , log, prevent the unwanted traffic and data coming to INTERNET.
@@ -54,3 +99,39 @@ TCP sErvcies
 •SSH, is an OSI model application layer protocol which uses TCP services at port no 22
 
 So, firewalld uses zones and services instead of chain and rules for performing the operations and it can manages rule(s) dynamically allowing updates & modification without breaking existing sessions and connections.
+
+SSL:
+	•Secure Socket Layer
+	•Transport Layer Security, and its now-deprecated predecessor, Secure Sockets Layer, are cryptographic protocols designed to provide communications security over a computer network.
+	•SSL certificate is webserver's digital certificate which is digitally signed by CA( third party) to verify ots identtiy and public key.
+	•HTTPS means all communications between your browser and 	internet are encrypted.
+	•SSL working is the combination of Asymmetric key and Symeetric key working.
+	
+	•Scenario:
+			
+
+PKI - Public Key Infrastructure. Public Key Infrastructure (PKI) is a technology for authenticating users and devices in the digital world. 
+	•Either it would be self-signed or it would be certified by trusted third party(CA) like GoDaddy or they can be signed by intermediate party.
+	•it makes trust & chain of trust
+
+MALWARE:
+	Shorthand for malicious software, malware typically consists of code developed by cyberattackers, designed to cause extensive damage to data and systems or to gain unauthorized access to a network.
+
+Types of Malware:
+	•Virus
+	Possibly the most common type of malware, viruses attach their malicious code to clean code and wait for an unsuspecting user or an automated process to execute them. Like a biological virus, they can spread quickly and widely, causing damage to the core functionality of systems, corrupting files and locking users out of their computers. They are usually contained within an executable file.
+
+	•Worms
+	Worms get their name from the way they infect systems. Starting from one infected machine, they weave their way through the network, connecting to consecutive machines in order to continue the spread of infection. This type of malware can infect entire networks of devices very quickly.
+
+	•Spyware
+	Spyware, as its name suggests, is designed to spy on what a user is doing. Hiding in the background on a computer, this type of malware will collect information without the user knowing, such as credit card details, passwords and other sensitive information.
+
+	•Trojans
+	Just like Greek soldiers hid in a giant horse to deliver their attack, this type of malware hides within or disguises itself as legitimate software. Acting discretely, it will breach security by creating backdoors that give other malware variants easy access.
+
+	•Ransomware
+	Also known as scareware, ransomware comes with a heavy price. Able to lockdown networks and lock out users until a ransom is paid, ransomware has targeted some of the biggest organizations in the world today — with expensive results.
+	
+PHP is an acronym for "PHP: Hypertext Preprocessor"
+It is server side scripting language , PHP code is executed on the server.

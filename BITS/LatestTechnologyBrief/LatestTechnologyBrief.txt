@@ -49,3 +49,8 @@ link
 
 •Hadoop, Cassandra, Spark are the framwerok to process Bigdata
 	HDFS(Hadoop ditributed file system) does not perform parallel processing as it is the work of MapReduce. HDFS is the storage layer of Hadoop that stores smaller chunks of data on multiple data nodes in a distributed manner. 
+	
+###########################################################################################################################
+XSD: XML schema definition. It is used to validate and describe the structure of the XML.
+It is same as Documnet Type Dfinition(DTD) but it has more more control.
+XSD has datatype support, Sequencing support and namespace support.
