@@ -1,0 +1,32 @@
+Guidelines forIndian Government Websites (GIGW)
+	•State Emblem of India MUST be displayed on the Homepage of the websites of Central Government Ministries/Departments.
+	•The lineage of the Department should also be indicated at the bottom
+	•The page title (the title specified by HTML <title> tag which appears on the top
+bar of the browser) MUST describe the topic and purpose of the page
+    •Web accessibility means that people with disabilities can also perceive, understand, navigate,
+and interact with the Web, and that they can contribute to the Web.
+	•‘gov.in’ or ‘nic.in’ domain exclusively
+	•Sample of indication of leaving the Government Website
+“This link shall take you to a page outside the (website URL). For any query
+regarding the contents of the linked page, please contact the webmaster of
+the concerned website”.
+	•Privacy Policy and terms & Conditions
+	•Primary content, Secondary cONtent(event and Announcements) , tertiary content(‘Frequently Asked Questions’ or FAQs , User Feedback)
+	
+	•Quality of Content:
+		packaged. Indian Government websites should be oriented towards their prospective audience. Intended audience to the Government website could
+		be Citizens, Businesses, Government Departments as well as Government employees
+		Consistent terminology
+		Multilingual Versions
+	•Desing:
+		Sitemap
+		Easy to understand
+		Navigation
+	•Testing:
+	Websites should be validated and tested with automatic tools and human review.Automated methods are generally rapid and convenient but cannot identify all issues.
+	•Website Hosting
+		Data Centre is a facility equipped with controlled power, cooling systems, physical security and access control (where website will be deployed)
+		Indian Government websites must be accessible to the public in a fast and secure manner on 24x7 basis.
+		The Web Hosting Service Provider sould be chosen cautiously, it   MUST have a Disaster Recovery (DR)
+		
+

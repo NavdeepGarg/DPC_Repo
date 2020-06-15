@@ -54,3 +54,8 @@ link
 XSD: XML schema definition. It is used to validate and describe the structure of the XML.
 It is same as Documnet Type Dfinition(DTD) but it has more more control.
 XSD has datatype support, Sequencing support and namespace support.
+
+###########################################################################################################################
+Quick Response
+QR is short for Quick Response (they can be read quickly by a cell phone). They are used to take a piece of information from a transitory media and put it in to your cell phone.
+A 2-dimensional barcodes that visually encode bits of information represented as black square dots placed on a white square grid

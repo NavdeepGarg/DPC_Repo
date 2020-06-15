@@ -52,7 +52,7 @@ Here <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 
 •HTML DOM
 	•The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. 
-	•It creates a tree like documnet sturcutre to porcess it.
+	•It creates a tree like document sturcutre to porcess it.
 
 •Really Simple Syndication(RSS feeds)
 
@@ -66,7 +66,9 @@ But Centos can provide more or less same fetaures of RHEL but their enterprise s
 
 •Because SQL does not use variables and control-of-flow statements, it is often used as a database sublanguage that can be added to a program written in a conventional programming language, such as C or COBOL
 This is called as Embedded SQL. It is advantageous with Small database and tables, for high performamce, and Extensive SQL support  
-
+•Embedded SQL is a method of combining the computing power of a programming language and the database manipulation capabilities of SQL
+	The embedded SQL statements are parsed by an embedded SQL preprocessor and replaced by host-language calls to a code library. 
+This differs from SQL-derived programming languages that don't go through discrete preprocessors, such as PL/SQL and T-SQL. 
 
 •SQLite is a software library that provides a relational database management system. The lite in SQLite means light weight in terms of setup, database administration, and required resource.
 https://www.sqlitetutorial.net/what-is-sqlite/
