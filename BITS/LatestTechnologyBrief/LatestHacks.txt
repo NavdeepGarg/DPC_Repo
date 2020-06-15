@@ -54,7 +54,7 @@ Here <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 	•The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. 
 	•It creates a tree like documnet sturcutre to porcess it.
 
-Really Simple Syndication(RSS feeds)
+•Really Simple Syndication(RSS feeds)
 
 	•RSS is a protocol that provides an open method of syndicating and aggregating web content.
 	•To user , uskoo RSS feed apne browser main subscribe karna hoga, which will be feeded up whenever any changes made public through wrSS feed of subscribred websites.
@@ -66,3 +66,7 @@ But Centos can provide more or less same fetaures of RHEL but their enterprise s
 
 •Because SQL does not use variables and control-of-flow statements, it is often used as a database sublanguage that can be added to a program written in a conventional programming language, such as C or COBOL
 This is called as Embedded SQL. It is advantageous with Small database and tables, for high performamce, and Extensive SQL support  
+
+
+•SQLite is a software library that provides a relational database management system. The lite in SQLite means light weight in terms of setup, database administration, and required resource.
+https://www.sqlitetutorial.net/what-is-sqlite/
