@@ -72,7 +72,7 @@ whiteBox Testing
 unit testing (Functional testing): Junit
 
 BlackBox testing
-Integration Testing with COINS manually-(Functional testing)
+Interface Testing with COINS manually-(Functional testing) to ensure the work-flow validation
 
 System Testing :StaticTesting and Vulnerability scanning by SonarCube and Coverity-(Non Functional testing)
 
