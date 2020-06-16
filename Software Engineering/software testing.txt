@@ -43,7 +43,6 @@ Software Testing Life Cycle:
 	•It is software testing process tat executed in planned and systematic manner to improve the quality of product.
 	 that identifies what test activities to carry out and when to accomplish those test activities.
 	•RA:QA team figure out the testable requirements. they follow up with stakeholders like Architecture designer, business analyst to get answer for any question.
-		
 	•Test Planning: Important phase where test manager figure the cost and effort to be done for commencing the testing.
 	•Test Case DEvelopment:	Testing team wrt test case and gather required data and get reviewed by QA lead.
 							Requirement traceability matrix is built where each test cases is mapped with the corresponding requirement.
@@ -60,7 +59,7 @@ Static Methods of testing are : code inspection , code review
 Testing Methods(dynamic methods):
 	•Black Box Testing:Known as Behavioral Testing , s/w test the internal structural, design and implementation and UI and UX of the product being tested.
 	•White Box : 	internal structure , login design and implementation of different module.
-	•Grey bOx:Only Partly internal structure is known to the tester.
+	•Grey bOx:Only Partly internal structure is known to the tester. Browser F12 developer tool testing.
 
 Functional Testing
 	•Describe what the product does
@@ -89,7 +88,7 @@ Loop testing
 
 Smoke Testing
 	•The term ‘smoke testing’, it is said, came to software testing from a similar type of hardware testing, in which the device passed the test if it did not catch fire (or smoked) the first time it was turned on.
-	•Smoke testing covers most of the major functions of the software but none of them in depth. The result of this test is used to decide whether to proceed with further testing. If the smoke test passes, go ahead with further testing. If it fails, halt further tests and ask for a new build with the required fixes. If an application is badly broken, detailed testing might be a waste of time and effort.
+	•Smoke testing covers most of the 'critical' functions of the software but none of them in depth. The result of this test is used to decide whether to proceed with further testing. If the smoke test passes, go ahead with further testing. If it fails, halt further tests and ask for a new build with the required fixes. If an application is badly broken, detailed testing might be a waste of time and effort.
 	
 Penetration testing:
 	•It is security assessment

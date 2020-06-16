@@ -1,4 +1,4 @@
-
+Web service is a standardized medium to propagate communication between the client and server applications on the World Wide Web. A web service is a software module that is designed to perform a certain set of tasks.
 
 	•Hypermedia as the Engine of Application State (HATEOAS) is a component of the REST application architecture that distinguishes it from other network application architectures. With HATEOAS, a client interacts with a network application whose application servers provide information dynamically through hypermedia.
 	•Hypermedia : an extension to hypertext providing multimedia facilities, such as those handling sound and video.

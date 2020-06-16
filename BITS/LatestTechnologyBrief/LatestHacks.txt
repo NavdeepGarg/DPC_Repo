@@ -26,6 +26,7 @@ SQL Injection:
 Blind SQL Injection :
 
 	•Blind SQL injection is nearly identical to normal SQL Injection, the only difference being the way the data is retrieved from the database. When the database does not output data to the web page, an attacker is forced to steal data by asking the database a series of true or false questions. This makes exploiting the SQL Injection vulnerability more difficult, but not impossible. 
+	whether 1=1 and 1=2 giving diff response. then analyse the results for vulnerabilities.
 	
 Cross site Scripting
 	•XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
@@ -42,6 +43,11 @@ CSRF(Corss site request Forgery)
 	•Eg , it involves Social enginnering where a hacker need to force the target to click on particular link to order to get the access to target website.
 	•Microsoft refers to this type of attack as a One-Click attack 
 	•To mitigate it : anti-forgery token (stored with cookies)made into use that needs to validated by the server for evry request.
+	
+XXE Injection Attacks
+	XML external entities are a type of custom XML entity whose defined values are loaded from outside of the DTD in which they are declared.
+	Eg of XXE injection	
+	•<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
 
 **********************************
 XHTML is the stricter ,more XML based version of HTML.
@@ -64,11 +70,13 @@ Here <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 But Centos can provide more or less same fetaures of RHEL but their enterprise support.
 
 
-•Because SQL does not use variables and control-of-flow statements, it is often used as a database sublanguage that can be added to a program written in a conventional programming language, such as C or COBOL
-This is called as Embedded SQL. It is advantageous with Small database and tables, for high performamce, and Extensive SQL support  
+•Because SQL is not pwerful to use variables and control-of-flow statements, it is often used as a database sublanguage that can be added to a program written in a conventional programming language, such as C or COBOL
+This is called as Embedded SQL. It is advantageous with Small database and tables, for high performamce, and Extensive SQL support.
+ 
 •Embedded SQL is a method of combining the computing power of a programming language and the database manipulation capabilities of SQL
 	The embedded SQL statements are parsed by an embedded SQL preprocessor and replaced by host-language calls to a code library. 
 This differs from SQL-derived programming languages that don't go through discrete preprocessors, such as PL/SQL and T-SQL. 
 
 •SQLite is a software library that provides a relational database management system. The lite in SQLite means light weight in terms of setup, database administration, and required resource.
+It is self-contained, serverless, zero-configuration, transactional.
 https://www.sqlitetutorial.net/what-is-sqlite/
