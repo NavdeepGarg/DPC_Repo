@@ -1,8 +1,9 @@
+
 #######from edureka##########
 
 •JVM : is an abstract machine that provide runtime environment where java bytecode can be executed.
 •JRE: is a runtime environment which implements JVM and provide all class libraries and other files that JVM requires at runtime.
-•JDK: is tool necessary for compile, document, and package  java programs. 
+•JDK: is tool necessary for compile, document, and package  java programs. (super set)
 
 •Multiprocessing is adding more number of or CPUs/processors to the system which increases the computing speed of the system. 
 •Multithreading is allowing a process to create more threads which increase the responsiveness of the system.
@@ -72,7 +73,7 @@ For example in a word processor, a background thread may check spelling and gram
 •Hibernate
 		is a framework which is java based ORM tool for mapping domain objects with relational DB objects.
 		It provides implementation of JPA specifications
-		Benefial due to reducing boiler plate code and provide HQL.
+		Beneficial due to reducing boiler plate code and provide HQL.
 
 ################SPRING-BOOT NOTES##########################
 •Spring Boot is built on top of the Spring framework, and it comes with many dependencies that can be plugged into the Spring application. 
@@ -106,6 +107,3 @@ DIP: Dependency Inversion Principle
 	•2 principles
 	•High-level modules(Jo depend kar rhe hai doosri class par) should not depend on low-level modules(Jis class par depend kar rhe hai). Both should depend on the abstraction.
 	•Abstractions should not depend on details. Details should depend on abstractions.
-	
-	
-	
