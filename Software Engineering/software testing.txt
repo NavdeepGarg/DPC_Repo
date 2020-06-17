@@ -1,19 +1,27 @@
 http://softwaretestingfundamentals.com/ - Good Tutorials
 
 Software Testing
+Software testing is a process, to evaluate the functionality of a software application with an intent to find whether the developed software met the specified requirements or not and to identify the defects to ensure that the product is defect-free in order to produce the quality product.
+
+Debugging is finding defect and correct it
 
 Test Scenario:
 	•is the hypothetical story to test the particular functionality of an application.
 	•It need use cases to test the function
 	
-Defect
-	•The mistakes done at the developer end which produces different result than expected.
-	•It is detected and corrected by Developer
+ 
 Bug
 	•Same defect which are detected by tester
 
 	Not sure on these definition , at many places Bugs and Defect are same.
 	Rather error are  pre-production and defects are post-production as mentioned in Pressman.
+	
+IEEE Definitions
+
+    Failure: External behavior is incorrect
+    Fault: Discrepancy in code that causes a failure.
+    Error: Human mistake that caused fault
+
 
 Verification and Validation Model
 
