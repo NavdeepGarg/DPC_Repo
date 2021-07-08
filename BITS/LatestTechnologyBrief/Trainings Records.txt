@@ -19,7 +19,7 @@ the concerned website”.
 		Consistent terminology
 		Multilingual Versions
 	•Desing:
-		Sitemap
+		Sitemap: That list all available pages on website
 		Easy to understand
 		Navigation
 	•Testing:

@@ -61,7 +61,7 @@ Creational Pattern
 ISOLATION LEVELS:
 TRANSACTION_READ_UNCOMMITTED- 1
 TRANSACTION_READ_COMMITTED- 2 (Dirty read solved)
-TRANSACTION_REPEATBLAE_READ- 4 (Dirty read, non-repeatable are solved , Phantom possible ) --DEFAULT IMPLEMENTATION
+TRANSACTION_REPEATBLAE_READ- 4 (Dirty read, non-repeatable are solved , Phantom not possible ) --DEFAULT IMPLEMENTATION
 TRANSACTION_SERIALIZABLE- 8 (Not recommended) -Whole Table Locked--Dirty read, non-repeatable,uncommitted read all problem solved.
 
 getTransactionIsolation()

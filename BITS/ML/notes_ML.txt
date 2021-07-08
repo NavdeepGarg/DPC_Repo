@@ -19,3 +19,34 @@ Reinforcement learning
 	•The main challenge in reinforcement learning lays in preparing the simulation environment, which is highly dependant on the task to be performed. 	
 	
 •kNN (k- Nearest Neighbors) for Supervised Learning
+
+Type of ML Problems.
+
+•Classification : Pick one of N labels example Cat, Horse, Dog etc.
+•Regression: Predict numerical values example Click-through rate.
+•Clustering	: Group similar examples 
+•Association rule learning	: Infer likely association patterns in data
+•Ranking	: Identify position on a scale or status	example : Search result ranking
+
+
+
+
+******************************************************************************************************************************
+Practical Machine Learning in Python Full Course
+	•Made different type of plots using house data set using seaborn ,
+	•sns.boxplot(x='zipcode',y='price',data=house)
+	•developed various model based on linear regression based on varyinh ht e no. of fetaures as input.
+		Based on the set of input fetaures, we compared how one model is different or better than others
+	
+	
+	
+	•Elbow diagram to check for the bents in the possible clusters.
+		This diagram i sused to get some idea about how many clusters would be ideal.
+		whereven bend observes in the graph , we can test our analysis on that 
+		
+	•further canonical discrimintae analysis was done by using Canonical Variables.
+		Two Canonical Variables model was used , and plot a scatter plot based on those model.
+		It was observed that 2 clusters was showing better result.
+	
+	•Decisoin Tree are a form of Supervised learning
+	•
