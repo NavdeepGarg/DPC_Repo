@@ -1,0 +1,135 @@
+•singleton is the default scope in Spring-boot application, i.e. only one object will be created respective to each @Component 
+	i.e. Default Objects will be present without even asking for them. -> 'EarlyInitialization'
+	
+
+•@Autowired annotation , by default search for the component type 
+•@Qualifier annotation is required to search by name rather than by type.
+
+E.g. Class A is Dependant on ClassB
+
+	•Constructor Injection :It becomes active when you add @Component to the class B and labeled the reference used in class A as @Autowired.
+							This will automatically inject th object of class B in Class A.
+							SIMPLE AND CONVIENEINT.
+							RECOMMENDED
+	•Setter Injection : Here @Autowired to be labeled only on setter method.
+						Also if we add @Autowired(required=false) on setter method for classB , then Class A object anyway will be created.
+						NOT RECOMMENDED
+		
+	
+####################################################################################################################
+
+logging.level.org.springframweork=debug
+
+SpringBootAutoConfiguration triggers:
+
+1)DisptacherServletAutoConfiguration - 
+
+	Automatically called when compiler sees DisptacherServlet in classpath
+
+2)ErrorMvcAutoConfiguration-
+
+3)HTTPMessageAutoconvertor -convert Beans to JSON and viceversa
+
+and many more..
+
+4)ConfigurableApplicationContext : class to get the objects on run time basis.
+
+5)@Bean Annotation is applied on a method to specify that it returns a bean to be managed by Spring context
+
+
+6)@Component : This annotation help springBoot framework to identify the Classes or Beans to be created before hand.
+			    It is a parent of :@Controller, @Service,@Repository.
+				IoC container will act on classes under Components and initialized them for its usage in application.
+
+
+##############################################################################################################################
+
+
+Maven dependencies were not resolving, so i change the installed JRE to JDK (as mentioned in the error message)
+
+Edureka 4 hr Course:
+ •@RequestMapping("/hello") & @RestController : to access the application using the URL
+ •@PathVariable : Annotation to get the path variable value from the URL  and store in a method input parameter
+ • <IMP> Controller will talk to Service and Service will talk to DAORepo and DAORepo will talk to database
+ 
+
+Model View Controller
+	•It is  a Design pattern to build and design application
+	•SpringWebMVC provide dignified help in SpringFramework with the help of DispatcherServlet.
+	•DispatcherServlet receives the request and direct the request.
+	• <img src="MVC_BLOCK_DIAG.JPG" width="1167" height="588" border="0" alt="" />
+
+
+Dependency Injection
+	•When a class A is dependent on Class B to use its method, and to do so Class A has to create an instance of Class B
+	•Dependency Injection depends on Inversion of Control Principle
+	•Inversion of Control : A class should not configure its dependencies statically but should be configured by some other class fromm outside.
+	    Components are not responsible for handling the creation of the dependencies they need
+		Inversion of Control (IoC) is a design principle (although, some people refer to it as a pattern). As the name suggests, it is used to invert different kinds of controls in object-oriented design to achieve loose coupling. Here, controls refer to any additional responsibilities a class has, other than its main responsibility. This include control over the flow of an application, and control over the flow of an object creation or dependent object creation and binding.
+		IoC is all about inverting the control. To explain this in layman's terms, suppose you drive a car to your work place. This means you control the car. The IoC principle suggests to invert the control, meaning that instead of driving the car yourself, you hire a cab, where another person will drive the car. Thus, this is called inversion of the control - from you to the cab driver. You don't have to drive a car yourself and you can let the driver do the driving so that you can focus on your main work.
+
+•SpringBoot has embedded TOMCAT server.
+
+•<IMP>To render the JSP on browser, this JSP need to be converted to servlet, that would be done by adding tomcat-jasper dependencies in pom.xml
+
+•<IMP>To configure the jsp file name automatically, application.prop file to be configured with spring.mvc.view.prefix & suffix params
+
+•Simply using HTTPServletRequest as a parameter in @RequesteMapping method can take the client input and further process it for specific use.
+• To avoid using legacy startegy, ModelAndView class is intriduced that will eliminate the use of session adn request object.
+
+•@PostMapping annotations is used to map the jsp form submit action.
+	Earlier days of servlet was easier in coding but in this world of Spring they made it object oriented and start using ModelAtrribute to match up with the from elements
+
+•@COmponentScan-- Very imp to mention your base packages wen it is not default. It is required by the SpringBoot fraemwork to configure the controller and BEan before hand and make it avaibale at the run time.
+
+http://localhost:8081/h2-console
+
+• REST API
+	•Stateless : requesting URL contains the required information and its body hold the state of requested resource , response from the server will be sent accordingly.
+	•Client & Server
+	•Uniform Interface : 
+	•Cacheable : Response is either Cacheable or Non-Cacheable , depend on this set parameter response can be re-used.
+	•Layered System: This tyope of architecture make application more manageable by incorporating features like , load balancing , shared cahces for encouraghing scalability
+	•Code on Demand : 
+
+• CRUD operation i'hv done in office project using the REST API itself.
+
+• SPRING SECURITY
+	
+	
+	
+•SPIRNG INTERVIEW QUESTION
+	https://www.youtube.com/watch?v=UfOxcrxhC0s&t=1567s at 2:58:00
+	
+	
+##to run as Maven Build	
+•spring-boot:run	
+
+## downladed m2e repo for eclipse and install the software to remove error from first line of pom.xml
+•mvn dependency:purge-local-repository , used this commnad after opening project in terminal mode to redownload the maven depencdency and purging the previous ones.
+
+
+
+
+##############################################################################################################################
+
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld" to start MySQL server
+Java Guide Tutorials
+• pom.xml is very important to conifgure with proper dependancy and then only major of issues related to hibernate, missing beans were automatically resolved.
+• start adding functionality in service layer -> service impl -> controller layer.
+• I had exact same issue. When I checked maven build log I have realised that there was an error about hibernate packages complaining about 
+   "invalid LOC header (bad signature)". I solved by deleting sub directories under .m2\repository\org\hibernate\hibernate-core and recompiling my project.
+
+• Spring data JPA creates query based on methodNames
+
+• netstat -ano | findstr :8086
+  taskkill /PID 18156 /F
+  
+  
+  
+  
+####################################--SPRING-SECURITY--##########################################################################################
+
+
+  
+  
