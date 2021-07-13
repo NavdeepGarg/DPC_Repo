@@ -1,0 +1,171 @@
+#####################Design Patter Notes#####################
+
+•It is a reusable solution to commonly occuring problem within in a givn context of software design.
+
+•Patterns are required bcoz we don't want to reinvent the wheel.
+	 
+•Make sure your design is in such a way that it is adaptable to change
+
+Smells are the indication that you are doing something wrong.
+	•like rigidity,fragility,tight coupling ,needless repetition,too many public members(it violates encapsulation)
+
+Program to an interface and do for implementation.It is a common theme of design pattern.
+
+•SOLID is an acronym for the first five object-oriented design (OOD) principles by Robert C. Martin 
+•These principles establish practices that lend to developing software with considerations for maintaining and extending as the project grows.
+	Adopting these practices can also contribute to avoiding code smells, refactoring code, and Agile or Adaptive software development.
+	SOLID stands for:
+
+    S - Single-responsiblity Principle
+    O - Open-closed Principle
+    L - Liskov Substitution Principle
+    I - Interface Segregation Principle
+    D - Dependency Inversion Principle
+
+
+Composition has many benefits than inheritance.
+	•It offer loose coupling.
+	•It provide more extensibility bcoz there is least to bother about the inheritance linkage
+	•There is always most time spent on code after its development, so better to think for extensibility wherever it can be  applicable.
+	 This argument favors Composition over Inheritance.
+	•Composition enhance polymorphism
+
+Delegation
+	•when a class delegate some task to other class to accomplish
+	•It also uses the cOmposition principle.
+	•equals() and hashCode() is the classic example.
+	 In order to compare two objects for equality we ask the class itself to do the comparison instead of client class doing that check.
+	It requires the current class to override the Object class equals and hashCode functions and delegating its work on them.
+	
+Dependency Inversion Principle(DIP)
+	•encourage the thinking in making of abstraction/interfaces.
+	•think first of abstraction than concrete class.
+	•if you are overriding the implemented method in superclass, it means you have not done the abstraction properly, rethink and change the design
+	coz it will end up in high coupling.
+	
+Dependency Injection:
+	•It goes hand in hand with DIP
+	•if you want to use DI, following 4 roles will be required
+		•the service you want to use
+		•the client uses the service
+		•an interface that is used by the client(composition rule) and implemented by a service
+		•injector which creates a service instance and inject it to the client.
+	
+
+Dependency Injection
+	•When a class A is dependent on Class B to use its method, and to do so Class A has to create an instance of Class B
+	•Dependency Injection depends on Inversion of Control Principle
+	•Inversion of Control : A class should not configure its dependencies statically but should be configured by some other class fromm outside.
+	    Components are not responsible for handling the creation of the dependencies they need
+		Inversion of Control (IoC) is a design principle (although, some people refer to it as a pattern). As the name suggests, it is used to invert different kinds of controls in object-oriented design to achieve loose coupling. Here, controls refer to any additional responsibilities a class has, other than its main responsibility. This include control over the flow of an application, and control over the flow of an object creation or dependent object creation and binding.
+		IoC is all about inverting the control. To explain this in layman's terms, suppose you drive a car to your work place. This means you control the car. The IoC principle suggests to invert the control, meaning that instead of driving the car yourself, you hire a cab, where another person will drive the car. Thus, this is called inversion of the control - from you to the cab driver. You don't have to drive a car yourself and you can let the driver do the driving so that you can focus on your main work.
+
+
+	
+UML is the documentation technique in a visual way that describe design.
+
+For folks, who are rushing through the course for an upcoming interview,I would suggest going through all the creational design patterns,
+decorator, proxy, iterator, observer and visitor patterns. As you read
+through them, be sure to look at the Java framework's api examples
+pointed out in each lesson.
+	
+
+
+
+
+•Suggestions for Object Orientated Design
+	Whenever writing code in an object orientated language, sticking to the following list of suggestions will make your code amenable to changes with the least effort.
+	1)Separate out parts of code that vary or change from those that remain the same.
+	2)Always code to an interface and not against a concrete implementation.<<STAR>>
+	3)Encapsulate behaviors as much as possible. <<STAR>>
+	4)Favor composition over inheritance. Inheritance can result in explosion of classes and also sometimes the base class is fitted with new functionality that isn't applicable to some of its derived classes.
+	5)Interacting components within a system should be as loosely coupled as possible.
+	6)Ideally, class design should inhibit modification and encourage extension.
+	7)Using patterns in your day to day work, allows exchanging entire implementation concepts with other developers via shared pattern vocabulary.
+
+
+•Design patterns for object orientated programs are divided into three broad categories listed below. These are the same categories used by GoF in their seminal work on design patterns.
+	Creational
+	Structural
+	Behavioral
+
+•Creational
+	Creational design patterns relate to "how objects are constructed from classes". The creational design pattern come with powerful suggestions on how
+	best to encapsulate the object creation process in a program.
+		•Builder Pattern
+		•Prototype Pattern
+		•Singleton Pattern
+		•Abstract Factory Pattern
+
+•Structural
+	Structural patterns are concerned with the composition of classes i.e. how the classes are made up or constructed
+		•Adapter Pattern
+		•Bridge Pattern
+		•Composite Pattern
+		•Decorator Pattern
+		•Facade Pattern
+		•Flyweight Pattern
+		•Proxy Pattern
+
+	
+•Behavioral
+	Behavioral design patterns dictate the interaction of classes and objects amongst each other and the delegation of responsibility.
+		•Interpreter Pattern
+		•Template Pattern
+		•Chain of Responsibility Pattern
+		•Command Pattern
+		•Iterator Pattern
+		•Mediator Pattern
+		•Memento Pattern
+		•Observer Pattern
+		•State Pattern
+		•Strategy Pattern
+		•Visitor Pattern
+
+
+•Abstract Factory Pattern(Creational)
+	
+	1)The abstract factory pattern solves the problem of creating families of related products. For instance, F-16 needs an engine, a cockpit, and wings. 
+	  The Boeing-747 would require the same set of parts but they would be specific to Boeing.
+	  
+	2)One of the fundamental principles of good object orientated design is to hide the concrete classes and expose interfaces to clients.
+	
+	3)It might appear to the naive reader that the factory method pattern and the abstract factory pattern are similar. The difference between the two lies in their motivations. 
+		The factory   method pattern is usually responsible for creating a single product whereas an abstract factory pattern creates entire families of related products.
+		Furthermore, in the factory method pattern, we use inheritance to
+		create more specialized products whereas, in an abstract factory
+		pattern, we practice object composition by passing in factories that
+		are consumed to create the desired products.
+	 	
+
+•Singleton(Creational)
+	•Most simplest • ensure class has only one instance and provide global point of access to it
+	•example printer,file system etc.
+	•In its implementation , using 'synchronized' keyword inthe getinstance() method will create lot of overhead and also synchronization is required only for 
+	the time when the object is going to be created for the very first time.Thus it creates performance issue.
+	•To tackle the performance issue double check locking is applied, where synchronized block is used.
+
+
+•BUILDER PATTERN(Creational)
+	•It is useful when Step by Step Object creations or Sequence in operation is required
+	•builder pattern encapsulates or hides the process of building a complex object and separates the representation of the object and its construction
+	•StringBuilder is using this approach and so it is in its name.
+	•Used for creating Complex Objects and Composite Objects.
+	•
+	
+
+•Decorator Pattern(Structural)
+	
+	
+
+•Proxy Pattern
+	
+
+	
+•Iterator Pattern
+
+
+•Observer Pattern
+
+
+•Visitor Pattern
