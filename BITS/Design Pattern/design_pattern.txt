@@ -141,7 +141,7 @@ pointed out in each lesson.
 •Singleton(Creational)
 	•Most simplest • ensure class has only one instance and provide global point of access to it
 	•example printer,file system etc.
-	•In its implementation , using 'synchronized' keyword inthe getinstance() method will create lot of overhead and also synchronization is required only for 
+	•In its implementation , using 'synchronized' keyword in the getinstance() method will create lot of overhead and also synchronization is required only for 
 	the time when the object is going to be created for the very first time.Thus it creates performance issue.
 	•To tackle the performance issue double check locking is applied, where synchronized block is used.
 
@@ -155,7 +155,25 @@ pointed out in each lesson.
 	
 
 •Decorator Pattern(Structural)
-	
+	•A decoration is added to something to make it more attractive, in the
+	same spirit, the decorator pattern adds new functionality to objects without modifying their defining classes.
+	•A prominent example of this pattern is the java.io package, which includes several decorators. Look at the snippet below:
+						public void main() {
+				// FileInputStream is responsible for reading the file
+				FileInputStream fileInputStream = new FileInputStream("my
+				File.txt");
+				// BufferedInputStream extends FilterInputStream and no
+				t FileInputStream, it is
+				// a decorator which enhances the functionality of the or
+				iginal object by wrapping over it.
+				BufferedInputStream bufferedInputStream = new BufferedInp
+				utStream(fileInputStream);
+				// The read operation becomes buffered now
+				bufferedInputStream.read();
+				}
+		The FileInputStream is the object actually responsible for reading the text file. If we wanted to introduce buffered read functionality, one
+		way of doing it would be to subclass FileInputStream and add the new functionality. The other is to use the decorator pattern which is
+		how it is implemented in the Java framework. The BufferedInputStream wraps the FileInputStream to provide buffering capabilities.
 	
 
 •Proxy Pattern
@@ -166,6 +184,10 @@ pointed out in each lesson.
 
 
 •Observer Pattern
+	•Social media helps us immensely in understanding the observer pattern. If you are registered on Twitter then whenever you follow someone, you
+	are essentially asking Twitter to send you (the observer) tweet updates of the person (the subject) you followed. The pattern consists of two actors,
+	the observer who is interested in the updates and the subject who generates the updates.
+	•In Java, implementations of java.util.EventListener are examples of the observer pattern.
 
 
 •Visitor Pattern

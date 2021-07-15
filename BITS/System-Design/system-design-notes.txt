@@ -1,0 +1,41 @@
+SOURCE:https://www.youtube.com/watch?v=MbjObHmDbZo
+
+############ --HLD-- ############ 
+
+•Distributed System
+	•A distributed system is any network structure that consists of autonomous computers that are connected using a distribution middleware. Distributed systems facilitate sharing different resources and capabilities, to provide users with a single and integrated coherent network.
+	•Use them only only when it is required , it is not just for fun and all big tech companies have used them because their applications are inevitably scaling to greater extent.
+	•Benefits:
+		•MoreReliable and Fault Tolerant.
+		•Scalability
+		•Lower Latency,increased performance
+		•Cost effective
+	•Scalability
+		•Ability of a system to grow and manage increased traffic
+		•Ability of a system to manage increased volume of data and request
+		•A good system design can handle all this and prevent the overall system cost.
+	
+	•Reliability
+		•MTBF: MTBF is a maintenance metric, represented in hours, showing how long a piece of equipment operates without interruption.
+				MTBF = Total uptime / # of Breakdowns
+
+•A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content.
+
+	A CDN allows for the quick transfer of assets needed for loading Internet content including HTML pages, javascript files, stylesheets, images, and videos. The popularity of CDN services continues to grow, and today the majority of web traffic is served through CDNs, including traffic from major sites like Facebook, Netflix, and Amazon.
+
+•Kubernets, docker, Hadoop helps in scaling your application
+
+•LoadBalancer
+
+•Mathematics for Traffic control
+
+•Caching and Sharding
+
+•DB scaling 
+
+
+############ --LLD-- ############ 
+
+•LLD describes the class diagram with the methods and relations between classes and program specs.It describe the modules so that programmer can directly code from the document
+
+•Association can be uni directional(->) or bi-directional(-)
