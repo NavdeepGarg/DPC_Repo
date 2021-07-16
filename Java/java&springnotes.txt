@@ -107,3 +107,5 @@ DIP: Dependency Inversion Principle
 	•2 principles
 	•High-level modules(Jo depend kar rhe hai doosri class par) should not depend on low-level modules(Jis class par depend kar rhe hai). Both should depend on the abstraction.
 	•Abstractions should not depend on details. Details should depend on abstractions.
+	
+•A functional interface is an interface that contains only one abstract method
