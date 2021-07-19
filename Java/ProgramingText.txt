@@ -1,0 +1,154 @@
+
+Complete report and microservice tutorial
+
+
+*****Data Structure text from Edureka ********
+Linear DS : Array, 2dArrya, 3DArray,Linked List, Double LL, CLL
+
+Hierarichal DS : TreeSet, TreeMap, Hash Map,Heap, Graph
+
+•Heap
+	is a special case of balance binary tree, where the root node is compared with its children abd arranged accordinlgy.
+	MinHeap and MaxHeap are two varient of its.
+	PriorityQueue is the default implementation of this DS with MinHeap implementation.
+	https://www.geeksforgeeks.org/max-heap-in-java/
+
+
+###############All about Collection#########
+###############Java Collection(Interface) Algorithms:
+
+The Collection interface (java.util.Collection) and Map interface (java.util.Map) are the two main “root” interfaces of Java collection classes.
+
+•Major Algorithms are 
+	1)Sorting Algo
+	2)Composition Algo
+	Collection.frequency():provide the count of number of times an element is present.
+	Collection.disjoint() : checks if two collections contains same common element.
+	3)Extreme Value algorithms
+	4)Data Manipulations
+
+
+
+•Collection 
+	An Interface To represent a group of objects as a single entity collection is used.
+
+•Collection Framework
+	Defines several classes and interfaces which can be used  a group of objects as a single entity 
+
+•Collections
+	is an utility class in java.util package to define several utility method like searching, sorting for collection objects
+
+•Set
+	is an interface, When dont want duplicate and insertion order
+	Implementations: HashSet and LinkedHashSet
+
+•SortedSet
+	is a child interface of Set , when dont want duplicate but want some sorting order
+	1)SeveralMethod it has are : first(),last(),headSet(),taileSet(),subSet(),comparator()
+	
+•NavigableSet
+	is a child interface of SortedSet and added up with few new methods for navigation , its implementation is : TreeSet
+	
+•TreeSet	(Set<-SortedSet<-NavigableSet)
+	1)Underlying datastructure is balanced tree
+	2)Insertion order not applicable and duplicate not allowed
+	3)Heterogenous object are NOTTTTT allowed (For eg. Strign and INteger cannot be the part of same object ) <IMP>
+	4)Sorting Order is allowed
+	5)Null allowed only in an empty tree set..(this was in Java 7 but discontibued in later versions of JAVA) bcoz whenever a new element going to be added it will start comparision 
+		with Null value before insertion. This will lead to NullPointer Exception
+	6)<IMP> Values are inserted based on default natural sorting order.
+		
+	7)TreeSet is rich in functionalities, implementing additional methods like:
+
+    pollFirst() – to return the first element, or null if Set is empty
+    pollLast() – to retrieve and remove the last element, or return null if Set is empty
+    first() – to return the first item
+    last() – to return the last item
+    ceiling() – to return the least element greater than or equal to the given element, or null if there is no such element
+    lower() – to return the largest element strictly less than the given element, or null if there is no such element
+
+		The methods mentioned above make TreeSet much easier to use and more powerful than HashSet.
+		
+		
+•HashSet
+	1)Underlying datastructure is HashTable
+	2)Duplicate are not allowed , Insertion order ii not preserved , Heterogenous Object are allowed
+	3)null insertion possible
+	4)Best choice when frequent operation is Searching
+	5)Default capacity is 16 and loadfactor : .75
+	6)LoadFactor is after loading how much fcator, a new HashSet object willl be created.
+	7)HashSet provides constant-time performance for most operations like add(), remove() and contains(), versus the log(n) time offered by the TreeSet. 
+	8)Synchronized-- i.e. Threadsafe
+	
+•LinkedHashSet
+	1)Insertion order is maintained
+	2)Underlying datastructure is hashtable and linkedllist
+
+
+•Queue:
+	1)Child Interface of Collection
+	2)PriorityQueue and Blocking Queue are implementation classes.
+
+
+•Map(I) <- SortedMap(I) <- NavigableMap(I) <- TreeMap(C)
+	when a group of key value pair needs to be represented in some sorted order of keys
+		1)Underlying datastructure is RedBlackTree
+		2)Key should be homogenous(i.e. of same type through out the object) ,bcoz comaprison would be made for any new insertion.
+		3)for heterogenous key , Class clast exception will be thrown.<IMP> NOTTTTT Heterogenous	
+		4)All Property are more or less same as like TreeSet.
+
+	
+	
+•Map(I) <-HashMap(I)
+		1)Underlying datastructure is HashTable
+		2)Best choice when frequent operation is searching
+		3)Not thread safe, hence multiple threads can access at a time. Not Synchronized.
+		4)Keys duplication not allowed , internally JVM uses equals() method to identify the duplication
+		5)Heterogenous Object allowed
+		6)It is a collection of set of key.value pairs  <IMP> , view it as a bag of sets as explained in videos
+		7)map.entrySet() return the set of Entries of key,value pair 			
+		8)entry object is static interface 	Map.Entry<K,V> under Map Interface 
+		9)Under Entry interface three methods are listed : getKey(), getValue(),setValue()
+		10)In it Insertion order is not preserved and it is based on hash code of the keys. HashMap allows Heterogeneous objects for both key and value. Null insertion is allowed for keys(only once) and for values(any number of times). It is best suitable for Search operations
+		
+		
+		Garbagecollector Story (System.gc)
+		•https://www.youtube.com/watch?v=AVdD987trsc&list=PL6giKRl5IbBr-68XLFj5t41GibaeOWjS8&index=2 @46:00
+		
+	All about HashTable
+	•https://www.youtube.com/watch?v=rfpvtTwWFK0&list=PL6giKRl5IbBr-68XLFj5t41GibaeOWjS8&index=4	
+
+
+
+•Enumeration, Iterator, ListIterator are the three cursor in Java 
+
+
+•Java provides two interfaces to sort objects using data members of the class:
+	1)Comparable
+		•A comparable object is capable of comparing itself with another object.
+		•compareTo(Object o1) which is invoked by Collections.sort method
+		•java.lang package
+		•meant for default natural ordering
+	2)Comparator
+		•A Comparator is external to the element type we are comparing.
+		•compare(Object m1, Object m2) which is invoked by Collections.sort method
+		•java.util package
+		•meant for customized sorting order.
+
+
+•there is no O(1) operation in BST and binary Tree
+
+•Jhaa par bhi koi datastructure comparison karke data insert kar rha , uss case main Comparable Interface ka implement hona jaruri hain.
+		ya fir customisez way main Comparator ko add karo Object main.
+	eg TreeMap,TreeSet inmain Objects jo enter ho rhe hain , they must implement Comparable interface or Compartaor to be added.
+		Simple reason is , yhaan addition comparison basis par hogi . agar comparison nhi ho paegi tooh ClassCastException throw hoga.
+
+
+
+
+
+*****Think like a programmer book*****
+
+•Without a plan, you are simple hoping for a lucky break,
+
+
