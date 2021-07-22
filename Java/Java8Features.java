@@ -10,6 +10,10 @@ import java.util.stream.Collectors;
 
 interface ABC{
 	public void method();
+	default void defaultABC()
+    {
+        System.out.println("Default Method");
+    }
 }
 
 public class Java8Features {
@@ -43,10 +47,15 @@ public class Java8Features {
 			@Override
 			public void method() {
 				System.out.println("Anonymous Class");			
-			}			
+			}	
+			 @Override
+			public void defaultABC() {
+			//It is Overriding of defaultABC method
+				System.out.println("defaultABC Class");			
+			}	 
 		};		
 		abc.method();
-		
+		abc.defaultABC();
 		//Lambda Expression
 		ABC abc2= ()->System.out.println("Lambda Implementation Class");		
 		abc2.method();
@@ -69,7 +78,7 @@ public class Java8Features {
 		 
 		 //Supplier Functional Interface
 		 Supplier<Integer> supplier =() -> l2.size();
-		 supplier.get();
+			System.out.println("\n"+supplier.get());
 				
 		//Date Time API
 		 LocalDate date = LocalDate.now(); //JODA time API
@@ -77,6 +86,14 @@ public class Java8Features {
 		 
 		 LocalTime time = LocalTime.now();
 		 System.out.println(time);
+		 
+		 
+		 //HETREOGENOUS THINGS ADDED ---NOT RECOMMENDED
+		 List obj4 = new ArrayList();
+		 obj4.add("hello");
+		 obj4.add(1);
+		 System.out.println(obj4);;
+		 
 	}
 
 }
