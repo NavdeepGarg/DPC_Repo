@@ -110,13 +110,15 @@ The Collection interface (java.util.Collection) and Map interface (java.util.Map
 		8)entry object is static interface 	Map.Entry<K,V> under Map Interface 
 		9)Under Entry interface three methods are listed : getKey(), getValue(),setValue()
 		10)In it Insertion order is not preserved and it is based on hash code of the keys. HashMap allows Heterogeneous objects for both key and value. Null insertion is allowed for keys(only once) and for values(any number of times). It is best suitable for Search operations
+
 		
 		
 		Garbagecollector Story (System.gc)
 		•https://www.youtube.com/watch?v=AVdD987trsc&list=PL6giKRl5IbBr-68XLFj5t41GibaeOWjS8&index=2 @46:00
 		
 	All about HashTable
-	•https://www.youtube.com/watch?v=rfpvtTwWFK0&list=PL6giKRl5IbBr-68XLFj5t41GibaeOWjS8&index=4	
+	•https://www.youtube.com/watch?v=rfpvtTwWFK0&list=PL6giKRl5IbBr-68XLFj5t41GibaeOWjS8&index=4
+	
 	All about ConcurrentHashMap
 	•https://www.youtube.com/watch?v=IUo1Ym-Uj_I
 
