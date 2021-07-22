@@ -7,10 +7,10 @@ Hacking : Hacking is identifying weakness in computer systems or networks to exp
 Penetration Testing :
 	•A penetration test, also known as a pen test, is a simulated cyber attack against your computer system to check for exploitable vulnerabilities.
 	•Phases
-		•Planning: Target/Website analysis to get more inof about it like DNS, IP etc.
+		•Planning: Target/Website analysis to get more info about it like DNS, IP etc.
 		•Scanning: Either Static scanning or dynamic scanning
 		•Gain Access: Attack on target using XSS, SQL Injection , CRFR etc.
-		•Maintain Accessa dn Analysis shared.
+		•Maintain Access and Analysis shared.
 
 Type of hacker:
 	•White, Black (illegal), Red, 
@@ -25,7 +25,7 @@ SQL Injection:
 Blind SQL Injection :
 
 	•Blind SQL injection is nearly identical to normal SQL Injection, the only difference being the way the data is retrieved from the database. When the database does not output data to the web page, an attacker is forced to steal data by asking the database a series of true or false questions. This makes exploiting the SQL Injection vulnerability more difficult, but not impossible. 
-	whether 1=1 and 1=2 giving diff response. then analyse the results for vulnerabilities.
+	whether 1=1 and 1=2 giving diff response. then analyses the results for vulnerabilities.
 	
 Cross site Scripting
 	•XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
