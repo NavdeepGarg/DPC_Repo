@@ -15,7 +15,8 @@ E.g. Class A is Dependant on ClassB
 						Also if we add @Autowired(required=false) on setter method for classB , then Class A object anyway will be created.
 						NOT RECOMMENDED
 		
-	
+•@OneTomany(mappedBy="propertyname") --> this signifies that the current class need not to worry about the mapping, it is being done by the class having "propertyname" as its member
+	Thus mappedby is required to tell hibernate the association is managed by the other class.
 ####################################################################################################################
 
 logging.level.org.springframweork=debug
@@ -68,7 +69,25 @@ Dependency Injection
 	    •Components are not responsible for handling the creation of the dependencies they need
 		•Inversion of Control (IoC) is a design principle (although, some people refer to it as a pattern). As the name suggests, it is used to invert different kinds of controls in object-oriented design to achieve loose coupling. Here, controls refer to any additional responsibilities a class has, other than its main responsibility. This include control over the flow of an application, and control over the flow of an object creation or dependent object creation and binding.
 		IoC is all about inverting the control. To explain this in layman's terms, suppose you drive a car to your work place. This means you control the car. The IoC principle suggests to invert the control, meaning that instead of driving the car yourself, you hire a cab, where another person will drive the car. Thus, this is called inversion of the control - from you to the cab driver. You don't have to drive a car yourself and you can let the driver do the driving so that you can focus on your main work.
-		•Factory Pattern
+		
+		•FACTORY PATTERN
+		
+•DIP stands for  : Dependency Inversion Principle
+	"High-level modules should not depend on low-level modules. Both should depend on abstraction. Abstractions should not depend on details. Details should depend on abstractions."
+•DIP &IoC are Design principle
+•Dependency Injection is a Design Pattern
+•IoC Container is the FRAMEWORK
+
+IOC
+	•invert different kinds of controls in object-oriented design to achieve loose coupling.
+	•analogy : The IoC principle suggests to invert the control, meaning that instead of driving the car yourself, you hire a cab, where another person will drive the car. Thus, this is called inversion of the control - from you to the cab driver.
+	•To achieve it use Factory class to provide you the object on which you are dependent on.
+	
+DIP: Dependency Inversion Principle
+	•2 principles
+	•High-level modules(Jo depend kar rhe hai doosri class par) should not depend on low-level modules(Jis class par depend kar rhe hai). Both should depend on the abstraction.
+	•Abstractions should not depend on details. Details should depend on abstractions.
+	
 
 •SpringBoot has embedded TOMCAT server.
 
@@ -133,5 +152,4 @@ Java Guide Tutorials
 ####################################--SPRING-SECURITY--##########################################################################################
 
 
-  
   
