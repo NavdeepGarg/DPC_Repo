@@ -153,3 +153,10 @@ Java Guide Tutorials
 
 
   
+•Provide both Authentication (user name and password) and Authorization( roles) functionality
+• extends WebSecurityConfigurerAdapter 
+• Override authenticationProvider()
+• Override the configure method of WebSecurityConfigurerAdapter.
+• UserService extends UserDetailsService (this one too provided by Spring)
+• UserServiceImpl implements UserService
+
