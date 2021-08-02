@@ -109,3 +109,9 @@ DIP: Dependency Inversion Principle
 	•Abstractions should not depend on details. Details should depend on abstractions.
 	
 •A functional interface is an interface that contains only one abstract method
+
+
+•Web Server and Application Server	
+	•WS provides environment  to run web application while App server provides environment to run enterprise application
+	•WS is a subset in AS
+	•WS supports Servlte+JSP+HTML while AS suuport WS+EJB+JMS etc.
