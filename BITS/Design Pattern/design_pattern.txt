@@ -16,12 +16,23 @@ Program to an interface and do for implementation.It is a common theme of design
 	Adopting these practices can also contribute to avoiding code smells, refactoring code, and Agile or Adaptive software development.
 	SOLID stands for:
 
-    S - Single-responsiblity Principle
+    S - Single-responsibility Principle
     O - Open-closed Principle
     L - Liskov Substitution Principle
     I - Interface Segregation Principle
     D - Dependency Inversion Principle
-
+	
+SOLID
+O:  open for extension closed for modification.
+	Example : 
+	Calculator , better to make it a interface so that in future new operation can be added without modifying the current class.	
+l : lISKOV Substitution 
+		Child class substitute to parent class must be done, Vehicle with and without engine example
+		
+		Interface segregation 
+			Cuboid and Shape
+Dependency Inversion Principle 
+	
 
 Composition has many benefits than inheritance.
 	•It offer loose coupling.
@@ -195,7 +206,7 @@ pointed out in each lesson.
 	
 
 	
-•Iterator Pattern
+•Iterator Pattern(Behavioral)
 
 
 •Observer Pattern(Behavioral)
