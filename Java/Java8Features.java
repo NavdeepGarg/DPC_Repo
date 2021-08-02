@@ -72,7 +72,7 @@ public class Java8Features {
 		System.out.println(l2);
 		
 		//Consumer Functional Interface
-		 Consumer<Integer> consumer= i-> System.out.print(" "+i);
+		 Consumer<Integer> consumer= (i)-> System.out.print(" "+i);
 		 for(Integer i : l2)
 			 consumer.accept(i);
 		 
