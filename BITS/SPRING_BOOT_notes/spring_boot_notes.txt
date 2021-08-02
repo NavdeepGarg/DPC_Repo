@@ -52,7 +52,9 @@ Edureka 4 hr Course:
  •@RequestMapping("/hello") & @RestController : to access the application using the URL
  •@PathVariable : Annotation to get the path variable value from the URL  and store in a method input parameter
  • <IMP> Controller will talk to Service and Service will talk to DAORepo and DAORepo will talk to database
+ •@RequestMapping handles ALL requests (GET ,PUT , POST, DELETE) while @GetMapping is specific for gEt requests
  
+ •@RestController returns in ResponseBody i.e. in JSON or XML format(not useful for laymen users) while @Controller used is for laymen users to understand the output.
 
 Model View Controller
 	•It is  a Design pattern to build and design application
