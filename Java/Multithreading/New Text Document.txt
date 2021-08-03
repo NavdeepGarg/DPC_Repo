@@ -5,3 +5,11 @@ Watch Durga Series and Telusko Series. 1.75x mode
 
 too much to write 
 
+
+volatile variable --> shared var and access directly from main memory.
+						provides visibility and not atomicity
+						
+synchronized keyword provides atomicity
+
+atomic variable provides both visibility and atomicity
+https://www.youtube.com/watch?v=71dgtPrbToE
