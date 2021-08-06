@@ -1,0 +1,18 @@
+•{logo} braces means it is javascript variable
+
+•Two types of component
+ •Class based component
+ •Function based component
+ 
+•moving ahead with Function based component
+	<>
+     <h3>My app</h3>
+     <p>My app works</p>
+     </>
+	 •Wrapping your code in angular bracket is the mandatory requirement 
+	 
+
+ 
+•props are the javascript object which is used to pass parameters from parent component to child component
+
+•Closing of element is utmost required
