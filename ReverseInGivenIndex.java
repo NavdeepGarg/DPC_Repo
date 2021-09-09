@@ -1,6 +1,5 @@
 package LinkedList;
-
-import javax.swing.plaf.synth.SynthSpinnerUI;
+ 
 
 class ListNode{
 
@@ -83,7 +82,7 @@ public class ReverseInGivenIndex {
 	public static ListNode reverseBetween(ListNode head, int start, int end) {
 
 		ListNode current = head;
-		ListNode currentemp = head;
+	 
 		ListNode next = null;
 		ListNode prev=current;
 		int startIndex=1;
@@ -111,8 +110,6 @@ public class ReverseInGivenIndex {
 			startIndex++;
 		}
 		endref=endref.next;
-
-
 		prev=revereLL(startref.next, end-start);
 		startref.next=prev;
 		while(prev.next!=null) {
@@ -123,7 +120,13 @@ public class ReverseInGivenIndex {
 
 		//After required reversal;
 		System.out.println("After required reversal ");
-		ListNode temp = head;
+		ListNode temp =null;
+		if(start==1) {
+			temp=startref.next;
+		}
+		else {
+			temp= head;
+		}
 		while(temp!=null) {
 			System.out.print(temp.value+",");
 			temp=temp.next;
@@ -142,11 +145,9 @@ public class ReverseInGivenIndex {
 		node3.next=node4;
 		node4.next=node5;
 		node5.next=null;
-
-
-
+ 
 		//	 revereLL(node1);
-		reverseBetween(node1,1,5);
+		reverseBetween(node1,1,4);
 
 	}
 }
