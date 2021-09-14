@@ -1,0 +1,86 @@
+https://www.youtube.com/watch?v=fd3TAYCHRfw&list=PLd3UqWTnYXOlHj_fVVjUIVHjD5uEy2kk4&index=3
+
+
+Watch Durga Series and Telusko Series. 1.75x mode
+
+too much to write 
+
+
+volatile variable --> shared var and access directly from main memory.
+						provides visibility and not atomicity
+						
+synchronized keyword provides atomicity
+
+atomic variable provides both visibility and atomicity
+https://www.youtube.com/watch?v=71dgtPrbToE
+
+
+
+****************************************************************************************************************************************************************
+
+
+MultiTasking
+ •Process Based
+	Typing Java Prog, Internet usage, Listenig Music all happenging at same time is process based.
+	This MultiTasking is happenig at OS level
+ 
+ •Thread Based
+	This MultiTasking is happenging at Program level 
+	To develop webserver and App server it comes into use.
+
+
+
+•Sample Prog
+					package thread;
+					class MyThread extends Thread{
+						
+						@Override
+						public void run() {
+							for(int i =0 ; i < 5;i++) {
+								System.out.println("i "+i);
+							}
+						}
+						
+						
+					}
+					public class ThreadDemo {
+						
+						public static void main(String[] args) {
+							
+							
+							MyThread th = new MyThread();// Thread Instantiation
+							
+							th.start();// thread started by main thread
+							
+							// here after this main and child both exist in system now
+							
+							
+						}
+
+								
+
+					}
+
+
+•Thread Scheduler decides the thread execution order. However we cannot guarntee the exact algo for thread scheduler it varies from JVM to JVM.
+ Hence thread execution order caannot be predicted laymenly.
+ 
+•start() method :
+	•It is respomnsible to regster with Thread scheduler and all other mandaotry activities.
+	•Invoke run method of given Thread
+	•Not advisable to override the start method.
+	•Illegable Thread state exception will come if we call start method twice.
+
+•yield() 
+	•causes to pause the current executing thread to give the chance for waiting thread of same priority , if there 
+	 is no waiting thread or all all waiing thread have low priority then same thread can continute its execution.
+	 •The thread which is yielded when it will get the chance once again it will depends on Thread scheduler and we cant expect immediatley.
+	 •public static native void yield()
+	 
+	 
+•join()
+	•If a thread want to wait untill completing some other thread, then we should go for join() method.
+	For eg. if thread t1 wants to wait untill completing t2, then t1 has to call t2.join() and then immeditaley t1 will go in waiting state untill t2 completes.
+	Once t2 completes , t1 can continue its execution.
+	
+	
