@@ -1,0 +1,14 @@
+•constraints will help in knowing the data type required.
+• the max value of the constraints helps in deciding the approach of Time complexity of the algorithm.
+	e.g. 1<N<10^18    then our TC should always be O(logn) to satisfy the constraints
+
+	
+•WRiTE FOR BIN SEARCH, DFS, BFS,  cumulative sum
+
+•Scope of Improvement 
+	•Any repetitive work.
+	•Any repetetive work.
+
+•Sliding  Window
+	•Variable window size , Fixed Window size
+	
