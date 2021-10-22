@@ -12,3 +12,6 @@
 •Sliding  Window
 	•Variable window size , Fixed Window size
 	
+
+•Graph
+	
