@@ -14,4 +14,6 @@
 	
 
 •Graph
-	
+	Implementation
+	1)ArrayList<Edge>[] graph = new ArrayList<Edge>[7] and Edge {int src, int nbr, int weight};
+	2)
