@@ -73,8 +73,8 @@ class Graph{
 		Set<Integer> vistedVertex = new HashSet<>();
 		
 		ArrayList<Integer> partialList= new ArrayList<>();
-		partialList.add(src);
-		vistedVertex.add(src);
+		//partialList.add(src);
+		//vistedVertex.add(src);
 		 printAllPath( src,  dest, graph,partialList, globalList,vistedVertex);
 		 
 		 System.out.println("Global List");
@@ -85,20 +85,25 @@ class Graph{
 	private void printAllPath(int src, int dest, LinkedList<Integer>[] graph, ArrayList<Integer> partialList,
 			List<List<Integer>> globalList, Set<Integer> vistedVertex) {
 		 
-		 
-				 
+		if(vistedVertex.contains(src)) {
+			return;
+		}
+				 vistedVertex.add(src);
+				 partialList.add(src);
 				for(int neighbourEdge: graph[src]) {
 					if(vistedVertex.contains(neighbourEdge)) {
 						continue;
 					}
-					vistedVertex.add(neighbourEdge);
+					//vistedVertex.add(neighbourEdge);
 					if( dest==neighbourEdge) {
 						partialList.add(neighbourEdge);
-						globalList.add(partialList);
+						List<Integer> finList =new ArrayList<>();
+						finList.addAll(partialList); 
+						globalList.add(finList);
 						partialList.remove(partialList.size()-1);
 						continue;
 					}
-					partialList.add(neighbourEdge);
+					//partialList.add(neighbourEdge);
 					printAllPath(neighbourEdge,dest,graph,partialList,globalList,vistedVertex);
 				}
 				partialList.remove(partialList.size()-1);
