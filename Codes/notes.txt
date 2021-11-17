@@ -11,6 +11,11 @@
 •Recursion tree method is again similar to IBH only with different mind approach.	
 	•Here in genral no. of branches from a given node is actually nothing but no. of choices.
 	•Once we can imagine a rec tree , its corresponding coding will be cakewalk.
+	
+•In DP , using recursive approach , I personally have following observation
+	•Use Top Down approach while writing the recurisve code. i.e. dont start from 0th index start from nth index
+	•While memoizing(Top-Down) use dimension as +1 concept. 
+	•Use position instead of index.
 
 
 •WRiTE FOR BIN SEARCH, DFS, BFS,  cumulative sum
