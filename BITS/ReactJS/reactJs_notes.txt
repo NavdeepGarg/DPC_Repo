@@ -1,8 +1,18 @@
+•index.html--> index.js-->App.js //flow of react app
+
+•JSX convention says , enclosed all HTML element in div tag
+
 •{logo} braces means it is javascript variable
 
 •Two types of component
  •Class based component
  •Function based component
+ 
+•Class based component
+   •has lifecycle methods
+   •has state to be stored which is not applicable for function based component
+   •has constructor
+   •has render function which is not applicable for function based component
  
 •moving ahead with Function based component
 	<>
@@ -14,5 +24,36 @@
 
  
 •props are the javascript object which is used to pass parameters from parent component to child component
+	props object has history property default
 
 •Closing of element is utmost required
+
+•npm install bootstrap@latest --save
+	npm install react-code-snippet --save
+	npm install axios --save
+	npm install react-router-dom --save
+	
+•state is applicable for class Components 
+
+•flow is : constructor()-> render()- > componentDidMount() and cycle in componentDidMount() with render()
+
+•Use props in functional and class component to pass data from one page to another page
+
+
+•onClick={this.testfunc().bind(this)} OR ()=>this.testfunc() (arrow function) are the common ways to bind the function in class based component
+	•To avoid explicit binding we use arrow function
+
+
+•onClick={testfun} OR ()=>this.testfunc() are the common ways to bind the function in function based component
+
+•componentDidMount() is called when the class component is completely ready, therefore it is advisable to call for api in componentDidMount only.
+
+•componentDidUpdate() is called whenever setState is called.
+
+•[] square bracket can be termed as searching operator because they will search for the value of the literal passing inside it.
+
+•Basically the curly braces {} are the another way for creating objects in javascript. This is equivalent to the "new Object()" syntax.
+	var x = {'float': 'right'}
+	is the nicer/shorter form of 
+	var x = new Object(); x.float = 'right';
+
