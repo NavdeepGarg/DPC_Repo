@@ -2,7 +2,17 @@
 • the max value of the constraints helps in deciding the approach of Time complexity of the algorithm.
 	e.g. 1<N<10^18    then our TC should always be O(logn) to satisfy the constraints
 
-	
+•IBH Method is Recursive code writing term.
+	•Induction Basecase and Hypothesis
+	•Hypo - is just the labeling the name and input for your desired function
+	•Induction is the most important step , as it tranfer the flow from one state to next "reduced" state.. It is important to write it well in order to get correct result.
+		It also includes the followup statement i.e. what shall happen when function call returns.
+	•Base case is the smallest valid input identification.
+•Recursion tree method is again similar to IBH only with different mind approach.	
+	•Here in genral no. of branches from a given node is actually nothing but no. of choices.
+	•Once we can imagine a rec tree , its corresponding coding will be cakewalk.
+
+
 •WRiTE FOR BIN SEARCH, DFS, BFS,  cumulative sum
 
 •Scope of Improvement 
@@ -14,6 +24,8 @@
 	
 
 •Graph
-	Graph Implementations
-	•ArrayList<Edge> graph, Edge={src, dest, weight}
-	
+
+	Implementation
+	1)ArrayList<Edge>[] graph = new ArrayList<Edge>[7] and Edge {int src, int nbr, int weight};
+	2)
+

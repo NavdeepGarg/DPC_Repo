@@ -1,7 +1,9 @@
 package graph; 
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
 
 class Graph{
@@ -32,9 +34,9 @@ class Graph{
 		}
 
 	}
-	public void createEdge(LinkedList<Integer> a[], int source, int dest) {
+	public void createEdge(LinkedList<Integer>[] adjList, int source, Integer dest) {
 
-		a[source].add(dest);
+		adjList[source].add(dest);
 
 	}
 
@@ -64,23 +66,77 @@ class Graph{
 		
 	}
 
+	
+	public void printAllPath(int src, int dest,LinkedList<Integer>[] graph) {
+		
+		List<List<Integer>> globalList= new ArrayList<List<Integer>>();
+		Set<Integer> vistedVertex = new HashSet<>();
+		
+		ArrayList<Integer> partialList= new ArrayList<>();
+		//partialList.add(src);
+		//vistedVertex.add(src);
+		 printAllPath( src,  dest, graph,partialList, globalList,vistedVertex);
+		 
+		 System.out.println("Global List");
+		 System.out.println(globalList);
+		 
+		
+	}
+	private void printAllPath(int src, int dest, LinkedList<Integer>[] graph, ArrayList<Integer> partialList,
+			List<List<Integer>> globalList, Set<Integer> vistedVertex) {
+		 
+		if(vistedVertex.contains(src)) {
+			return;
+		}
+				 vistedVertex.add(src);
+				 partialList.add(src);
+				for(int neighbourEdge: graph[src]) {
+					if(vistedVertex.contains(neighbourEdge)) {
+						continue;
+					}
+					//vistedVertex.add(neighbourEdge);
+					if( dest==neighbourEdge) {
+						partialList.add(neighbourEdge);
+						List<Integer> finList =new ArrayList<>();
+						finList.addAll(partialList); 
+						globalList.add(finList);
+						partialList.remove(partialList.size()-1);
+						continue;
+					}
+					//partialList.add(neighbourEdge);
+					printAllPath(neighbourEdge,dest,graph,partialList,globalList,vistedVertex);
+				}
+				partialList.remove(partialList.size()-1);
+		
+	}
+	
+	
 }
 
 public class GraphTraversal {
 	
 	public static void main(String[] args) {
 		
-		Graph g = new Graph(4);
+		Graph g = new Graph(5);
 		g.initializeGraph();
-		g.createEdge(g.adjList, 0, 1);
+/*		g.createEdge(g.adjList, 0, 1);
 	    g.createEdge(g.adjList, 0, 2);
 	    g.createEdge(g.adjList, 1, 2);
 	    g.createEdge(g.adjList, 2, 0);
 	    g.createEdge(g.adjList, 2, 3);
-	    g.createEdge(g.adjList, 3, 3);
+	    g.createEdge(g.adjList, 3, null);*/
+		
+		g.createEdge(g.adjList, 0, 1);
+		g.createEdge(g.adjList, 0, 2);
+		g.createEdge(g.adjList, 1, 3);
+		g.createEdge(g.adjList, 2, 0);
+		g.createEdge(g.adjList, 2, 4);
+		g.createEdge(g.adjList, 4, 3);
+		g.createEdge(g.adjList, 3, null);
 	    
 	    
-	    g.bfstraversal(g.adjList, 0);
+	//    g.bfstraversal(g.adjList, 0);
+	    g.printAllPath(0, 3, g.adjList);
 		
 	}
 	

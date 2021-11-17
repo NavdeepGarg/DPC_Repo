@@ -161,4 +161,4 @@ Java Guide Tutorials
 • Override the configure method of WebSecurityConfigurerAdapter.
 • UserService extends UserDetailsService (this one too provided by Spring)
 • UserServiceImpl implements UserService
-
+• https://reflectoring.io/spring-security-password-handling/
