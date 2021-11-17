@@ -1,0 +1,27 @@
+What is LLD
+	•Low-level design 
+	•Low level Implementation details of software
+	•Orgnization of Code
+	•Writing the software which are good
+	
+	Principles of Good Software
+	•Code Reusability
+		1)Tightly Coupling is the fist thing to avoid completely.
+		2) No Hardocoding of values, always pass as a param.
+	•Extensibility
+		1)To enable/cater any furture requirements.
+		2) TO change the platform.
+
+Classes
+	•Blueprint of an entity
+
+Interface
+	•Blueprint of a behavior , OR a contract
+	•means, everyone who implements me, must develop my behavior
+
+When we override the method of parent class in child classes, then for that child class the behvaiour will get inline with the child class implementation.
+		
+	
+		
+	
+		
