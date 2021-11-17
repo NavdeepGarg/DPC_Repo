@@ -82,5 +82,58 @@ MultiTasking
 	•If a thread want to wait untill completing some other thread, then we should go for join() method.
 	For eg. if thread t1 wants to wait untill completing t2, then t1 has to call t2.join() and then immeditaley t1 will go in waiting state untill t2 completes.
 	Once t2 completes , t1 can continue its execution.
+	•Three Join methods available
+		•join() , join(milliseconds), join(milliseconds,nanoseconds)
+		
+	
+•sleep()
+	If a thread dont want to perfomr any operation fo ra particular anount of time , then we should use sleep() method
+	•2 sleep methods are available
+	•public static native void sleep(milliseconds)
+	•public static native void sleep(milliseconds, nanoseconds)
+	
+•Interuption
+	•A thread can interrupt a sleeping thread or waiting thread by using , public void interrupt() method of Thread class.
+	•Example
+		package thread;
+
+			class MythreadDemo extends Thread{
+
+				public void run() {
+					try {
+						for(int i =0; i < 10; i++) {
+							System.out.println("I am a Lazy Thread");
+
+							Thread.sleep(2000);
+
+						}
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						System.out.println("I got Interrupted");
+
+					}
+
+				}
+			}
+
+
+			public class ThreadInterruptDemo {
+				public static void main(String[] args) {
+					MythreadDemo d = new MythreadDemo();
+					d.start(); // at this line system has two thread one is d and other is main thread		
+					d.interrupt();//here main thread is interrupting the thread 'd'
+					System.out.println("end of main thread");
+				}
+
+			}
+			
+	•Whenever we are calling interrupt method, if the target thread not in sleeping state/ waiting state then there is no impact of interrupt call immediately.
+		•Interrupt call will be waited untill target thread enter into sleeping / waiting state. If the target thread sleeping or waiting state, 
+		then immediately interrupt call will interrupt the target thread.
+		•JVM handles such interrupt calls.
+		•Interrupt call can go wasted if the target thread never enter into sleeping / waiting state in its life time.
+
+
+	
 	
 	
