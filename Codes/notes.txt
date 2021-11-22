@@ -29,8 +29,10 @@
 	
 
 •Graph
-
+	
 	Implementation
 	1)ArrayList<Edge>[] graph = new ArrayList<Edge>[7] and Edge {int src, int nbr, int weight};
-	2)
+	2)Either DFS or BFS a vertex is marked visited on its discovery itself. Keeping the track of visited array is required in order to avoid the revisiting the same vertex and avoid enter into any cycle
+	3)For checking all posible path , visited[src]=false before returing the funciton call, this is required to keep the src vertex open to be discovered if it comes in any other path which can reach till destinatoin.
+
 
