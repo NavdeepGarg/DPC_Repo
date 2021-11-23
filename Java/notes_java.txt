@@ -32,6 +32,24 @@ strictness order of modifiers:
     // private constructor and other methods...
 }
 
+•Java Generics with extends and super Wildcards
+	•private static double sum(Collection<? extends Number> numbers) {} , in this method call 
+		1)List<Integer> integers 2)List<Double> double 3)List<Number> number all canbe passed because all extends Number
+	•public static void append(Collection<? super Integer> integers, int n) {} , in this method call
+		1)List<Object> objects 2)List<Number> number all canbe passed because these are super class of Integer
+•Java’s generic type parameters are invariant. This means for any distinct types A and B, G<A> is not a subtype or supertype of G<B>. As a real world example, List<String> is not a supertype or subtype of List<Object>. So even though String extends (i.e. is a subtype of) Object, both of the following assignments will fail to compile:
+	List<String> strings = Arrays.<Object>asList("hi there");
+        List<Object> objects = Arrays.<String>asList("hi there");
+
+•Remember PECS: "Producer(Read operation) Extends, Consumer(Add operations) Super".
+
+•Learn internal functioning of TreeSet and HashSet and HashMap
+https://javahungry.blogspot.com/2013/08/how-sets-are-implemented-internally-in.html
+https://javahungry.blogspot.com/2015/10/how-treeset-works-internally-in-java-interview-questions.html
+https://javahungry.blogspot.com/2013/08/hashing-how-hash-map-works-in-java-or.html
+https://javahungry.blogspot.com/2014/02/hashmap-vs-concurrenthashmap-java-collections-interview-question.html
+
+
 #####################Design Patter Notes#####################
 
 •It is a reusable solution to commonly occuring problem within in a givn context of software design.
