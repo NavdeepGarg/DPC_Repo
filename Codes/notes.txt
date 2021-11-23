@@ -8,6 +8,7 @@
 	•Induction is the most important step , as it tranfer the flow from one state to next "reduced" state.. It is important to write it well in order to get correct result.
 		It also includes the followup statement i.e. what shall happen when function call returns.
 	•Base case is the smallest valid input identification.
+
 •Recursion tree method is again similar to IBH only with different mind approach.	
 	•Here in genral no. of branches from a given node is actually nothing but no. of choices.
 	•Once we can imagine a rec tree , its corresponding coding will be cakewalk.
