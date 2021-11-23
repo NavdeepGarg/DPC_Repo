@@ -49,7 +49,7 @@ https://javahungry.blogspot.com/2015/10/how-treeset-works-internally-in-java-int
 https://javahungry.blogspot.com/2013/08/hashing-how-hash-map-works-in-java-or.html
 https://javahungry.blogspot.com/2014/02/hashmap-vs-concurrenthashmap-java-collections-interview-question.html
 
-
+•https://www.toptal.com/java/interview-questions
 #####################Design Patter Notes#####################
 
 •It is a reusable solution to commonly occuring problem within in a givn context of software design.
