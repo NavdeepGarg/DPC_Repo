@@ -6,6 +6,32 @@ strictness order of modifiers:
 
 •default is package private identifier, i.e. it scope will not be visible outside package , chahe voh subclass hi kyu na ho.
 
+•volatile keyword solve the visibilty prob not synchrnization prob.
+	•volatile modifiers variable pass on their values from their local cache to shared cache immediately.
+	
+•atomic variable are basically used in case of compund operations like increment / decrement.
+	•These operations are actually two step processes fetch then add . sometimes in synchrnization it is possible that the incremented value is not read by other thread.
+	to solve such cases atomicvariables are introduced.
+	•Second approach for the above said problem isusing volatile and synchronized block together.
+
+•Double checking is the concept in multithrading environment which mostly used in singleton application.
+	Example:
+	public class DclSingleton {
+    private static volatile DclSingleton instance;
+    public static DclSingleton getInstance() {
+        if (instance == null) {
+            synchronized (DclSingleton .class) {
+                if (instance == null) { // double checking happening here.
+                    instance = new DclSingleton();
+                }
+            }
+        }
+        return instance;
+    }
+
+    // private constructor and other methods...
+}
+
 #####################Design Patter Notes#####################
 
 •It is a reusable solution to commonly occuring problem within in a givn context of software design.
