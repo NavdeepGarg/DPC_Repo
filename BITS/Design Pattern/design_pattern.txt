@@ -27,12 +27,34 @@ O:  open for extension closed for modification.
 	Example : 
 	Calculator , better to make it a interface so that in future new operation can be added without modifying the current class.	
 l : lISKOV Substitution 
-		Child class substitute to parent class must be done, Vehicle with and without engine example
+		•Object of a parent class should be completely replaebal eby object of child class.
 		
-		Interface segregation 
+		•Child class substitute to parent class must be done, Vehicle with and without engine example
+		•LSP is normally voilated at two places:
+			•When we throw exception from child-classes
+			•When we give a different meaning to the method of a parent class/ interface
+		
+Interface segregation
+		•Make interface as light as possible(add only very relevant methods)
 			Cuboid and Shape
 Dependency Inversion Principle 
+	•No 2 concrete class shall be directly dependant on each other.
+	•Any 2 concrete class should depend on each other via an interface
+	•what inversion is happening is the , not getting implementation directly from the class but via interfcae implementation.
 	
+	e.g.
+	class Paytm{
+	 PaytmPaymentProcessor paymentProcessor;
+	}
+	
+	interface PaytmPaymentProcessor{
+	//relvant methods.
+	}
+	// following are the 2 currentl available implementtion of PaytmPaymentProcessor
+	RazorPay implements PaytmPaymentProcessor{
+	}
+	JustPay implements PaytmPaymentProcessor{
+	}
 
 Composition has many benefits than inheritance.
 	•It offer loose coupling.
@@ -79,6 +101,7 @@ Dependency Injection
 
 IOC
 	•invert different kinds of controls in object-oriented design to achieve loose coupling.
+	•Framework will provide the dependencies magically on its own.
 	•analogy : The IoC principle suggests to invert the control, meaning that instead of driving the car yourself, you hire a cab, where another person will drive the car. Thus, this is called inversion of the control - from you to the cab driver.
 	•To achieve it use Factory class to provide you the object on which you are dependent on.
 	

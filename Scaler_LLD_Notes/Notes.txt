@@ -1,3 +1,5 @@
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------Classs 1:--
 What is LLD
 	•Low-level design 
 	•Low level Implementation details of software
@@ -20,8 +22,58 @@ Interface
 	•means, everyone who implements me, must develop my behavior
 
 When we override the method of parent class in child classes, then for that child class the behvaiour will get inline with the child class implementation.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Classs 2:
+
+•OOP has three pillars : Poly, Inheritance , Encapsulation
+Abstraction
+	•It is basically a representation of Idea
+	•It represents all details of an entity in a given context for a particualr system.
+	•Omit the non-needed details
+	•Example functionality in various available APIs.
+
+Encapsulation
+	•It hides the data and it holds the data.
+	•Access modifiers provides the encapsulation
+
+Inheritance
+	•IS-A relationship
+	•provides extensibility i.e. adding new things, modifying is the not the part of extensibility
+	•it is recommended to use inheritance when we are extendign the physical attribute.
+	
+<<IMP>>•But when it is about behavior then we shall go for "Interface" and make that behaviour as an Interface which shall be implemented
+	by few implementing classes. Those implemented classes(behaviour) can then be injected in our concrete class.
+		E.g. Animal <- Dog , IWalkingBehavour <<Implements by >> FastWalkingBehaviour
+		then Dog extends Animal(to attain physical attributes) and we can inject the behavioural classes seperately.
+		class Dog extends Animal{
+		IWalkingBehavour walkBehaviour;
 		
+		//Stub 
+		}
+			
+
+Polymorphosism
+	•
+
+Composition
+	•Has-A relationship
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Classs 3:	
+
+•SingleTon discussed.
+
+•Enum are classes with only particular set of values.
+		eg
+		enum Color{
+			RED=1,
+			BLUE=2}
+		enum Direction{
+			NORTH=1,
+			SOUTH=2,EAST=3,WEST=4}
+	•In Java enums are classes , and thus enum can have methods and properties as well.
 	
 		
 	
-		

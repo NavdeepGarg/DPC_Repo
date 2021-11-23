@@ -1,0 +1,142 @@
+•********General******
+•When get stuck into a case, think of some other logic.
+•sometime think to change the data structure itself.
+	•One such example is identification of duplicate using HashSet, it becomes easy to check if the same item commes once again..
+		and the question can be solved in linear time.
+•Jo pucha jae usi par focus rakho
+
+•define in our own term - By guaravSen
+
+1) Problem Definition
+2) Representation of Constraints/Objects
+3) Strategy/Approach to solving
+4) Algorithm
+5) Experimentation
+
+
+•In graph questions, many a times either a matrix cordinate traversal will work , or Queue will work to maintain the insertion tracking and processing, and Set is used to take the reference of visited nodes.	
+
+********Arrays******
+	•Index value of second last element in an array is arr.length -2 and likewise it applies to other index as well.
+	•Thus to run through uptoo a particular index we put the conditon around denote '<' operator is a way that right hand side of thsi would be index+1
+	•E.g. to traverse the whole array , conditon would be i < arr.length ,bcoz index of last element is arr.length -1;
+	
+********Heaps******
+	•left child position = 2i+1, rightchildposition=2i+2;
+	•checking for parent position 
+		•if pos = odd value, then parentPos= (pos-1)/2 else parentPos=(pos-2)/2
+	•priority queue is the default implementation for HEAP
+	•It takes lesser space bcoz it store from left to right
+
+********Merge Sort******
+	•N is the amount of leaves, joki at last level par distribute ho jati hain 
+
+
+
+********Back Tracking******
+	•Choice : decision space to choose from
+	•Constraints : Any restriction to be applied on it.
+	•Goal:
+	•Strign permutation is an example of BackTracking.
+	•Many of its application are NPC as like N-Queens Problem or Sudoku problem
+
+********Dynamic programming******
+
+	 
+	TopDown:
+	•Recirsive and memoization
+	
+	BottomUp
+	•Iterative , start with base solution and recurse it further.
+	
+	DP:
+	•When Choices are coming in thinking i.e. take it one time but leave it other time, then try DP on that .
+	•Mostly matrix in use
+	•Recursion equation to be made
+	•Fan of Base case first
+	•Array is used mostly to store the results (Memoization)
+	•A good picturization of concept is required
+	•Optimal Substructure
+		•It is basically the recursive step, which denotes that the original prob must break down in a structure that can reach till the final dest. in optimal way
+		•Ensure in recursive steps we move from n to n-1 to n-2 and so on.
+	•Overlapping SubProblem
+	•Use row , col as variable names while using matrix 
+	•Hypothesis jo banai hai , uska bhut imp role hota hian. Believe on its manifestations and follow the recursive approach. Baki algo apne aap kaaam karegi.
+	
+	
+	
+	McM: Matrix Chain Multiplication
+	•format identification :
+		1)first find out i, j 2)Find Base COndition 3)Find K loop scheme 4) Calculate Temp ans.
+		
+		
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+•Linear DS : Array, 2dArrya, 3DArray,Linked List, Double LL, CLL
+
+Hierarichal DS : TreeSet, TreeMap, Hash Map,Heap, Graph
+
+•Heap
+	is a special case of balance binary tree, where the root node is compared with its children abd arranged accordinlgy.
+	MinHeap and MaxHeap are two varient of its.
+	PriorityQueue is the default implementation of this DS with MinHeap implementation.
+	https://www.geeksforgeeks.org/max-heap-in-java/
+
+
+
+•constraints will help in knowing the data type required.
+• the max value of the constraints helps in deciding the approach of Time complexity of the algorithm.
+	e.g. 1<N<10^18    then our TC should always be O(logn) to satisfy the constraints
+
+•IBH Method is Recursive code writing term.
+	•Induction Basecase and Hypothesis
+	•Hypo - is just the labeling the name and input for your desired function
+	•Induction is the most important step , as it tranfer the flow from one state to next "reduced" state.. It is important to write it well in order to get correct result.
+		It also includes the followup statement i.e. what shall happen when function call returns.
+	•Base case is the smallest valid input identification.
+•Recursion tree method is again similar to IBH only with different mind approach.	
+	•Here in genral no. of branches from a given node is actually nothing but no. of choices.
+	•Once we can imagine a rec tree , its corresponding coding will be cakewalk.
+	
+•In DP , using recursive approach , I personally have following observation
+	•Use Top Down approach while writing the recurisve code. i.e. dont start from 0th index start from nth index
+	•While memoizing(Top-Down) use dimension as +1 concept. 
+	•Use position instead of index.
+
+
+•WRiTE FOR BIN SEARCH, DFS, BFS,  cumulative sum
+
+•Scope of Improvement 
+	•Any repetitive work.
+	•Any repetetive work.
+
+•Sliding  Window
+	•Variable window size , Fixed Window size
+	
+
+•Graph
+
+		Graph is an ordered pair of Vertex and Edges.(V,E) G=(V+E)
+			•Directed Graph(DiGraph) and UNDirected Graph.
+			•Directed Graph example is WWW.
+			•UNDirected graph example is Facebook Friend List.
+			
+		Linear Data Structure  : 
+			Queue, Stack, LinkedList, Array
+			
+		Tree:
+			A tree is a nonlinear data structure, compared to arrays, linked lists, stacks and queues which are linear data structures. A tree can be empty with no nodes or a tree is a structure consisting of one node called the root and zero or one or more subtrees.
+			•In graph theory, a tree is a connected acyclic graph;
+			•Tree is a graph only.
+
+		•No where it will be mnetioned ki apply DFS or BFS, in graph question we must understand the model of the problem and then identify the nodes and edges.
+
+		•A "topological ordering" is an ordering of the vertices of the graph such that for all edges (u,v) in the graph, node u comes before node v in the ordering.
+			•Every DAG(Directed Acyclic Grpah) has a topological ordering.
+			
+
+	Implementation
+	1)ArrayList<Edge>[] graph = new ArrayList<Edge>[7] and Edge {int src, int nbr, int weight};
+	2)
+

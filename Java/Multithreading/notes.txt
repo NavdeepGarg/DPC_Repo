@@ -66,7 +66,7 @@ MultiTasking
  Hence thread execution order caannot be predicted laymenly.
  
 •start() method :
-	•It is respomnsible to regster with Thread scheduler and all other mandaotry activities.
+	•It is responsible to regster with Thread scheduler and all other mandaotry activities.
 	•Invoke run method of given Thread
 	•Not advisable to override the start method.
 	•Illegable Thread state exception will come if we call start method twice.
@@ -135,5 +135,236 @@ MultiTasking
 
 
 	
+•synchronized keyword is a modifier which is applicable only for methods and blocks and not for classes and variables.
+	If a multiple thread are tryihn to operate simulataneoulsy on the same java object then there may be chance of data inconsistency prob.
+	To overcome this prob. we shall go for synchronized keyword.
+	
+	Disadvantages:
+		•It increases waiting time of thread and create performance prob. 
+
+•Lock concept is used internally for implementing synchronization.
+	•Acquiring and releasing lock internally takes care by JVM and programmer not respomnsible for this activity.
+	•Lock is happened only on a required "object".
+	•A thread simply releases the Lock after coming out a synchronized	method/block.
+	•While a thread executing synchronized method on a given object, the remaining thread(will move to waiting queue) are not allowed to execute any synchronized method simultaneoulsy on the "same" object , but remaining thread are allowed to execute non-synchronized method simulataneoulsy.
+		*reason is : the first thread have taken the object lock on common object and hence the second thread cannot take control on the object at the same time( till first thread releases the lock)
+	•Synchronized Area: This area can be accessed by only one thread at a time.
+	•Non Synchronized Area: This area can be accessed by any no. of thread simulataneoulsy.
+	
+•Class level lock.
+	•If synchronized method is declared as static as well , then the requesting thread will require class level lock.
+	•Every class in java has a unique lock which is nothing but class level lock.
+	•When a thread is executing static synchronized method, remaining thread not allowed to execute any static synchronized of that class simulataneoulsy,
+	but remaining thread are allowed to execute following methods simulataneoulsy
+		•normal static method of class, •synchronized instance methods •normal instance methods (Picture attached)
 	
 	
+•Synchronized block adv is , performance 
+		because waiting time for threads will be reduced.
+		•We can declare synchronized block as follows
+			•To get the lock of current object--> synchronized(this)
+			•To get the lock of particular object--> synchronized(B)
+			•To get class level lock--> synchronized(Display.class)
+			
+•RaceCondition : when multiple thread working on a common object then there could be data inconsistency prob. this issue is RC. and can be resolved by synchronization.
+
+•A thread can acquire multiple locks but that must be of different objects.
+
+•Inter thread communication
+	•wait, notify , notifyAll
+	•wait : Thread which is requesting the updation will call wait() method
+	•notify : Thred which is performing the update, it is reponsible to call notify method.
+			  then waiting thread will get the notification and continue its execution with those updated items.
+	•wait , notify ,notifyall present in Object class and not in thread class , because a thread can call these method on any java object.
+	
+	• to call wait , notify, notifyAll methods on any object , thread shouldbe owner of that object. i.e. the thread should has lock of that object.
+	i.e. the thread should be in synchronized area.
+	Hence we can call wait , notify, notifyAll methods only from synchronized area otherwise we get IllegalMonitorstate exception(RTE)
+
+•If a thread call wait() on any object it immediately release the lock on that particular object and enter into waiting state.
+
+Producer Consumer Problem
+•Producer Threas is responsible to produce item to the queue and consumer thread is responsible to consume items from the queue.
+	If the queue is emppty , consumer thread will call wait method and entered into waiitng state.
+	After producing item to the queue, producer thread is respomnsible to call notify method, then waiting consumer will get that notification and contiue its execution with updated items.
+
+•We can use notify() to give the notification for one waiting thread, if multiple thread are waiting then only thread will be notified and the remaining thread have to wait for the further notiifcation.
+	Which thread willbe notified we cant expect , it depends on JVM.
+
+•We can use notifyAll to give the notification for all waiting thread of a particular object. Even though multiple thread are notified 
+but execution will be performed one by one because thread requires lock and only one lock is available.
+
+•On which objectwe are calling wait(), thread require lock of that particular object.
+ for eg. if wait() to be called on s1, then we have to call s1.wait() but not s2.wait() and lock on s1 will be required in synchronized block.
+   stack s1= new stack()
+   synchronized(s1){
+   
+		s2.wait()// is invalid and throw rte.
+		s1.wait()// is only valid, because we have lock available on s1.
+   }
+   
+•Demo Program for synchronized keyword
+	package thread;
+
+			class Display{
+
+				public  void wish(String name) {
+
+					System.out.println("Good Morning "+name);
+
+				}
+
+			}
+
+			class NameThread extends Thread{
+
+				Display d;
+				String name;
+				NameThread(String name, Display d){
+					this.name=name;
+					this.d=d;
+				}
+
+				@Override
+				public void run() {
+					synchronized(d) {
+						for (int i =0; i < 10; i ++) {
+
+							this.d.wish(this.name);
+						}
+					}
+				}
+
+			}
+
+			public class SynchronizedDemo1 {
+				public static void main(String[] args) {
+					Display d = new Display();
+					NameThread dhoni = new NameThread("Dhoni", d);
+					NameThread yuvraj = new NameThread("Yuvraj", d);
+					dhoni.start();
+					yuvraj.start();
+				}
+
+			}
+
+•Demo Program for synchronized wait and notify
+
+
+			package thread;
+
+
+			class ThreadB extends Thread{
+				
+				int total;
+				@Override
+				public void run() {
+					synchronized (this) {
+						
+						System.out.println("Child thread start calculation");
+						for(int i =1; i<=100;i++) {
+							this.total+=i;
+						}
+						System.out.println("Child thread sending notification");
+						//notifyAll();
+						notify();
+					}
+					
+				}
+				
+			}
+
+			public class WaitNotifyDemo {
+				
+				public static void main(String[] args) throws InterruptedException {
+					ThreadB b= new ThreadB();
+					
+					b.start();
+					synchronized (b) {
+						b.wait();	//Here main thread will go in waiting pool
+						System.out.println("Main thread notified from Thread B");
+						System.out.println(b.total);
+					}
+					
+				}
+
+			}
+
+•Demo Program for print even and odd
+					package thread;
+
+				public class PrintEvenOdd {
+
+					int counter=1;
+					int N;
+					
+					public PrintEvenOdd(int N) {
+						// TODO Auto-generated constructor stub
+						this.N=N;
+					}
+					void printEvenNumber() {
+						
+						while(counter<N) {
+							synchronized (this) {
+								
+							
+							while(counter%2==1) {
+								try {
+									wait();
+								} catch (InterruptedException e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
+								}
+							}
+							
+							System.out.println("Even: "+counter);
+							counter++;
+							notify();
+							}
+						}
+						
+					}
+					
+				void printOddNumber() {
+						
+						while(counter<N) {
+							synchronized (this) {
+								
+							
+							while(counter%2==0) {
+								try {
+									wait();
+								} catch (InterruptedException e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
+								}
+							}
+							
+							System.out.println("Odd: "+counter);
+							counter++;
+							notify();
+							}
+						}
+						
+					}
+					
+
+				public static void main(String[] args) {
+					
+					PrintEvenOdd obj= new PrintEvenOdd(10);
+					Thread t1 = new Thread(()->{ 
+						//run method
+						obj.printEvenNumber();
+					});
+					
+					Thread t2 = new Thread(()->{ 
+						//run method
+						obj.printOddNumber();
+					});
+					
+					t1.start();
+					t2.start();
+				}
+					
+				}
+
