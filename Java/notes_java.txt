@@ -6,6 +6,50 @@ strictness order of modifiers:
 
 •default is package private identifier, i.e. it scope will not be visible outside package , chahe voh subclass hi kyu na ho.
 
+•volatile keyword solve the visibilty prob not synchrnization prob.
+	•volatile modifiers variable pass on their values from their local cache to shared cache immediately.
+	
+•atomic variable are basically used in case of compund operations like increment / decrement.
+	•These operations are actually two step processes fetch then add . sometimes in synchrnization it is possible that the incremented value is not read by other thread.
+	to solve such cases atomicvariables are introduced.
+	•Second approach for the above said problem isusing volatile and synchronized block together.
+
+•Double checking is the concept in multithrading environment which mostly used in singleton application.
+	Example:
+	public class DclSingleton {
+    private static volatile DclSingleton instance;
+    public static DclSingleton getInstance() {
+        if (instance == null) {
+            synchronized (DclSingleton .class) {
+                if (instance == null) { // double checking happening here.
+                    instance = new DclSingleton();
+                }
+            }
+        }
+        return instance;
+    }
+
+    // private constructor and other methods...
+}
+
+•Java Generics with extends and super Wildcards
+	•private static double sum(Collection<? extends Number> numbers) {} , in this method call 
+		1)List<Integer> integers 2)List<Double> double 3)List<Number> number all canbe passed because all extends Number
+	•public static void append(Collection<? super Integer> integers, int n) {} , in this method call
+		1)List<Object> objects 2)List<Number> number all canbe passed because these are super class of Integer
+•Java’s generic type parameters are invariant. This means for any distinct types A and B, G<A> is not a subtype or supertype of G<B>. As a real world example, List<String> is not a supertype or subtype of List<Object>. So even though String extends (i.e. is a subtype of) Object, both of the following assignments will fail to compile:
+	List<String> strings = Arrays.<Object>asList("hi there");
+        List<Object> objects = Arrays.<String>asList("hi there");
+
+•Remember PECS: "Producer(Read operation) Extends, Consumer(Add operations) Super".
+
+•Learn internal functioning of TreeSet and HashSet and HashMap
+https://javahungry.blogspot.com/2013/08/how-sets-are-implemented-internally-in.html
+https://javahungry.blogspot.com/2015/10/how-treeset-works-internally-in-java-interview-questions.html
+https://javahungry.blogspot.com/2013/08/hashing-how-hash-map-works-in-java-or.html
+https://javahungry.blogspot.com/2014/02/hashmap-vs-concurrenthashmap-java-collections-interview-question.html
+
+•https://www.toptal.com/java/interview-questions
 #####################Design Patter Notes#####################
 
 •It is a reusable solution to commonly occuring problem within in a givn context of software design.
