@@ -193,6 +193,7 @@ pointed out in each lesson.
 		create more specialized products whereas, in an abstract factory
 		pattern, we practice object composition by passing in factories that
 		are consumed to create the desired products.
+	4)Related to current domain at ISRO , it can be PaymentMadesource either it can be Purchase, Payroll, Account, store
 	 	
 
 •Singleton(Creational)
@@ -245,6 +246,6 @@ pointed out in each lesson.
 	are essentially asking Twitter to send you (the observer) tweet updates of the person (the subject) you followed. The pattern consists of two actors,
 	the observer who is interested in the updates and the subject who generates the updates.
 	•In Java, implementations of java.util.EventListener are examples of the observer pattern.
-
+	•Related to current domain at ISRO , it can be TDP Approval Notifications to all team members
 
 •Visitor Pattern(Behavioral)
