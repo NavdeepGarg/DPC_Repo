@@ -27,7 +27,7 @@ O:  open for extension closed for modification.
 	Example : 
 	Calculator , better to make it a interface so that in future new operation can be added without modifying the current class.	
 l : lISKOV Substitution 
-		•Object of a parent class should be completely replaebal eby object of child class.
+		•Object of a parent class should be completely replacable by object of child class.
 		
 		•Child class substitute to parent class must be done, Vehicle with and without engine example
 		•LSP is normally voilated at two places:
@@ -38,6 +38,14 @@ Interface segregation
 		•Make interface as light as possible(add only very relevant methods)
 			Cuboid and Shape
 Dependency Inversion Principle 
+
+	•High-level modules(Jo depend kar rhe hai doosri class par) should not depend on low-level modules(Jis class par depend kar rhe hai). Both should depend on the abstraction.
+	•Abstractions should not depend on details. Details should depend on abstractions.
+	•encourage the thinking in making of abstraction/interfaces.
+	•think first of abstraction than concrete class.
+	•if you are overriding the implemented method in superclass, it means you have not done the abstraction properly, rethink and change the design
+	coz it will end up in high coupling.
+	
 	•No 2 concrete class shall be directly dependant on each other.
 	•Any 2 concrete class should depend on each other via an interface
 	•what inversion is happening is the , not getting implementation directly from the class but via interfcae implementation.
@@ -211,8 +219,8 @@ pointed out in each lesson.
 				// FileInputStream is responsible for reading the file
 				FileInputStream fileInputStream = new FileInputStream("my
 				File.txt");
-				// BufferedInputStream extends FilterInputStream and no
-				t FileInputStream, it is
+				// BufferedInputStream extends FilterInputStream and not
+				 FileInputStream, it is
 				// a decorator which enhances the functionality of the or
 				iginal object by wrapping over it.
 				BufferedInputStream bufferedInputStream = new BufferedInp

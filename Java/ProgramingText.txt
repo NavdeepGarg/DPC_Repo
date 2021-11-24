@@ -111,6 +111,15 @@ The Collection interface (java.util.Collection) and Map interface (java.util.Map
 		9)Under Entry interface three methods are listed : getKey(), getValue(),setValue()
 		10)In it Insertion order is not preserved and it is based on hash code of the keys. HashMap allows Heterogeneous objects for both key and value. Null insertion is allowed for keys(only once) and for values(any number of times). It is best suitable for Search operations
 
+
+	•HashMap uses equals method to compare keys i.e. 
+			Integer i1= new Integer(10);
+			Integer i2= new Integer(10);
+			HashMap m = new HashMap;
+			m.put(i1,"pawan");m.put(i2,"kalyan"); sop(m) ; Ans={10=kalyan} only one entry
+	•IdentityHashMap uses == operator to compare keys.
+		i.e. for above eg 2 entries would be present in hashmap.
+			
 		
 		
 		Garbagecollector Story (System.gc)

@@ -36,6 +36,7 @@ For example in a word processor, a background thread may check spelling and gram
 	Program->Process->Thread
 	
 •System.gc()is the garbage collector destructor call to remove the unused objects.
+	•protected void finalize() throws Throwable , is called just before the deletion/destroying the object which is eligible for Garbage Collection, so as to perform clean-up activity.
 
 •Heap is the memory segment where all objects created with 'new' keyword will be stored.
 •Stack hold all the references.
@@ -107,6 +108,32 @@ DIP: Dependency Inversion Principle
 	•2 principles
 	•High-level modules(Jo depend kar rhe hai doosri class par) should not depend on low-level modules(Jis class par depend kar rhe hai). Both should depend on the abstraction.
 	•Abstractions should not depend on details. Details should depend on abstractions.
+	
+	•High-level modules(Jo depend kar rhe hai doosri class par) should not depend on low-level modules(Jis class par depend kar rhe hai). Both should depend on the abstraction.
+	•Abstractions should not depend on details. Details should depend on abstractions.
+
+	•encourage the thinking in making of abstraction/interfaces.
+	•think first of abstraction than concrete class.
+	•if you are overriding the implemented method in superclass, it means you have not done the abstraction properly, rethink and change the design
+	coz it will end up in high coupling.
+	•No 2 concrete class shall be directly dependant on each other.
+	•Any 2 concrete class should depend on each other via an interface
+	•what inversion is happening is the , not getting implementation directly from the class but via interfcae implementation.
+	
+	e.g.
+	class Paytm{
+	 PaytmPaymentProcessor paymentProcessor;
+	}
+	
+	interface PaytmPaymentProcessor{
+	//relvant methods.
+	}
+	// following are the 2 currentl available implementtion of PaytmPaymentProcessor
+	RazorPay implements PaytmPaymentProcessor{
+	}
+	JustPay implements PaytmPaymentProcessor{
+	}
+
 	
 •A functional interface is an interface that contains only one abstract method
 
