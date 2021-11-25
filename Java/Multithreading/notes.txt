@@ -286,6 +286,7 @@ but execution will be performed one by one because thread requires lock and only
 						System.out.println(b.total);
 					}
 					
+					//instead b.join also can be used, but its drawback would be ki the second thread will then finish its rest of the instruction as well, it can be crores lines as well.
 				}
 
 			}
