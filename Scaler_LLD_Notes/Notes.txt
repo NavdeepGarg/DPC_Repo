@@ -75,8 +75,7 @@ Classs 3:
 			SOUTH=2,EAST=3,WEST=4}
 	•In Java enums are classes , and thus enum can have methods and properties as well.
 	
-	
-	
+	 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 class 4:
@@ -85,5 +84,15 @@ class 4:
 Creational Pattern:
  Factory Mehtod
  
- An abstratc class is chosen when object of the class doesn't make sense
- 
+ An abstratc class is chosen when object of the class doesn't make sense at present
+  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Classs Structural Design Patterns:
+	•adpaterpattern discussed
+	
+	•FlyDesign Pattern
+		•whenever you see alot of instances and that have two type of prop intrinsic and extrinsic, consider the class divide into typw of class One with intrinsic and other with extrinsic. and make intrinsic immutable
+		•This help in saving lot of memory
+		
+	•Decorator Pattern
+		•Have a particular entity and have multiple layers that can be added.
