@@ -83,6 +83,7 @@ Classs Structural Design Patterns:
 	
 	•FlyDesign Pattern
 		•whenever you see alot of instances and that have two type of prop intrinsic and extrinsic, consider the class divide into typw of class One with intrinsic and other with extrinsic. and make intrinsic immutable
+		•This help in saving lot of memory
 		
 	•Decorator Pattern
 		•Have a particular entity and have multiple layers that can be added.
