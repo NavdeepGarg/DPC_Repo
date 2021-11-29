@@ -75,5 +75,15 @@ Classs 3:
 			SOUTH=2,EAST=3,WEST=4}
 	•In Java enums are classes , and thus enum can have methods and properties as well.
 	
-		
 	
+	
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+class 4:
+•Entity classes are classes and dotn add any behaviour related information to it.
+•Add behaviour in Interfaces only.
+Creational Pattern:
+ Factory Mehtod
+ 
+ An abstratc class is chosen when object of the class doesn't make sense
+ 

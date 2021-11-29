@@ -123,6 +123,31 @@ Creational Pattern
 	•In its implementation , using 'synchronized' keyword inthe getinstance() method will create lot of overhead and also synchronization is required only for 
 	the time when the object is going to be created for the very first time.Thus it creates performance issue.
 	•To tackle the performance issue double check locking is applied, where synchronized block is used.
+					
+					enum Singleton
+				{
+					INSTANCE;
+					// instance vars, constructor
+				 
+					private final Connection connection;
+					 
+					Singleton()
+					{
+						// Initialize the connection
+						connection = DB.getConnection();
+					}
+				 
+					// Static getter
+					public static Singleton getInstance()
+					{
+						return INSTANCE;
+					}
+				 
+					public Connection getConnection()
+					{
+						return connection;
+					}
+				}
 	
 	
 ISOLATION LEVELS:

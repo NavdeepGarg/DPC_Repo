@@ -193,7 +193,12 @@ pointed out in each lesson.
 		create more specialized products whereas, in an abstract factory
 		pattern, we practice object composition by passing in factories that
 		are consumed to create the desired products.
+	4)Related to current domain at ISRO , it can be PaymentMadesource either it can be Purchase, Payroll, Account, store
 	 	
+	5) Next example could be creating a room , comprises window bed and cupboard
+	
+	
+
 
 •Singleton(Creational)
 	•Most simplest • ensure class has only one instance and provide global point of access to it
@@ -201,6 +206,31 @@ pointed out in each lesson.
 	•In its implementation , using 'synchronized' keyword in the getinstance() method will create lot of overhead and also synchronization is required only for 
 	the time when the object is going to be created for the very first time.Thus it creates performance issue.
 	•To tackle the performance issue double check locking is applied, where synchronized block is used.
+		Just for ref. (placeholder)
+				enum Singleton
+				{
+					INSTANCE;
+					// instance vars, constructor
+				 
+					private final Connection connection;
+					 
+					Singleton()
+					{
+						// Initialize the connection
+						connection = DB.getConnection();
+					}
+				 
+					// Static getter
+					public static Singleton getInstance()
+					{
+						return INSTANCE;
+					}
+				 
+					public Connection getConnection()
+					{
+						return connection;
+					}
+				}
 
 
 •BUILDER PATTERN(Creational)
@@ -210,6 +240,10 @@ pointed out in each lesson.
 	•Used for creating Complex Objects and Composite Objects.
 	•
 	
+•Prototype Pattern(Creational)
+	•Prototype is blueprint
+	•In this pattern we clone a object already present and do other things on this clone.
+	•Used when creatign a obect is complex and multiple object of same type
 
 •Decorator Pattern(Structural)
 	•A decoration is added to something to make it more attractive, in the
@@ -245,6 +279,6 @@ pointed out in each lesson.
 	are essentially asking Twitter to send you (the observer) tweet updates of the person (the subject) you followed. The pattern consists of two actors,
 	the observer who is interested in the updates and the subject who generates the updates.
 	•In Java, implementations of java.util.EventListener are examples of the observer pattern.
-
+	•Related to current domain at ISRO , it can be TDP Approval Notifications to all team members
 
 •Visitor Pattern(Behavioral)
