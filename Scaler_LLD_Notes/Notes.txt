@@ -77,3 +77,14 @@ Classs 3:
 	
 		
 	
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Classs Structural Design Patterns:
+	•adpaterpattern discussed
+	
+	•FlyDesign Pattern
+		•whenever you see alot of instances and that have two type of prop intrinsic and extrinsic, consider the class divide into typw of class One with intrinsic and other with extrinsic. and make intrinsic immutable
+		
+	•Decorator Pattern
+		•Have a particular entity and have multiple layers that can be added.
+
+
