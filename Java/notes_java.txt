@@ -141,3 +141,11 @@ DataSource:> con=ds.getConnection() : from connection pool.
 •Jasypt 1.9.3 is a java library which allows the developer to add basic encryption capabilities to his/her projects with minimum effort, and without the need of having deep knowledge on how cryptography works.
 •Quartz 2.2 is an open source job scheduling library that can be integrated within virtually any Java application
 •log4J a logging library for Java
+
+
+•Enum
+   •are the classes that have a fixed set of constants or variables that so not itend to chnage. The enumerarion in 	Java is achieved using keyword enum. The Java enum constants are static and final implicitly.
+   •Enum week example, Enum job example(Contract , Temporary, Permanent)
+   •Class constants can be overridden and it support creation of objects WHILE Enums cconstants cant be overrideen and it doesnt support creation of objects.
+   •enum cannot extend ither classes but cqan implements interface
+   •
