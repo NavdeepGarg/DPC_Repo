@@ -174,3 +174,14 @@ DataSource:> con=ds.getConnection() : from connection pool.
    •Class constants can be overridden and it support creation of objects WHILE Enums cconstants cant be overrideen and it doesnt support creation of objects.
    •enum cannot extend ither classes but cqan implements interface
    •
+
+•Deep Cloning and Shallow Cloning
+	•clone method in object class is doing shallow cloning, if we want deep cloning we need to override the method.
+	•clonign literal meaning is exact copy
+	Shallow Cloning
+		•The process of creating exactly duplicate copy of original object,  if original object contains any reference variables then duplicate copies wont be created for contained object, just duplicate ref var will be created.
+	
+	Deep Cloning:
+		•The process of creating completely independeny duplicate object is called depp cloning
+		•
+	Examples attached
