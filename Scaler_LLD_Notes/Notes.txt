@@ -96,3 +96,44 @@ Classs Structural Design Patterns:
 		
 	•Decorator Pattern
 		•Have a particular entity and have multiple layers that can be added.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+•Expectation in LLD :
+	1)Structure the problem.
+	2)Define entities, Define relationship , Define Class diagram
+	3)Try implementing the SOLID principle.
+	
+	
+	-----
+	1)Clarification and requirement elicitation is utmost required. Discuss the requirements
+	2)keep Scalability in mind.
+	
+	-----
+	
+	PEN example
+		•Ask everything and dont assume.
+		Q1) What is the high level Requirement;
+		Q2) Future Scope.
+		
+		Requirement:
+		•Design a pen with write functionality
+		•Anything with a nib , body and write in ink is a pen
+		•Ball point pen and ink pen and both should write in diff way		
+		•Future-- pen with refill fucntionality
+		
+		Class Diagram:
+		Identify Entity
+		1)	•Nouns in the Requirement.
+			•Pen , Ink , Nib, Marker Pen, Body
+		2) •Intitutive approach / visualization
+		
+		
+		
+			
+			
+		
+	
+	
+	
