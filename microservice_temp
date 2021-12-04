@@ -1,0 +1,55 @@
+•Used Class RestTemplate for communiation between Two services
+
+•aplicatoin.yml for eureka service 
+  server:
+    port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+
+
+•applicatoin.yml for User service 
+  
+  server:
+    port: 8761
+
+spring:
+  application:
+    name: contact-service
+    
+    
+spring:
+  application:
+    name: user-service
+    
+•aplicatoin.yml for apigateway service
+  server:
+    port: 8761
+    
+eureka:
+  instance
+    hostname:localhost
+
+ spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        -id: user-service
+        uri: lb://user-service
+        predicates:
+          -Path=/user/**
+        -id: contact-service
+        uri: lb://contact-service
+        predicates:
+          -Path=/contact/**
+          
+    
+    
+    
+    
