@@ -96,3 +96,17 @@ Classs Structural Design Patterns:
 		
 	•Decorator Pattern
 		•Have a particular entity and have multiple layers that can be added.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Snake and Ladder Design Example
+	•Ask What is X
+	•CurrentRequirement and Future Requirement and Behaviour because these three requirement willl serve the base for our design
+	•
+	
+	why Map is used in Board??? what is piece ?
+	
+	https://leetcode.com/problems/implement-rand10-using-rand7/
+	
+	
+	
