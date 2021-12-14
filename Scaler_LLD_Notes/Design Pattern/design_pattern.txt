@@ -265,6 +265,9 @@ pointed out in each lesson.
 		The FileInputStream is the object actually responsible for reading the text file. If we wanted to introduce buffered read functionality, one
 		way of doing it would be to subclass FileInputStream and add the new functionality. The other is to use the decorator pattern which is
 		how it is implemented in the Java framework. The BufferedInputStream wraps the FileInputStream to provide buffering capabilities.
+		
+		Decorator 'is a' component and Decorator 'has a' component
+		Decorator Pattern attach additional reposibility to the concrete objects( Add on are the additonal resp.)
 	
 
 •Proxy Pattern
