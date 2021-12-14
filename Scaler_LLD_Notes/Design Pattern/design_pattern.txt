@@ -23,6 +23,7 @@ Program to an interface and do for implementation.It is a common theme of design
     D - Dependency Inversion Principle
 	
 SOLID
+(https://www.youtube.com/watch?v=gumM1H4qLUM)
 O:  open for extension closed for modification.
 	Example : 
 	Calculator , better to make it a interface so that in future new operation can be added without modifying the current class.	
@@ -180,6 +181,12 @@ pointed out in each lesson.
 		•Visitor Pattern
 
 
+
+•Factory Method Pattern(Creational)
+
+	•Def : FM Pattern defines an interfcae for creating an object , but let sub classes decide which class to instantiate.
+	•
+
 •Abstract Factory Pattern(Creational)
 	
 	1)The abstract factory pattern solves the problem of creating families of related products. For instance, F-16 needs an engine, a cockpit, and wings. 
@@ -266,8 +273,8 @@ pointed out in each lesson.
 		way of doing it would be to subclass FileInputStream and add the new functionality. The other is to use the decorator pattern which is
 		how it is implemented in the Java framework. The BufferedInputStream wraps the FileInputStream to provide buffering capabilities.
 		
-		Decorator 'is a' component and Decorator 'has a' component
-		Decorator Pattern attach additional reposibility to the concrete objects( Add on are the additonal resp.)
+		Decorator pattren comprises both 'is a' component and  'has a' component
+		Decorator Pattern attach additional reposibility to the concrete objects( actually Add ons are the additonal resp.)
 	
 
 •Proxy Pattern
