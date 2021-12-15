@@ -23,8 +23,10 @@ Interface
 
 When we override the method of parent class in child classes, then for that child class the behvaiour will get inline with the child class implementation.
 
+Class is the buleprint of the rral world object ... and we shall add behaviour to a class using interfcaes(has-A relation)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 Classs 2:
 
 •OOP has three pillars : Poly, Inheritance , Encapsulation
@@ -60,7 +62,7 @@ Polymorphosism
 Composition
 	•Has-A relationship
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 Classs 3:	
 
 •SingleTon discussed.
@@ -76,7 +78,7 @@ Classs 3:
 	•In Java enums are classes , and thus enum can have methods and properties as well.
 	
 	 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 class 4:
 •Entity classes are classes and dotn add any behaviour related information to it.
@@ -86,7 +88,7 @@ Creational Pattern:
  
  An abstratc class is chosen when object of the class doesn't make sense at present
   
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 Classs Structural Design Patterns:
 	•adpaterpattern discussed
 	
@@ -96,6 +98,7 @@ Classs Structural Design Patterns:
 		
 	•Decorator Pattern
 		•Have a particular entity and have multiple layers that can be added.
+
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -136,4 +139,25 @@ Classs Structural Design Patterns:
 		
 	
 	
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Snake and Ladder Design Example
+	•Ask What is X
+	•CurrentRequirement and Future Requirement and Behaviour because these three requirement willl serve the base for our design
+	•
+	
+	why Map is used in Board??? what is piece ?
+	
+	https://leetcode.com/problems/implement-rand10-using-rand7/
+	
+	
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Design a parking lot 
+	•Requirement Gathering
+		•Current features
+		•Future features
+		•Behavior of current features
+		
 	
