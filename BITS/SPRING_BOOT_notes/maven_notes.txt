@@ -1,5 +1,8 @@
 https://www.youtube.com/watch?v=agaZ92wc0gY
 
+https://maven.apache.org/guides/introduction/introduction-to-plugins.html
+
+https://maven.apache.org/plugins/maven-clean-plugin/
 
 •Maven Build life cycle is a collection of steps that are to be followed to build a project 
   •There are 3 built-in build life cycle :
