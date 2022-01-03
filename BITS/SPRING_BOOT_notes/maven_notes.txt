@@ -12,3 +12,9 @@ https://maven.apache.org/plugins/maven-clean-plugin/
 
   •A specific Build life cycle has following stages
     •Compile->Test-compile->Test->Package->Integration-test->Verify->Install->Deploy
+
+
+• command syntax
+    •mvn phasename1
+    •mvn phasename1 phasename2
+    •mvn plugin_name:goal_name
