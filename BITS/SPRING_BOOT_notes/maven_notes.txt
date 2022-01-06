@@ -1,0 +1,20 @@
+https://www.youtube.com/watch?v=agaZ92wc0gY
+
+https://maven.apache.org/guides/introduction/introduction-to-plugins.html
+
+https://maven.apache.org/plugins/maven-clean-plugin/
+
+•Maven Build life cycle is a collection of steps that are to be followed to build a project 
+  •There are 3 built-in build life cycle :
+    •Default :handles project deployment
+    •Clean :for project cleaning 
+    •site: handle creation of project site's documentation
+
+  •A specific Build life cycle has following stages
+    •Compile->Test-compile->Test->Package->Integration-test->Verify->Install->Deploy
+
+
+• command syntax
+    •mvn phasename1
+    •mvn phasename1 phasename2
+    •mvn plugin_name:goal_name
