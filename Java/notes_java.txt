@@ -45,7 +45,7 @@ strictness order of modifiers:
 
 •Learn internal functioning of TreeSet and HashSet and HashMap
 https://javahungry.blogspot.com/2013/08/how-sets-are-implemented-internally-in.html
-https://javahungry.blogspot.com/2015/10/how-treeset-works-internally-in-java-interview-questions.html
+https://javahungry.blogspot.com/2015/10/how-treeset-works-intenally-in-java-interview-questions.html
 https://javahungry.blogspot.com/2013/08/hashing-how-hash-map-works-in-java-or.html
 https://javahungry.blogspot.com/2014/02/hashmap-vs-concurrenthashmap-java-collections-interview-question.html
 
