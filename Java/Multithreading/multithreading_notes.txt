@@ -76,8 +76,8 @@ MultiTasking
 	 is no waiting thread or all all waiing thread have low priority then same thread can continute its execution.
 	 •The thread which is yielded when it will get the chance once again it will depends on Thread scheduler and we cant expect immediatley.
 	 •public static native void yield()
-	 
-	 
+	 •From Java 6: Thread provides the hint to Thread scheduler , then it depends on Thread Scheduler whether to accept the hint or rjct the hint
+	 •https://www.youtube.com/watch?v=v-naRczvLOw
 •join()
 	•If a thread want to wait untill completing some other thread, then we should go for join() method.
 	For eg. if thread t1 wants to wait untill completing t2, then t1 has to call t2.join() and then immeditaley t1 will go in waiting state untill t2 completes.
@@ -311,7 +311,7 @@ but execution will be performed one by one because thread requires lock and only
 							
 							while(counter%2==1) {
 								try {
-									wait();
+									wait();//current executing thread will go in waiting state
 								} catch (InterruptedException e) {
 									// TODO Auto-generated catch block
 									e.printStackTrace();
