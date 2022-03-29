@@ -37,7 +37,7 @@ l : lISKOV Substitution
 		
 Interface segregation
 		•Make interface as light as possible(add only very relevant methods)
-			Cuboid and Shape
+			Cuboid and Shape with draw funtion
 Dependency Inversion Principle 
 
 	•High-level modules(Jo depend kar rhe hai doosri class par) should not depend on low-level modules(Jis class par depend kar rhe hai). Both should depend on the abstraction.

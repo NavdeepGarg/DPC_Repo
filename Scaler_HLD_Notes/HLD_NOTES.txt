@@ -1,0 +1,10 @@
+•Case study of delicious.com is discussed which sclaed from one computer to different server
+	•ICANN : The Internet Corporation for Assigned Names and Numbers-- Non Profit organization
+	• DNS server : 
+		for eg: Google DNS server is at 8.8.8.8 , 8.8.4.4
+		Open DNS : 208.67.222.222
+		CloudFare : 1.1.1.1.
+
+•DNS Resolution:
+  Find in Browser Cache -> OS Cache ->Resolved Cache(ISP/LEVEL) ->Root Server ->Top Level Domain Server(.com, .co,.gov etc)
+  On resolving and coming backward it will be added in cache.
