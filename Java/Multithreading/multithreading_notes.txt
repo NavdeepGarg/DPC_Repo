@@ -184,7 +184,7 @@ MultiTasking
 •If a thread call wait() on any object it immediately release the lock on that particular object and enter into waiting state.
 
 Producer Consumer Problem
-•Producer Threas is responsible to produce item to the queue and consumer thread is responsible to consume items from the queue.
+•Producer Thread is responsible to produce item to the queue and consumer thread is responsible to consume items from the queue.
 	If the queue is emppty , consumer thread will call wait method and entered into waiitng state.
 	After producing item to the queue, producer thread is respomnsible to call notify method, then waiting consumer will get that notification and contiue its execution with updated items.
 
@@ -369,3 +369,4 @@ but execution will be performed one by one because thread requires lock and only
 					
 				}
 
+•Executing threads will go into wait state when wait yield and join are called.

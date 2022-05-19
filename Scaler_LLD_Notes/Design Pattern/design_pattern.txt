@@ -201,6 +201,26 @@ pointed out in each lesson.
 		pattern, we practice object composition by passing in factories that
 		are consumed to create the desired products.
 	4)Related to current domain at ISRO , it can be PaymentMadesource either it can be Purchase, Payroll, Account, store
+	
+	interface PaymentMadesource {
+	
+	 vendorDetails()
+	 
+	 officerDetails()
+	 
+	}
+	
+	PaymentMadesource p1 = new Purchase(), new Store() etc
+	Payment{
+	
+	 makePayment(PaymentMadesource);
+	 
+	}
+	
+	payment.makePayment();
+	
+	
+	
 	 	
 	5) Next example could be creating a room , comprises window bed and cupboard
 	
