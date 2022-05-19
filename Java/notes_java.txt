@@ -167,9 +167,11 @@ TRANSACTION_READ_UNCOMMITTED- 1
 TRANSACTION_READ_COMMITTED- 2 (Dirty read solved)
 TRANSACTION_REPEATBLAE_READ- 4 (Dirty read, non-repeatable are solved , Phantom not possible ) --DEFAULT IMPLEMENTATION
 TRANSACTION_SERIALIZABLE- 8 (Not recommended) -Whole Table Locked--Dirty read, non-repeatable,uncommitted read all problem solved.
-
+•https://en.wikipedia.org/wiki/Isolation_(database_systems)
 getTransactionIsolation()
 setTransactionIsolation(int level)
+
+•https://vladmihalcea.com/optimistic-vs-pessimistic-locking/
 
 
 DriverManager :> con = DM.getConnection(jdbc url, user,pwd) : always a new connection is created.
