@@ -369,3 +369,32 @@ but execution will be performed one by one because thread requires lock and only
 					
 				}
 
+
+
+
+*******************************************************************************************
+Thread Executor Framework
+ Required Interface:
+ •Executor
+ •ExecutorService
+ •ScheduledExecutorService
+ 
+ UtilityClass
+ •Executors
+ 
+ Storage Class
+ •Future<T>
+
+ ThreadPool 
+•newFixedThreadPool(int)           Creates a fixed size thread pool.
+•newCachedThreadPool()             Creates a thread pool that creates new 
+                                  threads as needed, but will reuse previously 
+                                  constructed threads when they are available
+•newSingleThreadExecutor()         Creates a single thread. 
+
+
+Risks in using Thread Pools
+
+	•Deadlock : While deadlock can occur in any multi-threaded program, thread pools introduce another case of deadlock, one in which all the executing threads are waiting for the results from the blocked threads waiting in the queue due to the unavailability of threads for execution.
+    •Thread Leakage :Thread Leakage occurs if a thread is removed from the pool to execute a task but not returned to it when the task completed. As an example, if the thread throws an exception and pool class does not catch this exception, then the thread will simply exit, reducing the size of the thread pool by one. If this repeats many times, then the pool would eventually become empty and no threads would be available to execute other requests.
+    •Resource Thrashing :If the thread pool size is very large then time is wasted in context switching between threads. Having more threads than the optimal number may cause starvation problem leading to resource thrashing as explained.
