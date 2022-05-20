@@ -199,3 +199,15 @@ DataSource:> con=ds.getConnection() : from connection pool.
 		•The process of creating completely independeny duplicate object is called depp cloning
 		•
 	Examples attached
+
+
+•Common SQL Queries
+
+  1) N = nth Highest Salary eg. 3rd Highest salary : N=3 .
+
+	SELECT ename,sal from Employee e1 where 
+        N-1 = (SELECT COUNT(DISTINCT sal)from Employee e2 where e2.sal > e1.sal) 
+
+ 2) SELECT TOP 1 DEPARTMENT_NAME, AVG(SALARY) AS MAX_AVG_SALARY
+	FROM COMPANY GROUP BY DEPARTMENT_NAME ORDER BY AVG(SALARY) DESC;
+ 3)
