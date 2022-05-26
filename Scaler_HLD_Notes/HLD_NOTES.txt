@@ -8,3 +8,25 @@
 •DNS Resolution:
   Find in Browser Cache -> OS Cache ->Resolved Cache(ISP/LEVEL) ->Root Server ->Top Level Domain Server(.com, .co,.gov etc)
   On resolving and coming backward it will be added in cache.
+  
+  
+  FROM DDIA BOOK :
+
+•Database Category
+ •Relational DB: Optimized for transaction and batch processing
+ •Document DB:NoSQL, better performance due to locality/Hig write throughput
+ •Graph DB: For higlhy interconnectd system. DB ex : Social Graph, WebGraph, Neo4j AnzoGraph.
+
+•chapter 4 Agile
+  Endcoding and Decoding is discussed based on respective encoded format.
+  either it is TextJSON, Binary etc.
+
+•Replication
+ DB-Replication Algos: 1) By wirting sQL statements 2) by wirting Logics 3) Trigger based replcation
+ 
+•Conflict Reoslution
+ Quorum
+ 
+•LEADERLess Replication
+  R+W>N , Amazon Cassadra etc .
+ 
