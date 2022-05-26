@@ -8,3 +8,53 @@
 •DNS Resolution:
   Find in Browser Cache -> OS Cache ->Resolved Cache(ISP/LEVEL) ->Root Server ->Top Level Domain Server(.com, .co,.gov etc)
   On resolving and coming backward it will be added in cache.
+  
+•Keywords
+
+ •Asynchronous Communication means , response ab kabhi bhi aae doesnt matter to the application. i.e. it is not the clocking request.
+ 
+ •sticky session login for dedicated session in stateful architechture.
+ •cloudfare for geolocations.
+ •token bucket theorem , sliding window timer theorem, leaky bukcet(with queue and fixed processing rate) in context of RateLimiter.
+ •master replica, ticket server,uuid, twitter snowflake -- in contect of unique id genertator in distibuted enivroment
+ •Consistency - R+w>N - Read quorum , Write quorum --this is quorum consensus.
+ •Consistency models - Strong, Weak, Eventually  
+ •Vector clock  to detect conflict in consistency across the nodes in distributed environmnet.
+ •and gossip protocol for failure detecttion.
+ •Fanout -Fanout is a messaging design where the published message from a particular publisher is consumed by multiple different subscribers independently and simultaneously
+  •A Bloom filter is a space-efficient probabilistic data structure, conceived by Burton Howard Bloom in 1970, that is used to test whether an element is a member of a set.
+    BloomFilter doesnot give false negative but can give false positive.
+	 (agar Bloomfilter ne mana kar diya toh voh pakka nhi hain- thumb rule)
+  
+  •Key Value Pair Design
+   •Gossip Protocol , Vector clocking for consistency
+   •sloppy quoram, merkel tree for temp failure and perm failure respectively.
+   •Write
+   •Read -- >cache -- > bloom filter - to search in sorted set table(ss).
+   
+  
+  
+  •Notification System- final design at 163.
+	•Third PArty services(APN, Firebase , Mailchimp,Twilik for SMS)
+	•User Id and User Devise one to many relationship for tracking the notiifcation receipients .
+	
+ •News Feed System- final design at 171, 174.
+  •Feed Publishing, NewsFeedBuilding
+  •FeedPublishing --Fanout on write -- for normal user, Fanout on read- for celebreties.
+  •Graph DB for friends retrieval
+  •Ratelimiting for limiting the posts per user
+  
+	
+   
+  •Chat server 
+	•questions: groiup, one to one , media, no of mem. in group, DAU,message length, user status, multiple device support
+	•capacity storage--
+	•HLD -- client--> LB--> appserver-->services-->third party-->db/cache
+	•zookeper- for discovery of nearest chat server
+	•Websocket
+	•KV storage for messages in NoSQL fashion
+	•RDBMS for users details.
+	
+	
+  •Design Google Auto Complete
+   
