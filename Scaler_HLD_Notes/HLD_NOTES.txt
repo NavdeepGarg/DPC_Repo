@@ -80,3 +80,8 @@
 •LEADERLess Replication
   R+W>N , Amazon Cassadra etc .
  
+ 
+ 
+ 
+ •Reference materials
+  
