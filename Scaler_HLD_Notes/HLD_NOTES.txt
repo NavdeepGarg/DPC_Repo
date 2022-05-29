@@ -79,9 +79,23 @@
  
 •LEADERLess Replication
   R+W>N , Amazon Cassadra etc .
+<<<<<<< HEAD
  
  
  
  
  •Reference materials
   
+=======
+  
+  
+  
+  
+ •REFEERENCES
+  •https://blog.teamtreehouse.com/should-you-go-beyond-relational-databases
+  •https://medium.com/design-microservices-architecture-with-patterns/microservices-communications-f319f8d76b71
+  •https://www.metabrew.com/article/anti-rdbms-a-list-of-distributed-key-value-stores
+  •https://en.wikipedia.org/wiki/Multi-master_replication	
+  
+ 
+>>>>>>> 36c05c84950c6c5065c4cc5544d0b33387334805
