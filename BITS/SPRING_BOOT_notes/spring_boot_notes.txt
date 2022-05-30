@@ -19,6 +19,8 @@ E.g. Class A is Dependant on ClassB
 	Thus mappedby is required to tell hibernate the association is managed by the other class.
 ####################################################################################################################
 
+@SpringBootApplication annotation is equivalent to using @Configuration, @EnableAutoConfiguration, and @ComponentScan with their default attributes
+
 logging.level.org.springframweork=debug
 
 SpringBootAutoConfiguration triggers:
