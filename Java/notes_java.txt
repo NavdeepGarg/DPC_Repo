@@ -211,3 +211,80 @@ DataSource:> con=ds.getConnection() : from connection pool.
  2) SELECT TOP 1 DEPARTMENT_NAME, AVG(SALARY) AS MAX_AVG_SALARY
 	FROM COMPANY GROUP BY DEPARTMENT_NAME ORDER BY AVG(SALARY) DESC;
  3)
+
+
+•Java 8 Optional
+  •To handle Null exceptions in java app and reduce boilerplate code.
+ 	 •  //Optional
+		 Person p  = new Person();
+		 System.out.println("person name "+p.getName());
+		 Optional<String> str = Optional.empty();
+		 
+		 //System.out.println(str.get()); //Exception in thread "main" java.util.NoSuchElementException: No value present
+		// p.setName("navdeep");
+		 str=Optional.ofNullable(p.getName());
+		 
+		// System.out.println(str); //Optional.empty
+		 
+		 System.out.println(str.orElse("garg")); //garg
+		 
+		 System.out.println(str.orElseGet(()->"Supplier concept")); //Supplier concept
+		 
+		 System.out.println(str.orElseThrow(()-> new IllegalArgumentException("throwing this error"))); //throwing this error
+
+•Executor Framework
+
+ 	•//Future and Callable
+		 
+		 Callable<Integer> callImp=()->{ return 5;};
+		 
+		 ExecutorService exeService=Executors.newFixedThreadPool(2);
+		 
+		 Future<Integer> t = exeService.submit(callImp);
+		 System.out.println("future:- "+t.get());//this is blocking stmt and Main thread will go in waiting state on get method call.
+
+
+		https://www.youtube.com/watch?v=NEZ2ASoP_nY
+
+		Thread Executor Framework
+		 Required Interface:
+		 •Executor -- some method it has = public void execute(Runnable task)
+		 •ExecutorService ---- some method it has ----<T> Future<T> 	submit(Callable<T> task) , 	submit(Runnable task)
+		 •ScheduledExecutorService
+
+		 UtilityClass
+		 •Executors
+
+		 Storage Class
+		 •Future<T> , (and as in Multithreading framework run method of runnable interface doesn't return anything, so it is helpful )
+
+		 ThreadPool 
+		•newFixedThreadPool(int)      Creates a fixed size thread pool.
+		•newCachedThreadPool()       Creates a thread pool that creates new threads as needed, but will reuse previously constructed threads when they are available
+		•newSingleThreadExecutor()    Creates a single thread. 
+		•newScheduledThreadPool(1)    The tasks can be scheduled using either of the two methods:
+					    scheduleAtFixedRate: Executes the task with a fixed interval, irrespective of when the previous task ended.
+					   scheduleWithFixedDelay: This will start the delay countdown only after the current task completes.
+
+
+		Risks in using Thread Pools
+
+			•Deadlock : While deadlock can occur in any multi-threaded program, thread pools introduce another case of deadlock, one in which all the executing threads are waiting for the results from the blocked threads waiting in the queue due to the unavailability of threads for execution.
+		    •Thread Leakage :Thread Leakage occurs if a thread is removed from the pool to execute a task but not returned to it when the task completed. As an example, if the thread throws an exception and pool class does not catch this exception, then the thread will simply exit, reducing the size of the thread pool by one. If this repeats many times, then the pool would eventually become empty and no threads would be available to execute other requests.
+		    •Resource Thrashing :If the thread pool size is very large then time is wasted in context switching between threads. Having more threads than the optimal number may cause starvation problem leading to resource thrashing as explained.
+
+
+• JODA TIME API 
+ 		 String s = "2014-05-01";
+		 String e = "2014-05-10";
+		 LocalDate start = LocalDate.parse(s);
+		 LocalDate end = LocalDate.parse(e);
+		 List<LocalDate> totalDates = new ArrayList<>();
+		 while (!start.isAfter(end)) {
+		     totalDates.add(start);
+		     start = start.plusDays(1);
+		 }
+		 System.out.println(totalDates.toString());
+•On Hibernate Caching 
+  •https://medium.com/swlh/what-is-hibernate-caching-introduction-of-level-1-level-2-cache-8ea7339a5052
+  
