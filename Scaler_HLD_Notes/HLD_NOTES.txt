@@ -1,3 +1,22 @@
+•Database Types and characteristics
+  •RDBMS: for consistency
+		PROS: ACID prop, consistency, fixed schema, good for vertical scaling and not for horizontal
+		CONS: JOINS becomes complex and adding columns become expensive when datasize grows
+           
+  •Key-Value Stores : For feature flags, some discoutn values to store e.g REDIS, Memchached etc 
+		PROS: fast response
+		
+  •Document Based Schema: When no fixed schema and heavy read and writes required.
+		PROS: highly scalable, sharding support, aggregation queries.
+
+  •Column DBs: nto support ACID transaction , for heavy data or strema data like music player, health tracking data, IoT devices data
+		PROS: highly writes,support distibuted DBs.
+		
+	•Search DBs : full text serach queries, searchign of products, searchign of fligths.
+		PROS: they are not primary DB but actually work along with RDBMS in real world application.
+  
+
+
 •Case study of delicious.com is discussed which sclaed from one computer to different server
 	•ICANN : The Internet Corporation for Assigned Names and Numbers-- Non Profit organization
 	• DNS server : 
