@@ -39,7 +39,7 @@
  •master replica, ticket server,uuid, twitter snowflake -- in contect of unique id genertator in distibuted enivroment
  •Consistency - R+w>N - Read quorum , Write quorum --this is quorum consensus.
  •Consistency models - Strong, Weak, Eventually  
- •Vector clock  to detect conflict in consistency across the nodes in distributed environmnet.
+ •Vector clock  to detect conflict in consistency across the nodes in distributed environmnet and reconciliation is done at client side(added overhead)
  •and gossip protocol for failure detecttion.
  •Fanout -Fanout is a messaging design where the published message from a particular publisher is consumed by multiple different subscribers independently and simultaneously
   •A Bloom filter is a space-efficient probabilistic data structure, conceived by Burton Howard Bloom in 1970, that is used to test whether an element is a member of a set.
@@ -49,12 +49,14 @@
   •Key Value Pair Design
    •Gossip Protocol , Vector clocking for consistency
    •sloppy quoram, merkel tree for temp failure and perm failure respectively.
+   •A Merkle tree is used for inconsistency detection and minimizing the amount of data transferred.
    •Write
-   •Read -- >cache -- > bloom filter - to search in sorted set table(ss).
-   
+   •Read -- >cache -- > bloom filter - to search in sorted set table(ss).   
+   •When the memory cache is full or reaches a predefined threshold, data is flushed to
+   SSTable [9] on disk. Note: A sorted-string table (SSTable) is a sorted list of <key, value>
+   pairs
   
-  
-  •Notification System- final design at 163.
+  •Notification System- final design at 158 & 163.
 	•Third PArty services(APN, Firebase , Mailchimp,Twilik for SMS)
 	•User Id and User Devise one to many relationship for tracking the notiifcation receipients .
 	
@@ -76,8 +78,27 @@
 	•RDBMS for users details.
 	
 	
-  •Design Google Auto Complete
-    
+  •Design Google Drive
+  
+  	•First case of Strong consistency.
+	
+		   High consistency requirement
+		Our system requires strong consistency by default. It is unacceptable for a file to be shown
+		differently by different clients at the same time. The system needs to provide strong
+		consistency for metadata cache and database layers.
+		Memory caches adopt an eventual consistency model by default, which means different
+		replicas might have different data. To achieve strong consistency, we must ensure the
+		following:
+		• Data in cache replicas and the master is consistent.
+		• Invalidate caches on database write to ensure cache and database hold the same value.
+		Achieving strong consistency in a relational database is easy because it maintains the ACID
+		(Atomicity, Consistency, Isolation, Durability) properties [9]. However, NoSQL databases do
+		not support ACID properties by default. ACID properties must be programmatically
+		incorporated in synchronization logic. In our design, we choose relational databases because
+		the ACID is natively supported.
+   
+   •Metadata is anything excpet main content
+   
   
   FROM DDIA BOOK :
 
@@ -113,5 +134,5 @@
   •https://medium.com/design-microservices-architecture-with-patterns/microservices-communications-f319f8d76b71
   •https://www.metabrew.com/article/anti-rdbms-a-list-of-distributed-key-value-stores
   •https://en.wikipedia.org/wiki/Multi-master_replication	
-  
- 
+  •https://efficientcodeblog.wordpress.com/2017/12/25/leaderless-replication-dynamo-style-quorum-consensus-eventual-consistency-high-availability-and-low-latency/
+ •https://medium.com/double-pointer/system-design-interview-uber-or-a-similar-app-grab-lyft-or-ola-design-76807fac24c3 
