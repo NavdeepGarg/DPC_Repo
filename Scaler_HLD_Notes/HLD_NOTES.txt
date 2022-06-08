@@ -16,6 +16,11 @@
 		PROS: they are not primary DB but actually work along with RDBMS in real world application.
   
 
+•Acronym -- ARESM , Availability, Reliability, Efficiency, Scalability, Manageability
+Requirement, Back-of-Envelope, API, data model, HLD, Bottlenecks
+
+•Reliability ke liye -- Replica create kardo , because losing a data is not an option
+•Availability -- for that create redundant services that can cater the user request , if load rises or failure happen
 
 •Case study of delicious.com is discussed which sclaed from one computer to different server
 	•ICANN : The Internet Corporation for Assigned Names and Numbers-- Non Profit organization
