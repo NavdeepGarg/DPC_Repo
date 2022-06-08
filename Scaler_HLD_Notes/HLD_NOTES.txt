@@ -136,3 +136,7 @@
   •https://en.wikipedia.org/wiki/Multi-master_replication	
   •https://efficientcodeblog.wordpress.com/2017/12/25/leaderless-replication-dynamo-style-quorum-consensus-eventual-consistency-high-availability-and-low-latency/
  •https://medium.com/double-pointer/system-design-interview-uber-or-a-similar-app-grab-lyft-or-ola-design-76807fac24c3 
+  About DB replication
+		•https://medium.com/@pulkitent/system-design-database-replication-part-1-3dcf4a300db1
+		•https://medium.com/@pulkitent/system-design-database-replication-contd-part-2-2a2ab9be94db
+ 
