@@ -82,9 +82,11 @@ Requirement, Back-of-Envelope, API, data model, HLD, Bottlenecks
 	•KV storage for messages in NoSQL fashion
 	•RDBMS for users details.
 	
-	
+•Web Crawler
+ 	•seedURL , URL Forontier, HTmL donwaloder,Content parser, linkk etracter, dedup model, update URL frontier
+
   •Design Google Drive
-  
+  	https://www.youtube.com/watch?v=UTbUmi_qhbU&list=PLPHYrMjrxLS4Hkw0PfAOMvhtszVXQNwLy&index=10 
   	•First case of Strong consistency.
 	
 		   High consistency requirement
@@ -102,7 +104,9 @@ Requirement, Back-of-Envelope, API, data model, HLD, Bottlenecks
 		incorporated in synchronization logic. In our design, we choose relational databases because
 		the ACID is natively supported.
    
-   •Metadata is anything excpet main content
+   •Metadata is anything excpet main content, usualy stores in MqSQL 
+   •Block Server, Indexer ,Watcher ,Messaginqg Queue(eposse Qeueu, Request Queue) , Synchrnization Service
+   •
    
   
   FROM DDIA BOOK :
