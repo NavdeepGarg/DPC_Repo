@@ -16,6 +16,11 @@
 		PROS: they are not primary DB but actually work along with RDBMS in real world application.
   
 
+•Acronym -- ARESM , Availability, Reliability, Efficiency, Scalability, Manageability
+Requirement, Back-of-Envelope, API, data model, HLD, Bottlenecks
+
+•Reliability ke liye -- Replica create kardo , because losing a data is not an option
+•Availability -- for that create redundant services that can cater the user request , if load rises or failure happen
 
 •Case study of delicious.com is discussed which sclaed from one computer to different server
 	•ICANN : The Internet Corporation for Assigned Names and Numbers-- Non Profit organization
@@ -77,9 +82,11 @@
 	•KV storage for messages in NoSQL fashion
 	•RDBMS for users details.
 	
-	
+•Web Crawler
+ 	•seedURL , URL Forontier, HTmL donwaloder,Content parser, linkk etracter, dedup model, update URL frontier
+
   •Design Google Drive
-  
+  	https://www.youtube.com/watch?v=UTbUmi_qhbU&list=PLPHYrMjrxLS4Hkw0PfAOMvhtszVXQNwLy&index=10 
   	•First case of Strong consistency.
 	
 		   High consistency requirement
@@ -97,7 +104,9 @@
 		incorporated in synchronization logic. In our design, we choose relational databases because
 		the ACID is natively supported.
    
-   •Metadata is anything excpet main content
+   •Metadata is anything excpet main content, usualy stores in MqSQL 
+   •Block Server, Indexer ,Watcher ,Messaginqg Queue(eposse Qeueu, Request Queue) , Synchrnization Service
+   •
    
   
   FROM DDIA BOOK :
@@ -137,3 +146,9 @@
   •https://efficientcodeblog.wordpress.com/2017/12/25/leaderless-replication-dynamo-style-quorum-consensus-eventual-consistency-high-availability-and-low-latency/
  •https://medium.com/double-pointer/system-design-interview-uber-or-a-similar-app-grab-lyft-or-ola-design-76807fac24c3 
 •https://iq.opengenus.org/data-partitioning/
+ 
+  About DB replication
+		•https://medium.com/@pulkitent/system-design-database-replication-part-1-3dcf4a300db1
+		•https://medium.com/@pulkitent/system-design-database-replication-contd-part-2-2a2ab9be94db
+ 
+

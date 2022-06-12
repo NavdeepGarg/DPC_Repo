@@ -389,11 +389,11 @@ Thread Executor Framework
  •Future<T>
 
  ThreadPool 
-•newFixedThreadPool(int)           Creates a fixed size thread pool.
-•newCachedThreadPool()             Creates a thread pool that creates new 
+•newFixedThreadPool(int)           Creates a fixed size thread pool.   LinkedBlockingQueue
+•newCachedThreadPool()             Creates a thread pool that creates new      *Synchronous Queue
                                   threads as needed, but will reuse previously 
                                   constructed threads when they are available
-•newSingleThreadExecutor()         Creates a single thread. 
+•newSingleThreadExecutor()         Creates a single thread.    *DelayQueue
 
 
 Risks in using Thread Pools
