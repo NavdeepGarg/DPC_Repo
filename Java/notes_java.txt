@@ -288,3 +288,7 @@ DataSource:> con=ds.getConnection() : from connection pool.
 •On Hibernate Caching 
   •https://medium.com/swlh/what-is-hibernate-caching-introduction-of-level-1-level-2-cache-8ea7339a5052
   
+
+
+
+•https://www.sqlshack.com/what-is-the-difference-between-clustered-and-non-clustered-indexes-in-sql-server/

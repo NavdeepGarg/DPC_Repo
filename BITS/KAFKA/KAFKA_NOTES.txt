@@ -1,0 +1,73 @@
+•Messaging system in a distributed environment based on pub-sub model
+	it provide both redundancy and replication
+  
+•Provide de-coupling
+
+•A Broker is a Kafka server that runs in a Kafka Cluster. 
+	•Kafka Brokers form a cluster. The Kafka Cluster consists of many Kafka Brokers on many servers. 
+	•We can add broker in a Kafka cluster without downtime
+	
+•Topic
+	•A set of message that belong to a particukar consumer group.
+	•It analogous to table in RDBMS
+	•Unique identifier for a topic is NAME, we can create any no of TOPICs
+
+•Partitions
+	•Topic are split into partition
+	•Each partition has a unique id called 'offset'
+	•Replica are backup of partition and used as fault tolerance and not for read and write data
+	
+	
+•Zookeper
+	•who manages/monitor Kafka Cluster and cordinate with each broker
+	• It keeps all Meta data , which includes - Configuration information and health status of broker
+	• Used for controller election in kafka cluster.
+	
+
+•COMMANDS
+
+	•start zookeper
+		•changes in config/zoo.cfg
+		•run zooserver.bat
+	•start kafka server
+		•changes in config/server.properties
+		•G:\KAFKA_DOWNLOADS\kafka_2.13-3.2.0>.\bin\windows\kafka-server-start.bat .\config\server.properties
+		
+		•create Topic
+			•G:\KAFKA_DOWNLOADS\kafka_2.13-3.2.0\bin\windows>kafka-topics.bat --bootstrap-server localhost:9092 --create --topic myTopic --partitions 1 --replication-factor 1
+			
+			•G:\KAFKA_DOWNLOADS\kafka_2.13-3.2.0\bin\windows>kafka-topics.bat --bootstrap-server localhost:9092 --list
+			
+			
+			•G:\KAFKA_DOWNLOADS\kafka_2.13-3.2.0\bin\windows>kafka-topics.bat --bootstrap-server localhost:9092 --describe -topic myTopic
+				Topic: myTopic  TopicId: C5cnP_d0QzqNW0mPzql6ng PartitionCount: 1       ReplicationFactor: 1    Configs: segment.bytes=1073741824
+				Topic: myTopic  Partition: 0    Leader: 1       Replicas: 1     Isr: 1
+		
+		•run producer
+			•G:\KAFKA_DOWNLOADS\kafka_2.13-3.2.0\bin\windows>kafka-console-producer.bat --bootstrap-server localhost:9092 --topic myTopic
+				>this is message from producer of myTopic
+				>this is message 2 from producer of myTopic
+				>this is message 3 from producer of myTopic
+				>this is message 4 from producer of myTopic
+				>
+				
+		•run consumer
+			•G:\KAFKA_DOWNLOADS\kafka_2.13-3.2.0\bin\windows>kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic myTopic --from-beginning
+				this is message from producer of myTopic
+				this is message 2 from producer of myTopic
+				this is message 3 from producer of myTopic
+				this is message 4 from producer of myTopic
+				
+				
+		•consumer group
+			•G:\KAFKA_DOWNLOADS\kafka_2.13-3.2.0\bin\windows>kafka-consumer-groups.bat --bootstrap-server localhost:9092 --list
+				console-consumer-8487
+				console-consumer-83101
+				
+		•consumer group describe
+			•G:\KAFKA_DOWNLOADS\kafka_2.13-3.2.0\bin\windows>kafka-consumer-groups.bat --bootstrap-server localhost:9092 --describe --group console-consumer-83101
+
+				GROUP                  TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                           HOST            CLIENT-ID
+				console-consumer-83101 myTopic         0          -               4               -               console-consumer-173fff56-c7a6-4404-aef4-840227986805 /127.0.0.1      console-consumer
+				
+		

@@ -108,7 +108,8 @@ Requirement, Back-of-Envelope, API, data model, HLD, Bottlenecks
    •Block Server, Indexer ,Watcher ,Messaginqg Queue(eposse Qeueu, Request Queue) , Synchrnization Service
    •
    
-  
+•Cassandra soft delete par dhyan deta hain , it retains the data for somemore time even it got deleted by the user.
+
   FROM DDIA BOOK :
 
 •Database Category
