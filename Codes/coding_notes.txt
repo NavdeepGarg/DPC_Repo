@@ -150,3 +150,26 @@ Hierarichal DS : TreeSet, TreeMap, Hash Map,Heap, Graph
 	•ANd main 0 powerful hota hain , OR main 1 or XOR main bhi 1.
 	•b^1 (XOR) == toggle , b^0 == same
 	•rsb : roght significant bit == x&x''   x'' is 2s complement
+	
+	
+	
+•Some Graph Algo observations
+	•in BFS algo, visited[src] = true is done at the end.
+	•in DFS algo, visited[src] = true is done at the beginnning.
+	•prims algo is a greedy approach , pick any source , start dfs 
+	•Kruskal algo can be done with DSU.
+	•dj , fllooyd warshal, Belmanford can b used for directed and undirected both
+	•Good article and questionnare on DJ : https://www.softwaretestinghelp.com/dijkstras-algorithm-in-java/
+	•prims and kruskal are for undirected graph.
+	•visited array concept is not relevant for  prim kruskal Bellmanford Flloyd warshal
+	•fllooyd warshal , edge directed driven, negative weights are allowed.
+	•BF is edge driven approach.
+
+•Stack Introduction And Identification
+	•Array ke question mailnly stack and heap aa jata hain 
+	•kahin ordering leni ho toh heap laga do 
+	•or jaha 2 loop ho and secondloop , j wala is dependent on i (first loop) , this can be solved in a better way using Stack
+	
+	
+•Prefix sum problems	
+	•https://leetcode.com/discuss/general-discussion/563022/prefix-sum-problems
