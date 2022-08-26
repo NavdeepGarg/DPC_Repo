@@ -100,7 +100,9 @@ DIP: Dependency Inversion Principle
 •<IMP>To configure the jsp file name automatically, application.prop file to be configured with spring.mvc.view.prefix & suffix params
 
 •Simply using HTTPServletRequest as a parameter in @RequesteMapping method can take the client input and further process it for specific use.
-• To avoid using legacy startegy, ModelAndView class is intriduced that will eliminate the use of session adn request object.
+• To avoid using legacy startegy, ModelAndView class is introduced that will eliminate the use of session adn request object.
+
+•http://www.javabyexamples.com/using-model-modelmap-and-modelview-in-spring-mvc
 
 •@PostMapping annotations is used to map the jsp form submit action.
 	Earlier days of servlet was easier in coding but in this world of Spring they made it object oriented and start using ModelAtrribute to match up with the from elements
