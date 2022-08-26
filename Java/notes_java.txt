@@ -292,3 +292,12 @@ DataSource:> con=ds.getConnection() : from connection pool.
 
 
 •https://www.sqlshack.com/what-is-the-difference-between-clustered-and-non-clustered-indexes-in-sql-server/
+
+
+Initializing a final Variable 
+
+We must initialize a final variable, otherwise, the compiler will throw a compile-time error. A final variable can only be initialized once, either via an initializer or an assignment statement. There are three ways to initialize a final variable: 
+
+    You can initialize a final variable when it is declared. This approach is the most common. A final variable is called a blank final variable if it is not initialized while declaration. Below are the two ways to initialize a blank final variable.
+    A blank final variable can be initialized inside an instance-initializer block or inside the constructor. If you have more than one constructor in your class then it must be initialized in all of them, otherwise, a compile-time error will be thrown.
+    A blank final static variable can be initialized inside a static block.
