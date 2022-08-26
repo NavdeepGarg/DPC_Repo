@@ -102,7 +102,8 @@ DIP: Dependency Inversion Principle
 •Simply using HTTPServletRequest as a parameter in @RequesteMapping method can take the client input and further process it for specific use.
 • To avoid using legacy startegy, ModelAndView class is introduced that will eliminate the use of session adn request object.
 
-•http://www.javabyexamples.com/using-model-modelmap-and-modelview-in-spring-mvc
+	•http://www.javabyexamples.com/using-model-modelmap-and-modelview-in-spring-mvc
+	•https://stackoverflow.com/questions/18486660/what-are-the-differences-between-model-modelmap-and-modelandview
 
 •@PostMapping annotations is used to map the jsp form submit action.
 	Earlier days of servlet was easier in coding but in this world of Spring they made it object oriented and start using ModelAtrribute to match up with the from elements
